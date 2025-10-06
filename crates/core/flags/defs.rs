@@ -72,6 +72,7 @@ pub(super) const FLAGS: &[&dyn Flag] = &[
     &FixedStrings,
     &Follow,
     &Generate,
+    &GitBlame,
     &Glob,
     &GlobCaseInsensitive,
     &Heading,
@@ -104,6 +105,7 @@ pub(super) const FLAGS: &[&dyn Flag] = &[
     &NoIgnoreExclude,
     &NoIgnoreFiles,
     &NoIgnoreGlobal,
+    &NoGitBlame,
     &NoIgnoreMessages,
     &NoIgnoreParent,
     &NoIgnoreVcs,
@@ -2497,6 +2499,100 @@ fn test_generate() {
     let args =
         parse_low_raw(["--generate", "man", "--json", "--no-json"]).unwrap();
     assert_eq!(Mode::Search(SearchMode::Standard), args.mode);
+}
+
+/// --git-blame
+#[derive(Debug)]
+struct GitBlame;
+
+impl Flag for GitBlame {
+    fn is_switch(&self) -> bool {
+        true
+    }
+    fn name_long(&self) -> &'static str {
+        "git-blame"
+    }
+    fn doc_category(&self) -> Category {
+        Category::Output
+    }
+    fn doc_short(&self) -> &'static str {
+        r"Show git blame information for each match."
+    }
+    fn doc_long(&self) -> &'static str {
+        r"
+Show git blame information (commit hash, author, timestamp) for each matching
+line. This information appears before the line number in the output. This flag
+is enabled by default and can be disabled with \flag{no-git-blame}.
+.sp
+When git blame information is not available (e.g., the file is not in a git
+repository), the line will be displayed without blame information.
+"
+    }
+
+    fn update(&self, v: FlagValue, args: &mut LowArgs) -> anyhow::Result<()> {
+        assert!(v.unwrap_switch(), "--git-blame has no automatic negation");
+        args.git_blame = Some(true);
+        Ok(())
+    }
+}
+
+#[cfg(test)]
+#[test]
+fn test_git_blame() {
+    let args = parse_low_raw(None::<&str>).unwrap();
+    assert_eq!(None, args.git_blame);
+
+    let args = parse_low_raw(["--git-blame"]).unwrap();
+    assert_eq!(Some(true), args.git_blame);
+}
+
+/// --no-git-blame
+#[derive(Debug)]
+struct NoGitBlame;
+
+impl Flag for NoGitBlame {
+    fn is_switch(&self) -> bool {
+        true
+    }
+    fn name_long(&self) -> &'static str {
+        "no-git-blame"
+    }
+    fn doc_category(&self) -> Category {
+        Category::Output
+    }
+    fn doc_short(&self) -> &'static str {
+        r"Suppress git blame information."
+    }
+    fn doc_long(&self) -> &'static str {
+        r"
+Suppress git blame information for matching lines.
+.sp
+Git blame display is enabled by default, so this flag is useful to
+disable it explicitly.
+"
+    }
+
+    fn update(&self, v: FlagValue, args: &mut LowArgs) -> anyhow::Result<()> {
+        assert!(v.unwrap_switch(), "--no-git-blame has no automatic negation");
+        args.git_blame = Some(false);
+        Ok(())
+    }
+}
+
+#[cfg(test)]
+#[test]
+fn test_no_git_blame() {
+    let args = parse_low_raw(None::<&str>).unwrap();
+    assert_eq!(None, args.git_blame);
+
+    let args = parse_low_raw(["--no-git-blame"]).unwrap();
+    assert_eq!(Some(false), args.git_blame);
+
+    let args = parse_low_raw(["--git-blame", "--no-git-blame"]).unwrap();
+    assert_eq!(Some(false), args.git_blame);
+
+    let args = parse_low_raw(["--no-git-blame", "--git-blame"]).unwrap();
+    assert_eq!(Some(true), args.git_blame);
 }
 
 /// -g/--glob

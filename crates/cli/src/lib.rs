@@ -123,6 +123,7 @@ tells the user how to fix the problem.
 
 #![deny(missing_docs)]
 
+pub mod blame;
 mod decompress;
 mod escape;
 mod hostname;

@@ -7,6 +7,8 @@ use std::{
     time::Instant,
 };
 
+use grep_cli::blame::BlameCache;
+
 use {
     bstr::ByteSlice,
     grep_matcher::{Match, Matcher},
@@ -42,6 +44,7 @@ struct Config {
     only_matching: bool,
     per_match: bool,
     per_match_one_line: bool,
+    git_blame: bool,
     replacement: Arc<Option<Vec<u8>>>,
     max_columns: Option<u64>,
     max_columns_preview: bool,
@@ -67,6 +70,7 @@ impl Default for Config {
             only_matching: false,
             per_match: false,
             per_match_one_line: false,
+            git_blame: false,
             replacement: Arc::new(None),
             max_columns: None,
             max_columns_preview: false,
@@ -129,6 +133,7 @@ impl StandardBuilder {
             config: self.config.clone(),
             wtr: RefCell::new(CounterWriter::new(wtr)),
             matches: vec![],
+            blame_cache: BlameCache::new(),
         }
     }
 
@@ -274,6 +279,18 @@ impl StandardBuilder {
     /// This is disabled by default.
     pub fn per_match_one_line(&mut self, yes: bool) -> &mut StandardBuilder {
         self.config.per_match_one_line = yes;
+        self
+    }
+
+    /// Enable the display of git blame information for each match.
+    ///
+    /// When this is enabled, the printer will attempt to collect git blame
+    /// information (commit hash, author, timestamp) for each matching line
+    /// and display it before the line number in the output.
+    ///
+    /// This is disabled by default.
+    pub fn git_blame(&mut self, yes: bool) -> &mut StandardBuilder {
+        self.config.git_blame = yes;
         self
     }
 
@@ -481,6 +498,7 @@ pub struct Standard<W> {
     config: Config,
     wtr: RefCell<CounterWriter<W>>,
     matches: Vec<Match>,
+    blame_cache: BlameCache,
 }
 
 impl<W: WriteColor> Standard<W> {
@@ -1182,6 +1200,7 @@ impl<'a, M: Matcher, W: WriteColor> StandardImpl<'a, M, W> {
         let mut prelude = PreludeWriter::new(self);
         prelude.start(line_number, column)?;
         prelude.write_path()?;
+        prelude.write_git_blame(line_number)?;
         prelude.write_line_number(line_number)?;
         prelude.write_column_number(column)?;
         prelude.write_byte_offset(absolute_byte_offset)?;
@@ -1673,6 +1692,25 @@ impl<'a, M: Matcher, W: WriteColor> PreludeWriter<'a, M, W> {
         } else {
             PreludeSeparator::FieldSeparator
         };
+        Ok(())
+    }
+
+    /// Writes git blame information if enabled and available.
+    #[inline(always)]
+    fn write_git_blame(&mut self, line: Option<u64>) -> io::Result<()> {
+        if !self.config().git_blame {
+            return Ok(());
+        }
+        let Some(line_number) = line else { return Ok(()) };
+        let Some(path) = self.std.path() else { return Ok(()) };
+
+        // Get blame info for this line
+        if let Some(blame_info) = self.std.sink.standard.blame_cache.get_blame(path.as_path(), line_number) {
+            self.write_separator()?;
+            let formatted = blame_info.format_fixed_width();
+            self.std.write(formatted.as_bytes())?;
+            self.next_separator = PreludeSeparator::FieldSeparator;
+        }
         Ok(())
     }
 

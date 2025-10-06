@@ -53,6 +53,7 @@ pub(crate) struct HiArgs {
     file_separator: Option<Vec<u8>>,
     fixed_strings: bool,
     follow: bool,
+    git_blame: bool,
     globs: ignore::overrides::Override,
     heading: bool,
     hidden: bool,
@@ -172,27 +173,6 @@ impl HiArgs {
             std::thread::available_parallelism().map_or(1, |n| n.get()).min(12)
         };
         log::debug!("using {threads} thread(s)");
-        let with_filename = low
-            .with_filename
-            .unwrap_or_else(|| low.vimgrep || !paths.is_one_file);
-
-        let file_separator = match low.mode {
-            Mode::Search(SearchMode::Standard) => {
-                if heading {
-                    Some(b"".to_vec())
-                } else if let ContextMode::Limited(ref limited) = low.context {
-                    let (before, after) = limited.get();
-                    if before > 0 || after > 0 {
-                        low.context_separator.clone().into_bytes()
-                    } else {
-                        None
-                    }
-                } else {
-                    None
-                }
-            }
-            _ => None,
-        };
 
         let line_number = low.line_number.unwrap_or_else(|| {
             if low.quiet {
@@ -217,6 +197,52 @@ impl HiArgs {
                 }
             }
         });
+
+        // Git blame is enabled by default for standard search mode,
+        // unless explicitly disabled or when quiet mode is active.
+        let git_blame = low.git_blame.unwrap_or_else(|| {
+            if low.quiet {
+                return false;
+            }
+            let Mode::Search(ref search_mode) = low.mode else { return false };
+            match *search_mode {
+                SearchMode::FilesWithMatches
+                | SearchMode::FilesWithoutMatch
+                | SearchMode::Count
+                | SearchMode::CountMatches
+                | SearchMode::JSON => false,
+                SearchMode::Standard => true,
+            }
+        });
+
+        // If git blame is enabled, we need line numbers to show blame info
+        let line_number = if git_blame {
+            true
+        } else {
+            line_number
+        };
+
+        let with_filename = low
+            .with_filename
+            .unwrap_or_else(|| low.vimgrep || !paths.is_one_file || git_blame);
+
+        let file_separator = match low.mode {
+            Mode::Search(SearchMode::Standard) => {
+                if heading {
+                    Some(b"".to_vec())
+                } else if let ContextMode::Limited(ref limited) = low.context {
+                    let (before, after) = limited.get();
+                    if before > 0 || after > 0 {
+                        low.context_separator.clone().into_bytes()
+                    } else {
+                        None
+                    }
+                } else {
+                    None
+                }
+            }
+            _ => None,
+        };
 
         let mmap_choice = {
             // SAFETY: Memory maps are difficult to impossible to encapsulate
@@ -270,6 +296,7 @@ impl HiArgs {
             file_separator,
             fixed_strings: low.fixed_strings,
             follow: low.follow,
+            git_blame,
             heading,
             hidden: low.hidden,
             hyperlink_config,
@@ -612,6 +639,7 @@ impl HiArgs {
             .byte_offset(self.byte_offset)
             .color_specs(self.colors.clone())
             .column(self.column)
+            .git_blame(self.git_blame)
             .heading(self.heading)
             .hyperlink(self.hyperlink_config.clone())
             .max_columns_preview(self.max_columns_preview)

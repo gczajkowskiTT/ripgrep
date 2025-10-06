@@ -205,6 +205,7 @@ name = "grep-printer"
 version = "0.2.2"
 dependencies = [
  "bstr",
+ "grep-cli",
  "grep-matcher",
  "grep-regex",
  "grep-searcher",
