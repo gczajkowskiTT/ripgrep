@@ -56,16 +56,44 @@ impl BlameCache {
     fn fetch_file_blame(&self, file_path: &Path) {
         let path_str = file_path.to_string_lossy().to_string();
 
-        // Use porcelain format which is easier to parse
-        let output = match Command::new("git")
-            .arg("blame")
+        // Convert to absolute path and determine the working directory for git
+        let abs_path = match file_path.canonicalize() {
+            Ok(p) => p,
+            Err(_) => {
+                // If we can't canonicalize, cache empty and return
+                let mut cache = self.cache.lock().unwrap();
+                cache.insert(path_str, HashMap::new());
+                return;
+            }
+        };
+
+        // Find the git repository root by looking for .git directory
+        let git_dir = find_git_dir(&abs_path);
+
+        // Determine what path to pass to git blame
+        let (working_dir, blame_path) = if let Some(ref git_root) = git_dir {
+            // Run git from the repo root with a relative path
+            let rel_path = abs_path.strip_prefix(git_root).unwrap_or(&abs_path);
+            (Some(git_root.as_path()), rel_path)
+        } else {
+            // No git repo found, run from file's directory with just filename
+            (abs_path.parent(), abs_path.as_path())
+        };
+
+        let mut cmd = Command::new("git");
+        cmd.arg("blame")
             .arg("--porcelain")
-            .arg(file_path)
+            .arg(blame_path)
             .stdin(Stdio::null())
             .stdout(Stdio::piped())
-            .stderr(Stdio::null())
-            .output()
-        {
+            .stderr(Stdio::null());
+
+        if let Some(dir) = working_dir {
+            cmd.current_dir(dir);
+        }
+
+        // Use porcelain format which is easier to parse
+        let output = match cmd.output() {
             Ok(output) if output.status.success() => output,
             _ => {
                 // If git blame fails, cache an empty map for this file
@@ -215,6 +243,27 @@ fn parse_git_blame_porcelain(output: &str) -> HashMap<u64, BlameInfo> {
     }
 
     result
+}
+
+/// Find the git repository root by walking up the directory tree from the given path.
+/// Returns the path to the directory containing .git, or None if not found.
+fn find_git_dir(start_path: &Path) -> Option<std::path::PathBuf> {
+    let mut current = start_path;
+
+    // Start from the file's directory
+    if current.is_file() {
+        current = current.parent()?;
+    }
+
+    loop {
+        let git_path = current.join(".git");
+        if git_path.exists() {
+            return Some(current.to_path_buf());
+        }
+
+        // Move up to parent directory
+        current = current.parent()?;
+    }
 }
 
 /// Format a Unix timestamp as a relative time string (e.g., "2d ago", "3w ago")
