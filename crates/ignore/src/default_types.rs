@@ -219,7 +219,7 @@ pub(crate) const DEFAULT_TYPES: &[(&[&str], &[&str])] = &[
     (&["qml"], &["*.qml"]),
     (&["qrc"], &["*.qrc"]),
     (&["qui"], &["*.ui"]),
-    (&["r"], &["*.R", "*.r", "*.Rmd", "*.Rnw"]),
+    (&["r"], &["*.R", "*.r", "*.Rmd", "*.rmd", "*.Rnw", "*.rnw"]),
     (&["racket"], &["*.rkt"]),
     (&["raku"], &[
         "*.raku", "*.rakumod", "*.rakudoc", "*.rakutest",
@@ -274,6 +274,7 @@ pub(crate) const DEFAULT_TYPES: &[(&[&str], &[&str])] = &[
     (&["spark"], &["*.spark"]),
     (&["spec"], &["*.spec"]),
     (&["sql"], &["*.sql", "*.psql"]),
+    (&["ssa"], &["*.ssa"]),
     (&["stylus"], &["*.styl"]),
     (&["sv"], &["*.v", "*.vg", "*.sv", "*.svh", "*.h"]),
     (&["svelte"], &["*.svelte", "*.svelte.ts"]),

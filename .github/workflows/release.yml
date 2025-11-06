@@ -98,12 +98,6 @@ jobs:
           target: armv7-unknown-linux-musleabi
           strip: arm-linux-musleabi-strip
           qemu: qemu-arm
-        - build: stable-powerpc64
-          os: ubuntu-latest
-          rust: stable
-          target: powerpc64-unknown-linux-gnu
-          strip: powerpc64-linux-gnu-strip
-          qemu: qemu-ppc64
         - build: stable-s390x
           os: ubuntu-latest
           rust: stable
@@ -182,11 +176,11 @@ jobs:
     - name: Build release binary
       shell: bash
       run: |
-        ${{ env.CARGO }} build --verbose --release --features pcre2 ${{ env.TARGET_FLAGS }}
+        ${{ env.CARGO }} build --verbose --profile release-lto --features pcre2 ${{ env.TARGET_FLAGS }}
         if [[ "${{ matrix.os }}" == windows-* ]]; then
-          bin="target/${{ matrix.target }}/release/rg.exe"
+          bin="target/${{ matrix.target }}/release-lto/rg.exe"
         else
-          bin="target/${{ matrix.target }}/release/rg"
+          bin="target/${{ matrix.target }}/release-lto/rg"
         fi
         echo "BIN=$bin" >> $GITHUB_ENV
 
