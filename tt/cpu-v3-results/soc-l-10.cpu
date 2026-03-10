@@ -1,0 +1,4 @@
+HOST: soc-l-10
+CPU: AMD EPYC 9455 48-Core Processor
+V3_SUPPORT: YES
+FEATURES: All x86-64-v3 features present

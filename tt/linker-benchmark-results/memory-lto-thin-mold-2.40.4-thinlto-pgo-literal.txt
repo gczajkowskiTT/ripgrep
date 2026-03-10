@@ -1,0 +1,72 @@
+	Command being timed: "/proj_soc/user_dev/gczajkowski/bin/rg-lto-thin-mold-2.40.4-thinlto-pgo --no-config --no-ignore function /proj_soc/user_dev/gczajkowski/chiplet-template"
+	User time (seconds): 0.31
+	System time (seconds): 8.07
+	Percent of CPU this job got: 144%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:05.78
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 15196
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 3909
+	Voluntary context switches: 591201
+	Involuntary context switches: 17
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+---
+	Command being timed: "/proj_soc/user_dev/gczajkowski/bin/rg-lto-thin-mold-2.40.4-thinlto-pgo --no-config --no-ignore function /proj_soc/user_dev/gczajkowski/chiplet-template"
+	User time (seconds): 0.27
+	System time (seconds): 8.20
+	Percent of CPU this job got: 145%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:05.84
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 14604
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 3736
+	Voluntary context switches: 591237
+	Involuntary context switches: 22
+	Swaps: 0
+	File system inputs: 10112
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+---
+	Command being timed: "/proj_soc/user_dev/gczajkowski/bin/rg-lto-thin-mold-2.40.4-thinlto-pgo --no-config --no-ignore function /proj_soc/user_dev/gczajkowski/chiplet-template"
+	User time (seconds): 0.29
+	System time (seconds): 7.91
+	Percent of CPU this job got: 139%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:05.86
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 16000
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 1
+	Minor (reclaiming a frame) page faults: 3835
+	Voluntary context switches: 591349
+	Involuntary context switches: 22
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+---

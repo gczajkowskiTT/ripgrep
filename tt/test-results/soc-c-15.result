@@ -1,0 +1,8 @@
+HOST: soc-c-15
+TIMESTAMP: 2026-02-14 16:17:11
+STATUS: PASSED
+VERSION: /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority
+CPU: /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority
+AMD EPYC 9384X 32-Core Processor
+AVX2: /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority
+YES

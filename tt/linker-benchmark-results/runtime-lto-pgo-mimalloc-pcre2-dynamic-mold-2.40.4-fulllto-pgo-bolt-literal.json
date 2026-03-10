@@ -1,0 +1,35 @@
+{
+  "results": [
+    {
+      "command": "/proj_soc/user_dev/gczajkowski/bin/rg-lto-pgo-mimalloc-pcre2-dynamic-mold-2.40.4-fulllto-pgo-bolt --no-config --no-ignore function '/proj_soc/user_dev/gczajkowski/chiplet-template'",
+      "mean": 5.86162572622,
+      "stddev": 0.08025463773766815,
+      "median": 5.86740652482,
+      "user": 0.25426514,
+      "system": 8.42590174,
+      "min": 5.75001724382,
+      "max": 5.97042159282,
+      "times": [
+        5.97042159282,
+        5.86740652482,
+        5.83337961982,
+        5.75001724382,
+        5.88690364982
+      ],
+      "memory_usage_byte": [
+        22503424,
+        22503424,
+        22503424,
+        22503424,
+        22503424
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ]
+}

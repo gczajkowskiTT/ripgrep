@@ -1,0 +1,16 @@
+# PGO Ripgrep Binary Test Results
+# Generated: Sat Feb 14 15:35:29 EST 2026
+# Binary: /proj_soc/user_dev/gczajkowski/bin/rg (3.7M)
+
+## soc-c-02 - PASSED
+CPU: AMD EPYC 7443 24-Core Processor
+AVX2: 1
+VERSION: ripgrep 15.1.0 (rev 83a84fb0bd)
+
+features:+pcre2
+simd(compile):+SSE2,-SSSE3,-AVX2
+simd(runtime):+SSE2,+SSSE3,+AVX2
+
+PCRE2 10.45 is available (JIT is available)
+PERF: 0.00s
+

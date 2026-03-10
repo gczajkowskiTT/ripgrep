@@ -1,0 +1,4 @@
+HOST: soc-l-02
+CPU: Intel(R) Xeon(R) Gold 6130 CPU @ 2.10GHz
+V3_SUPPORT: YES
+FEATURES: All x86-64-v3 features present

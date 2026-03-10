@@ -1,0 +1,57 @@
+# PGO Ripgrep Binary Test Summary
+# Generated: Sat Feb 14 16:24:54 EST 2026
+# Binary: /proj_soc/user_dev/gczajkowski/bin/rg
+
+## Results
+
+- soc-c-02: PASSED | /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority | AVX2: /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority
+- soc-c-03: PASSED | AMD EPYC 7443 24-Core Processor | AVX2: /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority
+- soc-c-04: PASSED | /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority | AVX2: /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority
+- soc-c-05: PASSED | /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority | AVX2: /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority
+- soc-c-06: PASSED | /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority | AVX2: /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority
+- soc-c-07: PASSED | /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority | AVX2: /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority
+- soc-c-08: PASSED | /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority | AVX2: /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority
+- soc-c-09: PASSED | /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority | AVX2: /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority
+- soc-c-12: PASSED | /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority | AVX2: /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority
+- soc-c-13: PASSED | /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority | AVX2: /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority
+- soc-c-14: PASSED | /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority | AVX2: /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority
+- soc-c-15: PASSED | /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority | AVX2: /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority
+- soc-c-16: PASSED | /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority | AVX2: /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority
+- soc-c-17: PASSED | /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority | AVX2: /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority
+- soc-c-18: PASSED | /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority | AVX2: /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority
+- soc-c-19: PASSED | /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority | AVX2: /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority
+- soc-c-20: PASSED | /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority | AVX2: /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority
+- soc-c-21: PASSED | /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority | AVX2: /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority
+- soc-c-22: PASSED | /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority | AVX2: /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority
+- soc-c-23: PASSED | /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority | AVX2: /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority
+- soc-c-24: PASSED | /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority | AVX2: /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority
+- soc-c-25: PASSED | /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority | AVX2: /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority
+- soc-c-26: PASSED | /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority | AVX2: /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority
+- soc-c-27: PASSED | /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority | AVX2: /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority
+- soc-c-28: PASSED | /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority | AVX2: /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority
+- soc-c-29: PASSED | /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority | AVX2: /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority
+- soc-c-30: PASSED | /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority | AVX2: /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority
+- soc-c-31: PASSED | /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority | AVX2: /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority
+- soc-c-32: PASSED | /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority | AVX2: /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority
+- soc-l-01: PASSED | /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority | AVX2: /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority
+- soc-l-02: PASSED | /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority | AVX2: /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority
+- soc-l-03: PASSED | /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority | AVX2: /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority
+- soc-l-04: PASSED | /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority | AVX2: /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority
+- soc-l-05: PASSED | Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz | AVX2: YES
+- soc-l-06: PASSED | /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority | AVX2: /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority
+- soc-l-07: PASSED | /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority | AVX2: /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority
+- soc-l-09: PASSED | /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority | AVX2: /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority
+- soc-l-10: PASSED | /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority | AVX2: /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority
+- soc-l-11: PASSED | /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority | AVX2: /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority
+- soc-l-12: PASSED | /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority | AVX2: /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority
+- soc-zebu-01: PASSED | AMD EPYC 9274F 24-Core Processor | AVX2: YES
+- soc-zebu-02: PASSED | /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority | AVX2: /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority
+- soc-zebu-03: PASSED | /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority | AVX2: /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority
+- soc-zebu-04: PASSED | /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority | AVX2: /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority
+- socinfra: FAILED | Version check failed
+
+## Summary
+Total Hosts: 45
+Passed: 44
+Failed: 1
+Success Rate: 97%

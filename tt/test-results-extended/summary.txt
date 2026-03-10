@@ -1,0 +1,74 @@
+# PGO Ripgrep Binary Test Summary (Extended SSH Timeouts)
+# Generated: Sat Feb 14 17:09:16 EST 2026
+# Binary: /proj_soc/user_dev/gczajkowski/bin/rg
+# Source: /proj_soc/user_dev/socinfra/resource_summary.json
+# SSH Settings: ConnectTimeout=30s, CommandTimeout=60s, Retries=3
+
+## Results
+
+- bgd1-vl-01.bgd1.tenstorrent.com: FAILED | All 3 attempts failed | Attempts: 3
+- bgd1-vl-02.bgd1.tenstorrent.com: FAILED | All 3 attempts failed | Attempts: 3
+- bgd1-vl-03.bgd1.tenstorrent.com: FAILED | All 3 attempts failed | Attempts: 3
+- bgd-nfs-01.local.tenstorrent.com: FAILED | All 3 attempts failed | Attempts: 3
+- jenkins_hw: FAILED | All 3 attempts failed | Attempts: 3
+- pd-l-33: PASSED | AMD EPYC 7443 24-Core Processor | AVX2: YES | Attempts: 1
+- rv-zebu-07: PASSED | AMD EPYC 9274F 24-Core Processor | AVX2: YES | Attempts: 1
+- rv-zebu-08: PASSED | AMD EPYC 9274F 24-Core Processor | AVX2: YES | Attempts: 1
+- soc-c-01: PASSED | AMD EPYC 7443 24-Core Processor | AVX2: YES | Attempts: 1
+- soc-c-02: PASSED | AMD EPYC 7443 24-Core Processor | AVX2: YES | Attempts: 1
+- soc-c-03: PASSED | AMD EPYC 7443 24-Core Processor | AVX2: YES | Attempts: 1
+- soc-c-04: PASSED | AMD EPYC 7443 24-Core Processor | AVX2: YES | Attempts: 1
+- soc-c-05: PASSED | AMD EPYC 7443 24-Core Processor | AVX2: YES | Attempts: 1
+- soc-c-06: PASSED | AMD EPYC 9274F 24-Core Processor | AVX2: YES | Attempts: 1
+- soc-c-07: PASSED | AMD EPYC 9274F 24-Core Processor | AVX2: YES | Attempts: 1
+- soc-c-08: PASSED | AMD EPYC 9274F 24-Core Processor | AVX2: YES | Attempts: 1
+- soc-c-09: PASSED | AMD EPYC 9274F 24-Core Processor | AVX2: YES | Attempts: 1
+- soc-c-10: PASSED | AMD EPYC 7343 16-Core Processor | AVX2: YES | Attempts: 1
+- soc-c-11: PASSED | AMD EPYC 7343 16-Core Processor | AVX2: YES | Attempts: 1
+- soc-c-12: PASSED | AMD EPYC 9384X 32-Core Processor | AVX2: YES | Attempts: 1
+- soc-c-13: PASSED | AMD EPYC 9384X 32-Core Processor | AVX2: YES | Attempts: 1
+- soc-c-14: PASSED | AMD EPYC 9384X 32-Core Processor | AVX2: YES | Attempts: 1
+- soc-c-15: PASSED | AMD EPYC 9384X 32-Core Processor | AVX2: YES | Attempts: 1
+- soc-c-16: PASSED | AMD EPYC 9384X 32-Core Processor | AVX2: YES | Attempts: 1
+- soc-c-17: PASSED | AMD EPYC 9384X 32-Core Processor | AVX2: YES | Attempts: 1
+- soc-c-18: PASSED | AMD EPYC 9384X 32-Core Processor | AVX2: YES | Attempts: 1
+- soc-c-19: PASSED | AMD EPYC 9384X 32-Core Processor | AVX2: YES | Attempts: 1
+- soc-c-20: PASSED | AMD EPYC 9384X 32-Core Processor | AVX2: YES | Attempts: 1
+- soc-c-21: PASSED | AMD EPYC 9384X 32-Core Processor | AVX2: YES | Attempts: 1
+- soc-c-22: PASSED | AMD EPYC 9384X 32-Core Processor | AVX2: YES | Attempts: 1
+- soc-c-23: PASSED | AMD EPYC 9384X 32-Core Processor | AVX2: YES | Attempts: 1
+- soc-c-24: PASSED | AMD EPYC 9384X 32-Core Processor | AVX2: YES | Attempts: 1
+- soc-c-25: PASSED | AMD EPYC 9384X 32-Core Processor | AVX2: YES | Attempts: 1
+- soc-c-26: PASSED | AMD EPYC 9384X 32-Core Processor | AVX2: YES | Attempts: 1
+- soc-c-27: PASSED | AMD EPYC 9384X 32-Core Processor | AVX2: YES | Attempts: 1
+- soc-c-28: PASSED | AMD EPYC 9384X 32-Core Processor | AVX2: YES | Attempts: 1
+- soc-c-29: PASSED | AMD EPYC 9384X 32-Core Processor | AVX2: YES | Attempts: 1
+- soc-c-30: PASSED | AMD EPYC 9384X 32-Core Processor | AVX2: YES | Attempts: 1
+- soc-c-31: PASSED | AMD EPYC 9384X 32-Core Processor | AVX2: YES | Attempts: 1
+- soc-c-32: PASSED | AMD EPYC 9384X 32-Core Processor | AVX2: YES | Attempts: 1
+- soc-l-01: PASSED | Intel(R) Xeon(R) Gold 6130 CPU @ 2.10GHz | AVX2: YES | Attempts: 1
+- soc-l-02: PASSED | Intel(R) Xeon(R) Gold 6130 CPU @ 2.10GHz | AVX2: YES | Attempts: 1
+- soc-l-03: PASSED | Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz | AVX2: YES | Attempts: 1
+- soc-l-04: PASSED | Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz | AVX2: YES | Attempts: 1
+- soc-l-05: PASSED | Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz | AVX2: YES | Attempts: 1
+- soc-l-06: PASSED | Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz | AVX2: YES | Attempts: 1
+- soc-l-07: PASSED | Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz | AVX2: YES | Attempts: 1
+- soc-l-08: FAILED | All 3 attempts failed | Attempts: 3
+- soc-l-09: PASSED | Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz | AVX2: YES | Attempts: 1
+- soc-l-10: PASSED | AMD EPYC 9455 48-Core Processor | AVX2: YES | Attempts: 1
+- soc-l-11: PASSED | AMD EPYC 9455 48-Core Processor | AVX2: YES | Attempts: 1
+- soc-l-12: PASSED | AMD EPYC 9455 48-Core Processor | AVX2: YES | Attempts: 1
+- soc-zebu-01: PASSED | AMD EPYC 9274F 24-Core Processor | AVX2: YES | Attempts: 1
+- soc-zebu-02: PASSED | AMD EPYC 9274F 24-Core Processor | AVX2: YES | Attempts: 1
+- soc-zebu-03: PASSED | AMD EPYC 9274F 24-Core Processor | AVX2: YES | Attempts: 1
+- soc-zebu-04: PASSED | AMD EPYC 9274F 24-Core Processor | AVX2: YES | Attempts: 1
+- yyz-colo-lsf-01: FAILED | All 3 attempts failed | Attempts: 3
+- yyzc-reports: FAILED | All 3 attempts failed | Attempts: 3
+- yyz-license-01: FAILED | All 3 attempts failed | Attempts: 3
+- yyz-license-02: FAILED | All 3 attempts failed | Attempts: 3
+
+## Summary
+Total Hosts: 60
+Passed: 50
+Failed: 10
+Success Rate: 83%

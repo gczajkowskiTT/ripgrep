@@ -1,0 +1,8 @@
+HOST: soc-l-06
+TIMESTAMP: 2026-02-14 16:19:52
+STATUS: PASSED
+VERSION: /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority
+CPU: /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority
+Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
+AVX2: /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority
+YES

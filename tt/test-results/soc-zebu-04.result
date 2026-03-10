@@ -1,0 +1,8 @@
+HOST: soc-zebu-04
+TIMESTAMP: 2026-02-14 16:22:13
+STATUS: PASSED
+VERSION: /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority
+CPU: /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority
+AMD EPYC 9274F 24-Core Processor
+AVX2: /usr/bin/xauth:  timeout in locking authority file /home/gczajkowski/.Xauthority
+YES

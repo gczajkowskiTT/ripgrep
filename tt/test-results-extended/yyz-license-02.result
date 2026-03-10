@@ -1,0 +1,24 @@
+HOST: yyz-license-02
+TIMESTAMP: 2026-02-14 17:09:02
+ATTEMPTS: 3
+
+=== Attempt 1/3 ===
+Version check: FAILED (exit code: 1)
+Output: /proj_soc/user_dev/gczajkowski/bin/rg: /lib64/libc.so.6: version `GLIBC_2.18' not found (required by /proj_soc/user_dev/gczajkowski/bin/rg)
+/proj_soc/user_dev/gczajkowski/bin/rg: /lib64/libc.so.6: version `GLIBC_2.25' not found (required by /proj_soc/user_dev/gczajkowski/bin/rg)
+/proj_soc/user_dev/gczajkowski/bin/rg: /lib64/libc.so.6: version `GLIBC_2.28' not found (required by /proj_soc/user_dev/gczajkowski/bin/rg)
+Waiting 2s before retry...
+=== Attempt 2/3 ===
+Version check: FAILED (exit code: 1)
+Output: /proj_soc/user_dev/gczajkowski/bin/rg: /lib64/libc.so.6: version `GLIBC_2.18' not found (required by /proj_soc/user_dev/gczajkowski/bin/rg)
+/proj_soc/user_dev/gczajkowski/bin/rg: /lib64/libc.so.6: version `GLIBC_2.25' not found (required by /proj_soc/user_dev/gczajkowski/bin/rg)
+/proj_soc/user_dev/gczajkowski/bin/rg: /lib64/libc.so.6: version `GLIBC_2.28' not found (required by /proj_soc/user_dev/gczajkowski/bin/rg)
+Waiting 2s before retry...
+=== Attempt 3/3 ===
+Version check: FAILED (exit code: 1)
+Output: /proj_soc/user_dev/gczajkowski/bin/rg: /lib64/libc.so.6: version `GLIBC_2.18' not found (required by /proj_soc/user_dev/gczajkowski/bin/rg)
+/proj_soc/user_dev/gczajkowski/bin/rg: /lib64/libc.so.6: version `GLIBC_2.25' not found (required by /proj_soc/user_dev/gczajkowski/bin/rg)
+/proj_soc/user_dev/gczajkowski/bin/rg: /lib64/libc.so.6: version `GLIBC_2.28' not found (required by /proj_soc/user_dev/gczajkowski/bin/rg)
+
+STATUS: FAILED
+ERROR: All 3 attempts failed

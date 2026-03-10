@@ -1,0 +1,18 @@
+HOST: soc-l-08
+TIMESTAMP: 2026-02-14 17:09:02
+ATTEMPTS: 3
+
+=== Attempt 1/3 ===
+Version check: FAILED (exit code: 255)
+Output: ssh: connect to host soc-l-08 port 22: No route to host
+Waiting 2s before retry...
+=== Attempt 2/3 ===
+Version check: FAILED (exit code: 255)
+Output: ssh: connect to host soc-l-08 port 22: No route to host
+Waiting 2s before retry...
+=== Attempt 3/3 ===
+Version check: FAILED (exit code: 255)
+Output: ssh: connect to host soc-l-08 port 22: No route to host
+
+STATUS: FAILED
+ERROR: All 3 attempts failed

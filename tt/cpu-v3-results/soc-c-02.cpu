@@ -1,0 +1,4 @@
+HOST: soc-c-02
+CPU: AMD EPYC 7443 24-Core Processor
+V3_SUPPORT: YES
+FEATURES: All x86-64-v3 features present

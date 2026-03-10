@@ -1,0 +1,676 @@
+++ dirname /proj_soc/user_dev/gczajkowski/ripgrepTT/tt/build-variant-lto-pgo-bolt-v3-mimalloc-pcre2-static.sh
++ source /proj_soc/user_dev/gczajkowski/ripgrepTT/tt/build-lib.sh
+++ [[ /proj_soc/user_dev/gczajkowski/ripgrepTT/tt/build-lib.sh == \/\p\r\o\j\_\s\o\c\/\u\s\e\r\_\d\e\v\/\g\c\z\a\j\k\o\w\s\k\i\/\r\i\p\g\r\e\p\T\T\/\t\t\/\b\u\i\l\d\-\v\a\r\i\a\n\t\-\l\t\o\-\p\g\o\-\b\o\l\t\-\v\3\-\m\i\m\a\l\l\o\c\-\p\c\r\e\2\-\s\t\a\t\i\c\.\s\h ]]
+++ set -euox pipefail
+++ export 'BUILD_GREEN=\033[0;32m'
+++ BUILD_GREEN='\033[0;32m'
+++ export 'BUILD_YELLOW=\033[1;33m'
+++ BUILD_YELLOW='\033[1;33m'
+++ export 'BUILD_BLUE=\033[0;34m'
+++ BUILD_BLUE='\033[0;34m'
+++ export 'BUILD_RED=\033[0;31m'
+++ BUILD_RED='\033[0;31m'
+++ export 'BUILD_NC=\033[0m'
+++ BUILD_NC='\033[0m'
+++++ dirname /proj_soc/user_dev/gczajkowski/ripgrepTT/tt/build-lib.sh
++++ cd /proj_soc/user_dev/gczajkowski/ripgrepTT/tt/..
++++ pwd
+++ export BUILD_RIPGREP_ROOT=/proj_soc/user_dev/gczajkowski/ripgrepTT
+++ BUILD_RIPGREP_ROOT=/proj_soc/user_dev/gczajkowski/ripgrepTT
+++ [[ -z /proj_soc/user_dev/gczajkowski/bin ]]
+++ export BUILD_INSTALL_DIR
+++ export SCRATCH_DIR=/localdev/gczajkowski/TMPDIR
+++ SCRATCH_DIR=/localdev/gczajkowski/TMPDIR
+++ export BUILD_MUSL_DIR=/localdev/gczajkowski/TMPDIR/x86_64-linux-musl-cross
+++ BUILD_MUSL_DIR=/localdev/gczajkowski/TMPDIR/x86_64-linux-musl-cross
+++ export BUILD_FEATURES=pcre2
+++ BUILD_FEATURES=pcre2
+++ export 'BUILD_BASE_RUSTFLAGS=-C link-arg=-fno-stack-protector -C link-arg=-U_FORTIFY_SOURCE'
+++ BUILD_BASE_RUSTFLAGS='-C link-arg=-fno-stack-protector -C link-arg=-U_FORTIFY_SOURCE'
+++ mkdir -p /localdev/gczajkowski/TMPDIR
+++ export BUILD_VARIANT_SCRATCH=
+++ BUILD_VARIANT_SCRATCH=
+++ export BUILD_PGO_DATA_DIR=
+++ BUILD_PGO_DATA_DIR=
+++ export BUILD_JEMALLOC_ROOT=/tools_soc/opensrc/jemalloc/5.3.0
+++ BUILD_JEMALLOC_ROOT=/tools_soc/opensrc/jemalloc/5.3.0
+++ export BUILD_JEMALLOC_LIB=/tools_soc/opensrc/jemalloc/5.3.0/lib
+++ BUILD_JEMALLOC_LIB=/tools_soc/opensrc/jemalloc/5.3.0/lib
+++ export BUILD_JEMALLOC_INCLUDE=/tools_soc/opensrc/jemalloc/5.3.0/include
+++ BUILD_JEMALLOC_INCLUDE=/tools_soc/opensrc/jemalloc/5.3.0/include
+++ export BUILD_MIMALLOC_ROOT=/tools_soc/opensrc/mimalloc/2.1.7
+++ BUILD_MIMALLOC_ROOT=/tools_soc/opensrc/mimalloc/2.1.7
+++ export BUILD_MIMALLOC_LIB=/tools_soc/opensrc/mimalloc/2.1.7/lib64
+++ BUILD_MIMALLOC_LIB=/tools_soc/opensrc/mimalloc/2.1.7/lib64
+++ export BUILD_MIMALLOC_INCLUDE=/tools_soc/opensrc/mimalloc/2.1.7/include
+++ BUILD_MIMALLOC_INCLUDE=/tools_soc/opensrc/mimalloc/2.1.7/include
+++ export BUILD_PCRE2_ROOT=/tools_soc/opensrc/pcre2/stable
+++ BUILD_PCRE2_ROOT=/tools_soc/opensrc/pcre2/stable
+++ export BUILD_PCRE2_LIB=/tools_soc/opensrc/pcre2/stable/lib
+++ BUILD_PCRE2_LIB=/tools_soc/opensrc/pcre2/stable/lib
+++ export BUILD_PCRE2_INCLUDE=/tools_soc/opensrc/pcre2/stable/include
+++ BUILD_PCRE2_INCLUDE=/tools_soc/opensrc/pcre2/stable/include
++ VARIANT_NAME=lto-pgo-bolt-v3-mimalloc-pcre2-static
++ DESCRIPTION='LTO + PGO + BOLT + x86-64-v3 + mimalloc (static PCRE2, dynamic glibc)'
++ BUILD_TYPE=bolt
++ TARGET=x86_64-unknown-linux-gnu
++ PROFILE=release-bolt
++ RUSTFLAGS='-C target-cpu=x86-64-v3'
++ FEATURES=pcre2
++ build_variant lto-pgo-bolt-v3-mimalloc-pcre2-static 'LTO + PGO + BOLT + x86-64-v3 + mimalloc (static PCRE2, dynamic glibc)' bolt x86_64-unknown-linux-gnu release-bolt '-C target-cpu=x86-64-v3' pcre2
++ local variant_name=lto-pgo-bolt-v3-mimalloc-pcre2-static
++ local 'description=LTO + PGO + BOLT + x86-64-v3 + mimalloc (static PCRE2, dynamic glibc)'
++ local build_type=bolt
++ local target=x86_64-unknown-linux-gnu
++ local profile=release-bolt
++ local 'rustflags=-C target-cpu=x86-64-v3'
++ local features=pcre2
++ export BUILD_VARIANT_SCRATCH=/localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static
++ BUILD_VARIANT_SCRATCH=/localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static
++ export BUILD_PGO_DATA_DIR=/localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static/pgo-data
++ BUILD_PGO_DATA_DIR=/localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static/pgo-data
++ export CARGO_TARGET_DIR=/localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static/target
++ CARGO_TARGET_DIR=/localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static/target
++ [[ -d /localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static ]]
++ mkdir -p /localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static
++ print_build_header lto-pgo-bolt-v3-mimalloc-pcre2-static 'LTO + PGO + BOLT + x86-64-v3 + mimalloc (static PCRE2, dynamic glibc)'
++ local variant_name=lto-pgo-bolt-v3-mimalloc-pcre2-static
++ local 'description=LTO + PGO + BOLT + x86-64-v3 + mimalloc (static PCRE2, dynamic glibc)'
++ echo -e '\033[1;33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m'
+[1;33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
++ echo -e '\033[0;34mBuilding: rg-lto-pgo-bolt-v3-mimalloc-pcre2-static\033[0m'
+[0;34mBuilding: rg-lto-pgo-bolt-v3-mimalloc-pcre2-static[0m
++ [[ -n LTO + PGO + BOLT + x86-64-v3 + mimalloc (static PCRE2, dynamic glibc) ]]
++ echo -e '\033[0;34mDescription: LTO + PGO + BOLT + x86-64-v3 + mimalloc (static PCRE2, dynamic glibc)\033[0m'
+[0;34mDescription: LTO + PGO + BOLT + x86-64-v3 + mimalloc (static PCRE2, dynamic glibc)[0m
++ echo -e '\033[1;33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m'
+[1;33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
++ echo ''
+
++ [[ -n /proj_soc/user_dev/gczajkowski/ripgrepTT/tt/build-logs/lto-pgo-bolt-v3-mimalloc-pcre2-static/build-20260216-131504 ]]
++ print_build_environment
++ echo 'Pre-build environment: /proj_soc/user_dev/gczajkowski/ripgrepTT/tt/build-logs/lto-pgo-bolt-v3-mimalloc-pcre2-static/build-20260216-131504.preenv'
+Pre-build environment: /proj_soc/user_dev/gczajkowski/ripgrepTT/tt/build-logs/lto-pgo-bolt-v3-mimalloc-pcre2-static/build-20260216-131504.preenv
++ local result=0
++ [[ bolt == \s\i\m\p\l\e ]]
++ [[ bolt == \p\g\o ]]
++ [[ bolt == \b\o\l\t ]]
++ build_bolt lto-pgo-bolt-v3-mimalloc-pcre2-static x86_64-unknown-linux-gnu release-bolt '-C target-cpu=x86-64-v3' pcre2
++ local variant_name=lto-pgo-bolt-v3-mimalloc-pcre2-static
++ local target=x86_64-unknown-linux-gnu
++ local profile=release-bolt
++ local 'extra_rustflags=-C target-cpu=x86-64-v3'
++ local features=pcre2
++ cd /proj_soc/user_dev/gczajkowski/ripgrepTT
++ [[ x86_64-unknown-linux-gnu == *\m\u\s\l* ]]
++ setup_pcre2_env lto-pgo-bolt-v3-mimalloc-pcre2-static
++ local variant_name=lto-pgo-bolt-v3-mimalloc-pcre2-static
++ export PKG_CONFIG_PATH=/tools_soc/opensrc/pcre2/stable/lib/pkgconfig:/opt/rh/gcc-toolset-14/root/usr/lib64/pkgconfig:/opt/rh/gcc-toolset-14/root/usr/lib/pkgconfig
++ PKG_CONFIG_PATH=/tools_soc/opensrc/pcre2/stable/lib/pkgconfig:/opt/rh/gcc-toolset-14/root/usr/lib64/pkgconfig:/opt/rh/gcc-toolset-14/root/usr/lib/pkgconfig
++ export PCRE2_LIB_DIR=/tools_soc/opensrc/pcre2/stable/lib
++ PCRE2_LIB_DIR=/tools_soc/opensrc/pcre2/stable/lib
++ export PCRE2_INCLUDE_DIR=/tools_soc/opensrc/pcre2/stable/include
++ PCRE2_INCLUDE_DIR=/tools_soc/opensrc/pcre2/stable/include
++ [[ lto-pgo-bolt-v3-mimalloc-pcre2-static == *\p\c\r\e\2\-\s\t\a\t\i\c* ]]
++ export PCRE2_SYS_STATIC=1
++ PCRE2_SYS_STATIC=1
+++ date +%s
++ local build_start=1771265704
++ [[ release-bolt != \r\e\l\e\a\s\e\-\b\o\l\t ]]
++ echo 'Step 1/5: Building PGO-optimized base binary...'
+Step 1/5: Building PGO-optimized base binary...
++ mkdir -p /localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static/pgo-data
++ rm -rf '/localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static/pgo-data/*'
++ local 'inst_flags=-C link-arg=-fno-stack-protector -C link-arg=-U_FORTIFY_SOURCE -C link-arg=-Wl,--emit-relocs -C profile-generate=/localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static/pgo-data'
++ [[ -n -C target-cpu=x86-64-v3 ]]
++ inst_flags='-C link-arg=-fno-stack-protector -C link-arg=-U_FORTIFY_SOURCE -C link-arg=-Wl,--emit-relocs -C profile-generate=/localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static/pgo-data -C target-cpu=x86-64-v3'
++ RUSTFLAGS='-C link-arg=-fno-stack-protector -C link-arg=-U_FORTIFY_SOURCE -C link-arg=-Wl,--emit-relocs -C profile-generate=/localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static/pgo-data -C target-cpu=x86-64-v3'
++ cargo build --target x86_64-unknown-linux-gnu --profile release-bolt --features pcre2
+   Compiling libc v0.2.177
+   Compiling memchr v2.7.6
+   Compiling regex-syntax v0.8.8
+   Compiling log v0.4.28
+   Compiling shlex v1.3.0
+   Compiling find-msvc-tools v0.1.4
+   Compiling serde_core v1.0.228
+   Compiling pkg-config v0.3.32
+   Compiling crossbeam-utils v0.8.21
+   Compiling cfg-if v1.0.4
+   Compiling serde v1.0.228
+   Compiling serde_json v1.0.145
+   Compiling termcolor v1.4.1
+   Compiling itoa v1.0.15
+   Compiling ryu v1.0.20
+   Compiling anyhow v1.0.100
+   Compiling same-file v1.0.6
+   Compiling ripgrep v15.1.0 (/proj_soc/user_dev/gczajkowski/ripgrepTT)
+   Compiling textwrap v0.16.2
+   Compiling lexopt v0.3.1
+   Compiling encoding_rs v0.8.35
+   Compiling walkdir v2.5.0
+   Compiling aho-corasick v1.1.3
+   Compiling grep-matcher v0.1.8 (/proj_soc/user_dev/gczajkowski/ripgrepTT/crates/matcher)
+   Compiling memmap2 v0.9.9
+   Compiling jobserver v0.1.34
+   Compiling regex-automata v0.4.13
+   Compiling crossbeam-epoch v0.9.18
+   Compiling cc v1.2.41
+   Compiling crossbeam-deque v0.8.6
+   Compiling encoding_rs_io v0.1.7
+   Compiling bstr v1.12.0
+   Compiling globset v0.4.18 (/proj_soc/user_dev/gczajkowski/ripgrepTT/crates/globset)
+   Compiling grep-searcher v0.1.16 (/proj_soc/user_dev/gczajkowski/ripgrepTT/crates/searcher)
+   Compiling grep-regex v0.1.14 (/proj_soc/user_dev/gczajkowski/ripgrepTT/crates/regex)
+   Compiling grep-cli v0.1.12 (/proj_soc/user_dev/gczajkowski/ripgrepTT/crates/cli)
+   Compiling ignore v0.4.25 (/proj_soc/user_dev/gczajkowski/ripgrepTT/crates/ignore)
+   Compiling grep-printer v0.3.1 (/proj_soc/user_dev/gczajkowski/ripgrepTT/crates/printer)
+   Compiling pcre2-sys v0.2.10
+   Compiling pcre2 v0.2.11
+   Compiling grep-pcre2 v0.1.9 (/proj_soc/user_dev/gczajkowski/ripgrepTT/crates/pcre2)
+   Compiling grep v0.4.1 (/proj_soc/user_dev/gczajkowski/ripgrepTT/crates/grep)
+    Finished `release-bolt` profile [optimized + debuginfo] target(s) in 1m 34s
++ local target_dir=/localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static/target
++ local inst_binary=/localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static/target/x86_64-unknown-linux-gnu/release-bolt/rg
++ run_pgo_workloads /localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static/target/x86_64-unknown-linux-gnu/release-bolt/rg
++ local binary_path=/localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static/target/x86_64-unknown-linux-gnu/release-bolt/rg
++ cd /proj_soc/user_dev/gczajkowski/ripgrepTT
++ echo 'Running profiling workloads using ripgrep benchsuite patterns...'
+Running profiling workloads using ripgrep benchsuite patterns...
++ /localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static/target/x86_64-unknown-linux-gnu/release-bolt/rg 'fn ' crates/
++ /localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static/target/x86_64-unknown-linux-gnu/release-bolt/rg 'struct ' crates/
++ /localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static/target/x86_64-unknown-linux-gnu/release-bolt/rg 'impl ' crates/
++ /localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static/target/x86_64-unknown-linux-gnu/release-bolt/rg 'pub fn' crates/
++ /localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static/target/x86_64-unknown-linux-gnu/release-bolt/rg return crates/
++ /localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static/target/x86_64-unknown-linux-gnu/release-bolt/rg -i error crates/
++ /localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static/target/x86_64-unknown-linux-gnu/release-bolt/rg -i warning crates/
++ /localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static/target/x86_64-unknown-linux-gnu/release-bolt/rg -i result crates/
++ /localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static/target/x86_64-unknown-linux-gnu/release-bolt/rg -w new crates/
++ /localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static/target/x86_64-unknown-linux-gnu/release-bolt/rg -w test crates/
++ /localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static/target/x86_64-unknown-linux-gnu/release-bolt/rg -w String crates/
++ /localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static/target/x86_64-unknown-linux-gnu/release-bolt/rg 'TODO|FIXME' crates/
++ /localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static/target/x86_64-unknown-linux-gnu/release-bolt/rg 'Ok|Err' crates/
++ /localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static/target/x86_64-unknown-linux-gnu/release-bolt/rg 'Some|None' crates/
++ /localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static/target/x86_64-unknown-linux-gnu/release-bolt/rg '\b[A-Z][a-z]+\b' crates/
++ /localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static/target/x86_64-unknown-linux-gnu/release-bolt/rg '[0-9]+' crates/
++ /localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static/target/x86_64-unknown-linux-gnu/release-bolt/rg 'fn\s+\w+' crates/
++ /localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static/target/x86_64-unknown-linux-gnu/release-bolt/rg 'let.*=.*;' crates/
++ /localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static/target/x86_64-unknown-linux-gnu/release-bolt/rg 'if\s+.*\s*{' crates/
++ true
++ /localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static/target/x86_64-unknown-linux-gnu/release-bolt/rg 'use ' crates/
++ /localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static/target/x86_64-unknown-linux-gnu/release-bolt/rg 'mod ' crates/
++ /localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static/target/x86_64-unknown-linux-gnu/release-bolt/rg -P '(?<=fn\s)\w+' crates/
++ /localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static/target/x86_64-unknown-linux-gnu/release-bolt/rg -P '\w+(?=\()' crates/
++ echo 'Profiling workload complete'
+Profiling workload complete
++ llvm-profdata merge -o /localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static/pgo-data/merged.profdata /localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static/pgo-data/default_13470593637817771493_0.profraw
++ echo 'Cleaning previous build artifacts...'
+Cleaning previous build artifacts...
++ cargo clean
+     Removed 449 files, 312.6MiB total
++ local 'opt_flags=-C link-arg=-fno-stack-protector -C link-arg=-U_FORTIFY_SOURCE -C link-arg=-Wl,--emit-relocs -C profile-use=/localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static/pgo-data/merged.profdata -C llvm-args=-pgo-warn-missing-function'
++ [[ -n -C target-cpu=x86-64-v3 ]]
++ opt_flags='-C link-arg=-fno-stack-protector -C link-arg=-U_FORTIFY_SOURCE -C link-arg=-Wl,--emit-relocs -C profile-use=/localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static/pgo-data/merged.profdata -C llvm-args=-pgo-warn-missing-function -C target-cpu=x86-64-v3'
++ RUSTFLAGS='-C link-arg=-fno-stack-protector -C link-arg=-U_FORTIFY_SOURCE -C link-arg=-Wl,--emit-relocs -C profile-use=/localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static/pgo-data/merged.profdata -C llvm-args=-pgo-warn-missing-function -C target-cpu=x86-64-v3'
++ cargo build --target x86_64-unknown-linux-gnu --profile release-bolt --features pcre2
+   Compiling libc v0.2.177
+   Compiling memchr v2.7.6
+   Compiling regex-syntax v0.8.8
+   Compiling log v0.4.28
+   Compiling shlex v1.3.0
+   Compiling find-msvc-tools v0.1.4
+   Compiling serde_core v1.0.228
+   Compiling pkg-config v0.3.32
+   Compiling crossbeam-utils v0.8.21
+   Compiling cfg-if v1.0.4
+   Compiling serde_json v1.0.145
+   Compiling serde v1.0.228
+   Compiling itoa v1.0.15
+   Compiling termcolor v1.4.1
+   Compiling ryu v1.0.20
+   Compiling anyhow v1.0.100
+   Compiling same-file v1.0.6
+   Compiling ripgrep v15.1.0 (/proj_soc/user_dev/gczajkowski/ripgrepTT)
+   Compiling lexopt v0.3.1
+   Compiling textwrap v0.16.2
+   Compiling encoding_rs v0.8.35
+   Compiling walkdir v2.5.0
+   Compiling aho-corasick v1.1.3
+   Compiling grep-matcher v0.1.8 (/proj_soc/user_dev/gczajkowski/ripgrepTT/crates/matcher)
+   Compiling crossbeam-epoch v0.9.18
+   Compiling crossbeam-deque v0.8.6
+   Compiling regex-automata v0.4.13
+   Compiling encoding_rs_io v0.1.7
+   Compiling jobserver v0.1.34
+   Compiling cc v1.2.41
+   Compiling memmap2 v0.9.9
+   Compiling bstr v1.12.0
+   Compiling globset v0.4.18 (/proj_soc/user_dev/gczajkowski/ripgrepTT/crates/globset)
+   Compiling grep-searcher v0.1.16 (/proj_soc/user_dev/gczajkowski/ripgrepTT/crates/searcher)
+   Compiling grep-regex v0.1.14 (/proj_soc/user_dev/gczajkowski/ripgrepTT/crates/regex)
+   Compiling grep-cli v0.1.12 (/proj_soc/user_dev/gczajkowski/ripgrepTT/crates/cli)
+   Compiling ignore v0.4.25 (/proj_soc/user_dev/gczajkowski/ripgrepTT/crates/ignore)
+   Compiling grep-printer v0.3.1 (/proj_soc/user_dev/gczajkowski/ripgrepTT/crates/printer)
+   Compiling pcre2-sys v0.2.10
+   Compiling pcre2 v0.2.11
+   Compiling grep-pcre2 v0.1.9 (/proj_soc/user_dev/gczajkowski/ripgrepTT/crates/pcre2)
+   Compiling grep v0.4.1 (/proj_soc/user_dev/gczajkowski/ripgrepTT/crates/grep)
+    Finished `release-bolt` profile [optimized + debuginfo] target(s) in 1m 13s
++ local pgo_binary=/localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static/target/x86_64-unknown-linux-gnu/release-bolt/rg
++ command -v llvm-bolt
++ echo 'Step 2/5: Instrumenting binary with BOLT...'
+Step 2/5: Instrumenting binary with BOLT...
++ local bolt_profile_dir=/localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static/bolt-data
++ mkdir -p /localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static/bolt-data
++ local instrumented_binary=/localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static/bolt-data/rg-instrumented
++ llvm-bolt /localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static/target/x86_64-unknown-linux-gnu/release-bolt/rg -instrument -instrumentation-file=/localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static/bolt-data/prof.fdata -o /localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static/bolt-data/rg-instrumented
+BOLT-INFO: shared object or position-independent executable detected
+BOLT-INFO: Target architecture: x86_64
+BOLT-INFO: BOLT version: f8ef2699d860aea97750953f1b79db8ef7574e82
+BOLT-INFO: first alloc address is 0x0
+BOLT-INFO: creating new program header table at address 0x600000, offset 0x600000
+BOLT-WARNING: debug info will be stripped from the binary. Use -update-debug-sections to keep it.
+BOLT-INFO: enabling relocation mode
+BOLT-INFO: forcing -jump-tables=move for instrumentation
+BOLT-INFO: enabling lite mode
+BOLT-WARNING: split function detected on input : pcre2_pattern_info_8.cold. The support is limited in relocation mode
+BOLT-INFO: 0 out of 4345 functions in the binary (0.0%) have non-empty execution profile
+BOLT-INSTRUMENTER: Number of indirect call site descriptors: 7895
+BOLT-INSTRUMENTER: Number of indirect call target descriptors: 4151
+BOLT-INSTRUMENTER: Number of function descriptors: 4149
+BOLT-INSTRUMENTER: Number of branch counters: 63537
+BOLT-INSTRUMENTER: Number of ST leaf node counters: 33989
+BOLT-INSTRUMENTER: Number of direct call counters: 2358
+BOLT-INSTRUMENTER: Total number of counters: 99884
+BOLT-INSTRUMENTER: Total size of counters: 799072 bytes (static alloc memory)
+BOLT-INSTRUMENTER: Total size of string table emitted: 375495 bytes in file
+BOLT-INSTRUMENTER: Total size of descriptors: 6119388 bytes in file
+BOLT-INSTRUMENTER: Profile will be saved to file /localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static/bolt-data/prof.fdata
+BOLT-INFO: 65758 instructions were shortened
+BOLT-INFO: removed 218 empty blocks
+BOLT-INFO: merged 6 duplicate CFG edges
+BOLT-INFO: UCE removed 2438 blocks and 152402 bytes of code
+BOLT-INFO: padding code to 0x1000000 to accommodate hot text
+BOLT-INFO: output linked against instrumentation runtime library, lib entry point is 0x113c460
+BOLT-INFO: clear procedure is 0x113afe0
+BOLT-INFO: patched build-id (flipped last bit)
+BOLT-INFO: setting __bolt_runtime_start to 0x113c410
+BOLT-INFO: setting __bolt_runtime_fini to 0x113c460
+BOLT-INFO: setting __hot_start to 0x800000
+BOLT-INFO: setting __hot_end to 0xe07eb8
++ echo 'Step 3/5: Collecting BOLT profile data...'
+Step 3/5: Collecting BOLT profile data...
++ chmod +x /localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static/bolt-data/rg-instrumented
++ run_pgo_workloads /localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static/bolt-data/rg-instrumented
++ local binary_path=/localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static/bolt-data/rg-instrumented
++ cd /proj_soc/user_dev/gczajkowski/ripgrepTT
++ echo 'Running profiling workloads using ripgrep benchsuite patterns...'
+Running profiling workloads using ripgrep benchsuite patterns...
++ /localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static/bolt-data/rg-instrumented 'fn ' crates/
++ /localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static/bolt-data/rg-instrumented 'struct ' crates/
++ /localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static/bolt-data/rg-instrumented 'impl ' crates/
++ /localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static/bolt-data/rg-instrumented 'pub fn' crates/
++ /localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static/bolt-data/rg-instrumented return crates/
++ /localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static/bolt-data/rg-instrumented -i error crates/
++ /localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static/bolt-data/rg-instrumented -i warning crates/
++ /localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static/bolt-data/rg-instrumented -i result crates/
++ /localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static/bolt-data/rg-instrumented -w new crates/
++ /localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static/bolt-data/rg-instrumented -w test crates/
++ /localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static/bolt-data/rg-instrumented -w String crates/
++ /localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static/bolt-data/rg-instrumented 'TODO|FIXME' crates/
++ /localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static/bolt-data/rg-instrumented 'Ok|Err' crates/
++ /localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static/bolt-data/rg-instrumented 'Some|None' crates/
++ /localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static/bolt-data/rg-instrumented '\b[A-Z][a-z]+\b' crates/
++ /localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static/bolt-data/rg-instrumented '[0-9]+' crates/
++ /localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static/bolt-data/rg-instrumented 'fn\s+\w+' crates/
++ /localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static/bolt-data/rg-instrumented 'let.*=.*;' crates/
++ /localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static/bolt-data/rg-instrumented 'if\s+.*\s*{' crates/
++ true
++ /localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static/bolt-data/rg-instrumented 'use ' crates/
++ /localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static/bolt-data/rg-instrumented 'mod ' crates/
++ /localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static/bolt-data/rg-instrumented -P '(?<=fn\s)\w+' crates/
++ /localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static/bolt-data/rg-instrumented -P '\w+(?=\()' crates/
++ echo 'Profiling workload complete'
+Profiling workload complete
++ echo 'Step 4/5: Merging BOLT profile data...'
+Step 4/5: Merging BOLT profile data...
++ ls '/localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static/bolt-data/prof.fdata.*'
++ [[ ! -f /localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static/bolt-data/prof.fdata ]]
++ echo 'Step 5/5: Applying BOLT optimization...'
+Step 5/5: Applying BOLT optimization...
++ local bolt_binary=/localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static/target/x86_64-unknown-linux-gnu/release-bolt/rg-bolt
++ llvm-bolt /localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static/target/x86_64-unknown-linux-gnu/release-bolt/rg -data=/localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static/bolt-data/prof.fdata -reorder-blocks=ext-tsp -reorder-functions=hfsort+ -split-functions=3 -split-all-cold -split-eh -icf=1 -use-gnu-stack -o /localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static/target/x86_64-unknown-linux-gnu/release-bolt/rg-bolt
+BOLT-WARNING: '-reorder-functions=hfsort+' is deprecated, please use '-reorder-functions=cdsort' instead
+BOLT-WARNING: specifying non-boolean value "3" for option -split-functions is deprecated
+BOLT-WARNING: specifying numeric value "1" for option -icf is deprecated
+BOLT-INFO: shared object or position-independent executable detected
+BOLT-INFO: Target architecture: x86_64
+BOLT-INFO: BOLT version: f8ef2699d860aea97750953f1b79db8ef7574e82
+BOLT-INFO: first alloc address is 0x0
+BOLT-WARNING: debug info will be stripped from the binary. Use -update-debug-sections to keep it.
+BOLT-INFO: enabling relocation mode
+BOLT-INFO: enabling lite mode
+BOLT-WARNING: split function detected on input : pcre2_pattern_info_8.cold. The support is limited in relocation mode
+BOLT-INFO: pre-processing profile using branch profile reader
+BOLT-INFO: forcing -jump-tables=move as PIC jump table was detected in function pcre2_match_8
+BOLT-INFO: 691 out of 4345 functions in the binary (15.9%) have non-empty execution profile
+BOLT-INFO: 36 functions with profile could not be optimized
+BOLT-INFO: profile for 1 objects was ignored
+BOLT-INFO: among the hottest 691 functions top 5% function CFG discontinuity is 0.00%
+BOLT-INFO: 27854 instructions were shortened
+BOLT-INFO: removed 1488 empty blocks
+BOLT-INFO: merged 6 duplicate CFG edges
+BOLT-INFO: ICF folded 11 out of 4366 functions in 3 passes. 0 functions had jump tables.
+BOLT-INFO: Removing all identical functions will save 0.81 KB of code space. Folded functions were called 1378 times based on profile.
+BOLT-INFO: basic block reordering modified layout of 337 functions (48.77% of profiled, 7.74% of total)
+BOLT-INFO: UCE removed 1 blocks and 7 bytes of code
+BOLT-INFO: splitting separates 340191 hot bytes from 649864 cold bytes (34.36% of split functions is hot).
+BOLT-INFO: 5 Functions were reordered by LoopInversionPass
+BOLT-INFO: SCTC: patched 2 tail calls (2 forward) tail calls (0 backward) from a total of 2 while removing 0 double jumps and removing 2 basic blocks totalling 10 bytes of code. CTCs total execution count is 4 and the number of times CTCs are taken is 4
+BOLT-INFO: padding code to 0x800000 to accommodate hot text
+BOLT-INFO: patched build-id (flipped last bit)
+BOLT-INFO: setting __hot_start to 0x600000
+BOLT-INFO: setting __hot_end to 0x68f296
+++ date +%s
++ local build_end=1771265888
++ local build_time=184
++ [[ ! -f /localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static/target/x86_64-unknown-linux-gnu/release-bolt/rg-bolt ]]
++ mkdir -p /proj_soc/user_dev/gczajkowski/bin
++ cp /localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static/target/x86_64-unknown-linux-gnu/release-bolt/rg-bolt /proj_soc/user_dev/gczajkowski/bin/rg-lto-pgo-bolt-v3-mimalloc-pcre2-static
++ chmod +x /proj_soc/user_dev/gczajkowski/bin/rg-lto-pgo-bolt-v3-mimalloc-pcre2-static
++ echo 'Stripping BOLT binary...'
+Stripping BOLT binary...
++ strip --strip-all /proj_soc/user_dev/gczajkowski/bin/rg-lto-pgo-bolt-v3-mimalloc-pcre2-static
++ inject_allocator_library /proj_soc/user_dev/gczajkowski/bin/rg-lto-pgo-bolt-v3-mimalloc-pcre2-static lto-pgo-bolt-v3-mimalloc-pcre2-static
++ local binary_path=/proj_soc/user_dev/gczajkowski/bin/rg-lto-pgo-bolt-v3-mimalloc-pcre2-static
++ local variant_name=lto-pgo-bolt-v3-mimalloc-pcre2-static
++ local allocator=
++ local lib_name=
++ local lib_path=
++ local root_path=
++ [[ lto-pgo-bolt-v3-mimalloc-pcre2-static == *\j\e\m\a\l\l\o\c* ]]
++ [[ lto-pgo-bolt-v3-mimalloc-pcre2-static == *\m\i\m\a\l\l\o\c* ]]
++ allocator=mimalloc
++ lib_name=libmimalloc.so.2.1
++ lib_path=/tools_soc/opensrc/mimalloc/2.1.7/lib64
++ root_path=/tools_soc/opensrc/mimalloc/2.1.7
++ [[ ! -d /tools_soc/opensrc/mimalloc/2.1.7 ]]
++ echo 'Injecting SOC mimalloc into binary using patchelf...'
+Injecting SOC mimalloc into binary using patchelf...
++ patchelf --add-needed libmimalloc.so.2.1 /proj_soc/user_dev/gczajkowski/bin/rg-lto-pgo-bolt-v3-mimalloc-pcre2-static
++ patchelf --set-rpath /tools_soc/opensrc/mimalloc/2.1.7/lib64 /proj_soc/user_dev/gczajkowski/bin/rg-lto-pgo-bolt-v3-mimalloc-pcre2-static
++ echo -e '\033[0;32m✓ Injected SOC mimalloc: /tools_soc/opensrc/mimalloc/2.1.7\033[0m'
+[0;32m✓ Injected SOC mimalloc: /tools_soc/opensrc/mimalloc/2.1.7[0m
++ inject_pcre2_library /proj_soc/user_dev/gczajkowski/bin/rg-lto-pgo-bolt-v3-mimalloc-pcre2-static lto-pgo-bolt-v3-mimalloc-pcre2-static
++ local binary_path=/proj_soc/user_dev/gczajkowski/bin/rg-lto-pgo-bolt-v3-mimalloc-pcre2-static
++ local variant_name=lto-pgo-bolt-v3-mimalloc-pcre2-static
++ [[ ! -d /tools_soc/opensrc/pcre2/stable ]]
++ [[ lto-pgo-bolt-v3-mimalloc-pcre2-static == *\p\c\r\e\2\-\s\t\a\t\i\c* ]]
++ return 0
+++ du -h /proj_soc/user_dev/gczajkowski/bin/rg-lto-pgo-bolt-v3-mimalloc-pcre2-static
+++ cut -f1
++ local size=8.4M
++ echo -e '\033[0;32m✓ Built successfully\033[0m'
+[0;32m✓ Built successfully[0m
++ echo '  Build time: 184s'
+  Build time: 184s
++ echo '  Binary size: 8.4M'
+  Binary size: 8.4M
++ echo '  Installed: /proj_soc/user_dev/gczajkowski/bin/rg-lto-pgo-bolt-v3-mimalloc-pcre2-static'
+  Installed: /proj_soc/user_dev/gczajkowski/bin/rg-lto-pgo-bolt-v3-mimalloc-pcre2-static
++ echo ''
+
++ return 0
++ result=0
++ [[ 0 -eq 0 ]]
++ verify_binary lto-pgo-bolt-v3-mimalloc-pcre2-static
++ local variant_name=lto-pgo-bolt-v3-mimalloc-pcre2-static
++ local binary_path=/proj_soc/user_dev/gczajkowski/bin/rg-lto-pgo-bolt-v3-mimalloc-pcre2-static
++ [[ ! -f /proj_soc/user_dev/gczajkowski/bin/rg-lto-pgo-bolt-v3-mimalloc-pcre2-static ]]
++ /proj_soc/user_dev/gczajkowski/bin/rg-lto-pgo-bolt-v3-mimalloc-pcre2-static --version
++ echo -e '\033[0;32m✓ Binary execution test passed\033[0m'
+[0;32m✓ Binary execution test passed[0m
++ verify_binary_features /proj_soc/user_dev/gczajkowski/bin/rg-lto-pgo-bolt-v3-mimalloc-pcre2-static lto-pgo-bolt-v3-mimalloc-pcre2-static
++ local binary_path=/proj_soc/user_dev/gczajkowski/bin/rg-lto-pgo-bolt-v3-mimalloc-pcre2-static
++ local variant_name=lto-pgo-bolt-v3-mimalloc-pcre2-static
++ echo ''
+
++ echo $'\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201'
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
++ echo 'BINARY FEATURE VERIFICATION: lto-pgo-bolt-v3-mimalloc-pcre2-static'
+BINARY FEATURE VERIFICATION: lto-pgo-bolt-v3-mimalloc-pcre2-static
++ echo $'\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201'
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
++ echo ''
+
++ [[ ! -f /proj_soc/user_dev/gczajkowski/bin/rg-lto-pgo-bolt-v3-mimalloc-pcre2-static ]]
++ local errors=0
++ echo '=== Basic Properties ==='
+=== Basic Properties ===
+++ file /proj_soc/user_dev/gczajkowski/bin/rg-lto-pgo-bolt-v3-mimalloc-pcre2-static
++ local 'file_output=/proj_soc/user_dev/gczajkowski/bin/rg-lto-pgo-bolt-v3-mimalloc-pcre2-static: ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 3.2.0, BuildID[sha1]=d908adf2b15c4b677fcbc61f7e4386d118be7584, stripped'
++ echo 'File type: /proj_soc/user_dev/gczajkowski/bin/rg-lto-pgo-bolt-v3-mimalloc-pcre2-static: ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 3.2.0, BuildID[sha1]=d908adf2b15c4b677fcbc61f7e4386d118be7584, stripped'
+File type: /proj_soc/user_dev/gczajkowski/bin/rg-lto-pgo-bolt-v3-mimalloc-pcre2-static: ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 3.2.0, BuildID[sha1]=d908adf2b15c4b677fcbc61f7e4386d118be7584, stripped
++ [[ /proj_soc/user_dev/gczajkowski/bin/rg-lto-pgo-bolt-v3-mimalloc-pcre2-static: ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 3.2.0, BuildID[sha1]=d908adf2b15c4b677fcbc61f7e4386d118be7584, stripped == *\s\t\r\i\p\p\e\d* ]]
++ echo '✓ Binary is stripped'
+✓ Binary is stripped
++ echo ''
+
++ echo '=== C Library ==='
+=== C Library ===
++ [[ lto-pgo-bolt-v3-mimalloc-pcre2-static == *\m\u\s\l* ]]
++ ldd /proj_soc/user_dev/gczajkowski/bin/rg-lto-pgo-bolt-v3-mimalloc-pcre2-static
++ grep -qE 'libc\.so\.'
++ readelf -d /proj_soc/user_dev/gczajkowski/bin/rg-lto-pgo-bolt-v3-mimalloc-pcre2-static
++ grep -q 'libc\.so'
++ echo '✓ GLIBC: Dynamically linked (verified via readelf)'
+✓ GLIBC: Dynamically linked (verified via readelf)
+++ readelf -d /proj_soc/user_dev/gczajkowski/bin/rg-lto-pgo-bolt-v3-mimalloc-pcre2-static
+++ grep 'libc\.so'
+++ sed -n 's/.*\[libc\.so\.[0-9]*\].*/libc.so/p'
+++ head -1
++ local libc_lib=libc.so
++ echo '  → libc.so (ldd unavailable, likely BOLT binary)'
+  → libc.so (ldd unavailable, likely BOLT binary)
++ echo ''
+
++ echo '=== CPU Target ==='
+=== CPU Target ===
++ [[ lto-pgo-bolt-v3-mimalloc-pcre2-static == *\-\v\3* ]]
++ readelf -p .comment /proj_soc/user_dev/gczajkowski/bin/rg-lto-pgo-bolt-v3-mimalloc-pcre2-static
++ grep -q x86-64-v3
++ objdump -p /proj_soc/user_dev/gczajkowski/bin/rg-lto-pgo-bolt-v3-mimalloc-pcre2-static
++ grep -q x86-64-v3
++ echo '⚠ x86-64-v3: Cannot definitively verify (may still be correct)'
+⚠ x86-64-v3: Cannot definitively verify (may still be correct)
++ echo ''
+
++ echo '=== Link-Time Optimization ==='
+=== Link-Time Optimization ===
++ [[ lto-pgo-bolt-v3-mimalloc-pcre2-static == *\l\t\o\-\t\h\i\n* ]]
++ [[ lto-pgo-bolt-v3-mimalloc-pcre2-static == *\l\t\o* ]]
++ echo '✓ LTO Fat: Expected (build used release-lto profile)'
+✓ LTO Fat: Expected (build used release-lto profile)
++ echo ''
+
++ echo '=== Profile-Guided Optimization ==='
+=== Profile-Guided Optimization ===
++ [[ lto-pgo-bolt-v3-mimalloc-pcre2-static == *\p\g\o* ]]
++ echo '✓ PGO: Binary built with profile-guided optimization'
+✓ PGO: Binary built with profile-guided optimization
++ echo ''
+
++ echo '=== BOLT Optimization ==='
+=== BOLT Optimization ===
++ [[ lto-pgo-bolt-v3-mimalloc-pcre2-static == *\b\o\l\t* ]]
++ readelf -S /proj_soc/user_dev/gczajkowski/bin/rg-lto-pgo-bolt-v3-mimalloc-pcre2-static
++ grep -q bolt
++ echo '✓ BOLT: Metadata sections found'
+✓ BOLT: Metadata sections found
++ echo ''
+
++ echo '=== PCRE2 Library ==='
+=== PCRE2 Library ===
++ local has_pcre2_dynamic=false
++ ldd /proj_soc/user_dev/gczajkowski/bin/rg-lto-pgo-bolt-v3-mimalloc-pcre2-static
++ grep -q libpcre2
++ readelf -d /proj_soc/user_dev/gczajkowski/bin/rg-lto-pgo-bolt-v3-mimalloc-pcre2-static
++ grep -q libpcre2
++ [[ false == \t\r\u\e ]]
++ [[ lto-pgo-bolt-v3-mimalloc-pcre2-static == *\p\c\r\e\2\-\s\t\a\t\i\c* ]]
++ echo '✓ PCRE2 Static: Correctly embedded'
+✓ PCRE2 Static: Correctly embedded
++ echo ''
+
++ echo '=== Memory Allocator ==='
+=== Memory Allocator ===
+++ ldd /proj_soc/user_dev/gczajkowski/bin/rg-lto-pgo-bolt-v3-mimalloc-pcre2-static
++ local 'ldd_output=	not a dynamic executable'
+++ readelf -d /proj_soc/user_dev/gczajkowski/bin/rg-lto-pgo-bolt-v3-mimalloc-pcre2-static
++ local 'readelf_output=
+Dynamic section at offset 0x8517e8 contains 32 entries:
+  Tag        Type                         Name/Value
+ 0x000000000000001d (RUNPATH)            Library runpath: [/tools_soc/opensrc/mimalloc/2.1.7/lib64]
+ 0x0000000000000001 (NEEDED)             Shared library: [libmimalloc.so.2.1]
+ 0x0000000000000001 (NEEDED)             Shared library: [libgcc_s.so.1]
+ 0x0000000000000001 (NEEDED)             Shared library: [libpthread.so.0]
+ 0x0000000000000001 (NEEDED)             Shared library: [libdl.so.2]
+ 0x0000000000000001 (NEEDED)             Shared library: [libc.so.6]
+ 0x000000000000001e (FLAGS)              BIND_NOW
+ 0x000000006ffffffb (FLAGS_1)            Flags: NOW PIE
+ 0x0000000000000015 (DEBUG)              0x0
+ 0x0000000000000007 (RELA)               0x1a20
+ 0x0000000000000008 (RELASZ)             305688 (bytes)
+ 0x0000000000000009 (RELAENT)            24 (bytes)
+ 0x000000006ffffff9 (RELACOUNT)          12614
+ 0x0000000000000017 (JMPREL)             0x4c438
+ 0x0000000000000002 (PLTRELSZ)           504 (bytes)
+ 0x0000000000000003 (PLTGOT)             0x494438
+ 0x0000000000000014 (PLTREL)             RELA
+ 0x0000000000000006 (SYMTAB)             0xa00068
+ 0x000000000000000b (SYMENT)             24 (bytes)
+ 0x0000000000000005 (STRTAB)             0xc00000
+ 0x000000000000000a (STRSZ)              2021 (bytes)
+ 0x000000006ffffef5 (GNU_HASH)           0x1258
+ 0x0000000000000019 (INIT_ARRAY)         0x493da0
+ 0x000000000000001b (INIT_ARRAYSZ)       16 (bytes)
+ 0x000000000000001a (FINI_ARRAY)         0x493d98
+ 0x000000000000001c (FINI_ARRAYSZ)       8 (bytes)
+ 0x000000000000000c (INIT)               0x6156c0
+ 0x000000000000000d (FINI)               0x60fb80
+ 0x000000006ffffff0 (VERSYM)             0xfe8
+ 0x000000006ffffffe (VERNEED)            0x10f8
+ 0x000000006fffffff (VERNEEDNUM)         4
+ 0x0000000000000000 (NULL)               0x0'
++ [[ lto-pgo-bolt-v3-mimalloc-pcre2-static == *\j\e\m\a\l\l\o\c* ]]
++ [[ lto-pgo-bolt-v3-mimalloc-pcre2-static == *\m\i\m\a\l\l\o\c* ]]
++ local has_mimalloc=false
++ local mimalloc_path=
++ echo '	not a dynamic executable'
++ grep -q libmimalloc.so
++ echo '
+Dynamic section at offset 0x8517e8 contains 32 entries:
+  Tag        Type                         Name/Value
+ 0x000000000000001d (RUNPATH)            Library runpath: [/tools_soc/opensrc/mimalloc/2.1.7/lib64]
+ 0x0000000000000001 (NEEDED)             Shared library: [libmimalloc.so.2.1]
+ 0x0000000000000001 (NEEDED)             Shared library: [libgcc_s.so.1]
+ 0x0000000000000001 (NEEDED)             Shared library: [libpthread.so.0]
+ 0x0000000000000001 (NEEDED)             Shared library: [libdl.so.2]
+ 0x0000000000000001 (NEEDED)             Shared library: [libc.so.6]
+ 0x000000000000001e (FLAGS)              BIND_NOW
+ 0x000000006ffffffb (FLAGS_1)            Flags: NOW PIE
+ 0x0000000000000015 (DEBUG)              0x0
+ 0x0000000000000007 (RELA)               0x1a20
+ 0x0000000000000008 (RELASZ)             305688 (bytes)
+ 0x0000000000000009 (RELAENT)            24 (bytes)
+ 0x000000006ffffff9 (RELACOUNT)          12614
+ 0x0000000000000017 (JMPREL)             0x4c438
+ 0x0000000000000002 (PLTRELSZ)           504 (bytes)
+ 0x0000000000000003 (PLTGOT)             0x494438
+ 0x0000000000000014 (PLTREL)             RELA
+ 0x0000000000000006 (SYMTAB)             0xa00068
+ 0x000000000000000b (SYMENT)             24 (bytes)
+ 0x0000000000000005 (STRTAB)             0xc00000
+ 0x000000000000000a (STRSZ)              2021 (bytes)
+ 0x000000006ffffef5 (GNU_HASH)           0x1258
+ 0x0000000000000019 (INIT_ARRAY)         0x493da0
+ 0x000000000000001b (INIT_ARRAYSZ)       16 (bytes)
+ 0x000000000000001a (FINI_ARRAY)         0x493d98
+ 0x000000000000001c (FINI_ARRAYSZ)       8 (bytes)
+ 0x000000000000000c (INIT)               0x6156c0
+ 0x000000000000000d (FINI)               0x60fb80
+ 0x000000006ffffff0 (VERSYM)             0xfe8
+ 0x000000006ffffffe (VERNEED)            0x10f8
+ 0x000000006fffffff (VERNEEDNUM)         4
+ 0x0000000000000000 (NULL)               0x0'
++ grep -q libmimalloc.so
++ has_mimalloc=true
+++ echo '
+Dynamic section at offset 0x8517e8 contains 32 entries:
+  Tag        Type                         Name/Value
+ 0x000000000000001d (RUNPATH)            Library runpath: [/tools_soc/opensrc/mimalloc/2.1.7/lib64]
+ 0x0000000000000001 (NEEDED)             Shared library: [libmimalloc.so.2.1]
+ 0x0000000000000001 (NEEDED)             Shared library: [libgcc_s.so.1]
+ 0x0000000000000001 (NEEDED)             Shared library: [libpthread.so.0]
+ 0x0000000000000001 (NEEDED)             Shared library: [libdl.so.2]
+ 0x0000000000000001 (NEEDED)             Shared library: [libc.so.6]
+ 0x000000000000001e (FLAGS)              BIND_NOW
+ 0x000000006ffffffb (FLAGS_1)            Flags: NOW PIE
+ 0x0000000000000015 (DEBUG)              0x0
+ 0x0000000000000007 (RELA)               0x1a20
+ 0x0000000000000008 (RELASZ)             305688 (bytes)
+ 0x0000000000000009 (RELAENT)            24 (bytes)
+ 0x000000006ffffff9 (RELACOUNT)          12614
+ 0x0000000000000017 (JMPREL)             0x4c438
+ 0x0000000000000002 (PLTRELSZ)           504 (bytes)
+ 0x0000000000000003 (PLTGOT)             0x494438
+ 0x0000000000000014 (PLTREL)             RELA
+ 0x0000000000000006 (SYMTAB)             0xa00068
+ 0x000000000000000b (SYMENT)             24 (bytes)
+ 0x0000000000000005 (STRTAB)             0xc00000
+ 0x000000000000000a (STRSZ)              2021 (bytes)
+ 0x000000006ffffef5 (GNU_HASH)           0x1258
+ 0x0000000000000019 (INIT_ARRAY)         0x493da0
+ 0x000000000000001b (INIT_ARRAYSZ)       16 (bytes)
+ 0x000000000000001a (FINI_ARRAY)         0x493d98
+ 0x000000000000001c (FINI_ARRAYSZ)       8 (bytes)
+ 0x000000000000000c (INIT)               0x6156c0
+ 0x000000000000000d (FINI)               0x60fb80
+ 0x000000006ffffff0 (VERSYM)             0xfe8
+ 0x000000006ffffffe (VERNEED)            0x10f8
+ 0x000000006fffffff (VERNEEDNUM)         4
+ 0x0000000000000000 (NULL)               0x0'
+++ grep 'RUNPATH\|RPATH'
+++ grep -o '\[.*\]'
+++ tr -d '[]'
++ local runpath=/tools_soc/opensrc/mimalloc/2.1.7/lib64
++ [[ /tools_soc/opensrc/mimalloc/2.1.7/lib64 == *\/\t\o\o\l\s\_\s\o\c\/\o\p\e\n\s\r\c\/\m\i\m\a\l\l\o\c* ]]
++ mimalloc_path=/tools_soc/opensrc/mimalloc/2.1.7/lib64/libmimalloc.so.2.1
++ [[ true == \t\r\u\e ]]
++ echo '✓ mimalloc: Dynamically linked'
+✓ mimalloc: Dynamically linked
++ echo '  → /tools_soc/opensrc/mimalloc/2.1.7/lib64/libmimalloc.so.2.1'
+  → /tools_soc/opensrc/mimalloc/2.1.7/lib64/libmimalloc.so.2.1
++ [[ /tools_soc/opensrc/mimalloc/2.1.7/lib64/libmimalloc.so.2.1 == *\/\t\o\o\l\s\_\s\o\c\/\o\p\e\n\s\r\c\/\m\i\m\a\l\l\o\c* ]]
++ echo '  ✓ Using SOC mimalloc library'
+  ✓ Using SOC mimalloc library
++ echo ''
+
++ echo $'\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201'
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
++ [[ 0 -eq 0 ]]
++ echo -e '\033[0;32m✓ VERIFICATION PASSED\033[0m'
+[0;32m✓ VERIFICATION PASSED[0m
++ echo $'\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201'
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
++ echo ''
+
++ return 0
++ return 0
++ result=0
++ [[ -n /proj_soc/user_dev/gczajkowski/ripgrepTT/tt/build-logs/lto-pgo-bolt-v3-mimalloc-pcre2-static/build-20260216-131504 ]]
++ print_build_environment
++ echo 'Post-build environment: /proj_soc/user_dev/gczajkowski/ripgrepTT/tt/build-logs/lto-pgo-bolt-v3-mimalloc-pcre2-static/build-20260216-131504.postenv'
+Post-build environment: /proj_soc/user_dev/gczajkowski/ripgrepTT/tt/build-logs/lto-pgo-bolt-v3-mimalloc-pcre2-static/build-20260216-131504.postenv
++ [[ -d /localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static ]]
++ rm -rf /localdev/gczajkowski/TMPDIR/build-lto-pgo-bolt-v3-mimalloc-pcre2-static
++ return 0

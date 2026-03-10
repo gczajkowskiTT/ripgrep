@@ -1,0 +1,12 @@
+HOST: soc-l-09
+TIMESTAMP: 2026-02-14 17:09:02
+ATTEMPTS: 3
+
+=== Attempt 1/3 ===
+Version check: SUCCESS
+Version: ripgrep 15.1.0 (rev 83a84fb0bd)
+Search test: SUCCESS
+
+STATUS: PASSED
+CPU: Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
+AVX2: YES

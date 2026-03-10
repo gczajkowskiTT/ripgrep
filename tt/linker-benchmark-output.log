@@ -1,0 +1,14 @@
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  RIPGREP LINKER BENCHMARK
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Testing 8 linkers with 3 variant types
+Build directory: /proj_soc/user_dev/gczajkowski/bin
+Build location: /localdev/gczajkowski/cargo-linker-benchmark
+Temp directory: /localdev/gczajkowski/TMPDIR
+Dataset: /proj_soc/user_dev/gczajkowski/chiplet-template
+Results: /proj_soc/user_dev/gczajkowski/ripgrepTT/tt/linker-benchmark-results
+
+═══════════════════════════════════════════════════════════════
+PHASE 1: Building all variant/linker combinations
+═══════════════════════════════════════════════════════════════

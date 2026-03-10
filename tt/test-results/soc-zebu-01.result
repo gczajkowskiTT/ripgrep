@@ -1,0 +1,6 @@
+HOST: soc-zebu-01
+TIMESTAMP: 2026-02-14 16:19:54
+STATUS: PASSED
+VERSION: ripgrep 15.1.0 (rev 83a84fb0bd)
+CPU: AMD EPYC 9274F 24-Core Processor
+AVX2: YES

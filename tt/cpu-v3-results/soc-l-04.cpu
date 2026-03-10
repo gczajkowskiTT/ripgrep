@@ -1,0 +1,4 @@
+HOST: soc-l-04
+CPU: Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
+V3_SUPPORT: YES
+FEATURES: All x86-64-v3 features present

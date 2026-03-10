@@ -1,0 +1,4 @@
+Benchmark 1: /proj_soc/user_dev/gczajkowski/bin/rg-lto-thin-mold-2.40.4-fulllto-pgo-bolt --no-config --no-ignore function '/proj_soc/user_dev/gczajkowski/chiplet-template'
+  Time (mean ± σ):      5.901 s ±  0.126 s    [User: 0.310 s, System: 7.897 s]
+  Range (min … max):    5.760 s …  6.046 s    5 runs
+ 

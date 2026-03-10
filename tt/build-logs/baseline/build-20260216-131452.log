@@ -1,0 +1,376 @@
+++ dirname /proj_soc/user_dev/gczajkowski/ripgrepTT/tt/build-variant-baseline.sh
++ source /proj_soc/user_dev/gczajkowski/ripgrepTT/tt/build-lib.sh
+++ [[ /proj_soc/user_dev/gczajkowski/ripgrepTT/tt/build-lib.sh == \/\p\r\o\j\_\s\o\c\/\u\s\e\r\_\d\e\v\/\g\c\z\a\j\k\o\w\s\k\i\/\r\i\p\g\r\e\p\T\T\/\t\t\/\b\u\i\l\d\-\v\a\r\i\a\n\t\-\b\a\s\e\l\i\n\e\.\s\h ]]
+++ set -euox pipefail
+++ export 'BUILD_GREEN=\033[0;32m'
+++ BUILD_GREEN='\033[0;32m'
+++ export 'BUILD_YELLOW=\033[1;33m'
+++ BUILD_YELLOW='\033[1;33m'
+++ export 'BUILD_BLUE=\033[0;34m'
+++ BUILD_BLUE='\033[0;34m'
+++ export 'BUILD_RED=\033[0;31m'
+++ BUILD_RED='\033[0;31m'
+++ export 'BUILD_NC=\033[0m'
+++ BUILD_NC='\033[0m'
+++++ dirname /proj_soc/user_dev/gczajkowski/ripgrepTT/tt/build-lib.sh
++++ cd /proj_soc/user_dev/gczajkowski/ripgrepTT/tt/..
++++ pwd
+++ export BUILD_RIPGREP_ROOT=/proj_soc/user_dev/gczajkowski/ripgrepTT
+++ BUILD_RIPGREP_ROOT=/proj_soc/user_dev/gczajkowski/ripgrepTT
+++ [[ -z /proj_soc/user_dev/gczajkowski/bin ]]
+++ export BUILD_INSTALL_DIR
+++ export SCRATCH_DIR=/localdev/gczajkowski/TMPDIR
+++ SCRATCH_DIR=/localdev/gczajkowski/TMPDIR
+++ export BUILD_MUSL_DIR=/localdev/gczajkowski/TMPDIR/x86_64-linux-musl-cross
+++ BUILD_MUSL_DIR=/localdev/gczajkowski/TMPDIR/x86_64-linux-musl-cross
+++ export BUILD_FEATURES=pcre2
+++ BUILD_FEATURES=pcre2
+++ export 'BUILD_BASE_RUSTFLAGS=-C link-arg=-fno-stack-protector -C link-arg=-U_FORTIFY_SOURCE'
+++ BUILD_BASE_RUSTFLAGS='-C link-arg=-fno-stack-protector -C link-arg=-U_FORTIFY_SOURCE'
+++ mkdir -p /localdev/gczajkowski/TMPDIR
+++ export BUILD_VARIANT_SCRATCH=
+++ BUILD_VARIANT_SCRATCH=
+++ export BUILD_PGO_DATA_DIR=
+++ BUILD_PGO_DATA_DIR=
+++ export BUILD_JEMALLOC_ROOT=/tools_soc/opensrc/jemalloc/5.3.0
+++ BUILD_JEMALLOC_ROOT=/tools_soc/opensrc/jemalloc/5.3.0
+++ export BUILD_JEMALLOC_LIB=/tools_soc/opensrc/jemalloc/5.3.0/lib
+++ BUILD_JEMALLOC_LIB=/tools_soc/opensrc/jemalloc/5.3.0/lib
+++ export BUILD_JEMALLOC_INCLUDE=/tools_soc/opensrc/jemalloc/5.3.0/include
+++ BUILD_JEMALLOC_INCLUDE=/tools_soc/opensrc/jemalloc/5.3.0/include
+++ export BUILD_MIMALLOC_ROOT=/tools_soc/opensrc/mimalloc/2.1.7
+++ BUILD_MIMALLOC_ROOT=/tools_soc/opensrc/mimalloc/2.1.7
+++ export BUILD_MIMALLOC_LIB=/tools_soc/opensrc/mimalloc/2.1.7/lib64
+++ BUILD_MIMALLOC_LIB=/tools_soc/opensrc/mimalloc/2.1.7/lib64
+++ export BUILD_MIMALLOC_INCLUDE=/tools_soc/opensrc/mimalloc/2.1.7/include
+++ BUILD_MIMALLOC_INCLUDE=/tools_soc/opensrc/mimalloc/2.1.7/include
+++ export BUILD_PCRE2_ROOT=/tools_soc/opensrc/pcre2/stable
+++ BUILD_PCRE2_ROOT=/tools_soc/opensrc/pcre2/stable
+++ export BUILD_PCRE2_LIB=/tools_soc/opensrc/pcre2/stable/lib
+++ BUILD_PCRE2_LIB=/tools_soc/opensrc/pcre2/stable/lib
+++ export BUILD_PCRE2_INCLUDE=/tools_soc/opensrc/pcre2/stable/include
+++ BUILD_PCRE2_INCLUDE=/tools_soc/opensrc/pcre2/stable/include
++ VARIANT_NAME=baseline
++ DESCRIPTION='Standard release build'
++ BUILD_TYPE=simple
++ TARGET=x86_64-unknown-linux-gnu
++ PROFILE=release
++ RUSTFLAGS=
++ FEATURES=pcre2
++ build_variant baseline 'Standard release build' simple x86_64-unknown-linux-gnu release '' pcre2
++ local variant_name=baseline
++ local 'description=Standard release build'
++ local build_type=simple
++ local target=x86_64-unknown-linux-gnu
++ local profile=release
++ local rustflags=
++ local features=pcre2
++ export BUILD_VARIANT_SCRATCH=/localdev/gczajkowski/TMPDIR/build-baseline
++ BUILD_VARIANT_SCRATCH=/localdev/gczajkowski/TMPDIR/build-baseline
++ export BUILD_PGO_DATA_DIR=/localdev/gczajkowski/TMPDIR/build-baseline/pgo-data
++ BUILD_PGO_DATA_DIR=/localdev/gczajkowski/TMPDIR/build-baseline/pgo-data
++ export CARGO_TARGET_DIR=/localdev/gczajkowski/TMPDIR/build-baseline/target
++ CARGO_TARGET_DIR=/localdev/gczajkowski/TMPDIR/build-baseline/target
++ [[ -d /localdev/gczajkowski/TMPDIR/build-baseline ]]
++ mkdir -p /localdev/gczajkowski/TMPDIR/build-baseline
++ print_build_header baseline 'Standard release build'
++ local variant_name=baseline
++ local 'description=Standard release build'
++ echo -e '\033[1;33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m'
+[1;33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
++ echo -e '\033[0;34mBuilding: rg-baseline\033[0m'
+[0;34mBuilding: rg-baseline[0m
++ [[ -n Standard release build ]]
++ echo -e '\033[0;34mDescription: Standard release build\033[0m'
+[0;34mDescription: Standard release build[0m
++ echo -e '\033[1;33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m'
+[1;33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
++ echo ''
+
++ [[ -n /proj_soc/user_dev/gczajkowski/ripgrepTT/tt/build-logs/baseline/build-20260216-131452 ]]
++ print_build_environment
++ echo 'Pre-build environment: /proj_soc/user_dev/gczajkowski/ripgrepTT/tt/build-logs/baseline/build-20260216-131452.preenv'
+Pre-build environment: /proj_soc/user_dev/gczajkowski/ripgrepTT/tt/build-logs/baseline/build-20260216-131452.preenv
++ local result=0
++ [[ simple == \s\i\m\p\l\e ]]
++ build_simple baseline x86_64-unknown-linux-gnu release '' pcre2
++ local variant_name=baseline
++ local target=x86_64-unknown-linux-gnu
++ local profile=release
++ local rustflags=
++ local features=pcre2
++ cd /proj_soc/user_dev/gczajkowski/ripgrepTT
++ [[ x86_64-unknown-linux-gnu == *\m\u\s\l* ]]
++ setup_pcre2_env baseline
++ local variant_name=baseline
++ export PKG_CONFIG_PATH=/tools_soc/opensrc/pcre2/stable/lib/pkgconfig:/opt/rh/gcc-toolset-14/root/usr/lib64/pkgconfig:/opt/rh/gcc-toolset-14/root/usr/lib/pkgconfig
++ PKG_CONFIG_PATH=/tools_soc/opensrc/pcre2/stable/lib/pkgconfig:/opt/rh/gcc-toolset-14/root/usr/lib64/pkgconfig:/opt/rh/gcc-toolset-14/root/usr/lib/pkgconfig
++ export PCRE2_LIB_DIR=/tools_soc/opensrc/pcre2/stable/lib
++ PCRE2_LIB_DIR=/tools_soc/opensrc/pcre2/stable/lib
++ export PCRE2_INCLUDE_DIR=/tools_soc/opensrc/pcre2/stable/include
++ PCRE2_INCLUDE_DIR=/tools_soc/opensrc/pcre2/stable/include
++ [[ baseline == *\p\c\r\e\2\-\s\t\a\t\i\c* ]]
+++ date +%s
++ local build_start=1771265692
++ local 'combined_rustflags=-C link-arg=-fno-stack-protector -C link-arg=-U_FORTIFY_SOURCE'
++ [[ -n '' ]]
++ RUSTFLAGS='-C link-arg=-fno-stack-protector -C link-arg=-U_FORTIFY_SOURCE'
++ cargo build --target x86_64-unknown-linux-gnu --profile release --features pcre2
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+   Compiling libc v0.2.177
+   Compiling memchr v2.7.6
+   Compiling regex-syntax v0.8.8
+   Compiling log v0.4.28
+   Compiling find-msvc-tools v0.1.4
+   Compiling shlex v1.3.0
+   Compiling serde_core v1.0.228
+   Compiling pkg-config v0.3.32
+   Compiling crossbeam-utils v0.8.21
+   Compiling cfg-if v1.0.4
+   Compiling serde_json v1.0.145
+   Compiling serde v1.0.228
+   Compiling termcolor v1.4.1
+   Compiling ryu v1.0.20
+   Compiling itoa v1.0.15
+   Compiling anyhow v1.0.100
+   Compiling same-file v1.0.6
+   Compiling ripgrep v15.1.0 (/proj_soc/user_dev/gczajkowski/ripgrepTT)
+   Compiling lexopt v0.3.1
+   Compiling textwrap v0.16.2
+   Compiling encoding_rs v0.8.35
+   Compiling walkdir v2.5.0
+   Compiling aho-corasick v1.1.3
+   Compiling grep-matcher v0.1.8 (/proj_soc/user_dev/gczajkowski/ripgrepTT/crates/matcher)
+   Compiling encoding_rs_io v0.1.7
+   Compiling crossbeam-epoch v0.9.18
+   Compiling crossbeam-deque v0.8.6
+   Compiling jobserver v0.1.34
+   Compiling memmap2 v0.9.9
+   Compiling cc v1.2.41
+   Compiling regex-automata v0.4.13
+   Compiling pcre2-sys v0.2.10
+   Compiling pcre2 v0.2.11
+   Compiling grep-pcre2 v0.1.9 (/proj_soc/user_dev/gczajkowski/ripgrepTT/crates/pcre2)
+   Compiling bstr v1.12.0
+   Compiling globset v0.4.18 (/proj_soc/user_dev/gczajkowski/ripgrepTT/crates/globset)
+   Compiling grep-searcher v0.1.16 (/proj_soc/user_dev/gczajkowski/ripgrepTT/crates/searcher)
+   Compiling grep-regex v0.1.14 (/proj_soc/user_dev/gczajkowski/ripgrepTT/crates/regex)
+   Compiling grep-cli v0.1.12 (/proj_soc/user_dev/gczajkowski/ripgrepTT/crates/cli)
+   Compiling ignore v0.4.25 (/proj_soc/user_dev/gczajkowski/ripgrepTT/crates/ignore)
+   Compiling grep-printer v0.3.1 (/proj_soc/user_dev/gczajkowski/ripgrepTT/crates/printer)
+   Compiling grep v0.4.1 (/proj_soc/user_dev/gczajkowski/ripgrepTT/crates/grep)
+    Finished `release` profile [optimized + debuginfo] target(s) in 10.00s
+++ date +%s
++ local build_end=1771265702
++ local build_time=10
++ local target_dir=/localdev/gczajkowski/TMPDIR/build-baseline/target
++ local binary_path=/localdev/gczajkowski/TMPDIR/build-baseline/target/x86_64-unknown-linux-gnu/release/rg
++ [[ ! -f /localdev/gczajkowski/TMPDIR/build-baseline/target/x86_64-unknown-linux-gnu/release/rg ]]
++ mkdir -p /proj_soc/user_dev/gczajkowski/bin
++ cp /localdev/gczajkowski/TMPDIR/build-baseline/target/x86_64-unknown-linux-gnu/release/rg /proj_soc/user_dev/gczajkowski/bin/rg-baseline
++ chmod +x /proj_soc/user_dev/gczajkowski/bin/rg-baseline
++ inject_allocator_library /proj_soc/user_dev/gczajkowski/bin/rg-baseline baseline
++ local binary_path=/proj_soc/user_dev/gczajkowski/bin/rg-baseline
++ local variant_name=baseline
++ local allocator=
++ local lib_name=
++ local lib_path=
++ local root_path=
++ [[ baseline == *\j\e\m\a\l\l\o\c* ]]
++ [[ baseline == *\m\i\m\a\l\l\o\c* ]]
++ return 0
++ inject_pcre2_library /proj_soc/user_dev/gczajkowski/bin/rg-baseline baseline
++ local binary_path=/proj_soc/user_dev/gczajkowski/bin/rg-baseline
++ local variant_name=baseline
++ [[ ! -d /tools_soc/opensrc/pcre2/stable ]]
++ [[ baseline == *\p\c\r\e\2\-\s\t\a\t\i\c* ]]
++ [[ baseline == *\m\u\s\l* ]]
++ echo 'Configuring SOC PCRE2 dynamic library using patchelf...'
+Configuring SOC PCRE2 dynamic library using patchelf...
+++ patchelf --print-rpath /proj_soc/user_dev/gczajkowski/bin/rg-baseline
++ local current_rpath=
++ local new_rpath=/tools_soc/opensrc/pcre2/stable/lib
++ [[ -n '' ]]
++ patchelf --set-rpath /tools_soc/opensrc/pcre2/stable/lib /proj_soc/user_dev/gczajkowski/bin/rg-baseline
++ echo -e '\033[0;32m✓ Configured SOC PCRE2 dynamic: /tools_soc/opensrc/pcre2/stable\033[0m'
+[0;32m✓ Configured SOC PCRE2 dynamic: /tools_soc/opensrc/pcre2/stable[0m
+++ du -h /proj_soc/user_dev/gczajkowski/bin/rg-baseline
+++ cut -f1
++ local size=28M
++ echo -e '\033[0;32m✓ Built successfully\033[0m'
+[0;32m✓ Built successfully[0m
++ echo '  Build time: 10s'
+  Build time: 10s
++ echo '  Binary size: 28M'
+  Binary size: 28M
++ echo '  Installed: /proj_soc/user_dev/gczajkowski/bin/rg-baseline'
+  Installed: /proj_soc/user_dev/gczajkowski/bin/rg-baseline
++ echo ''
+
++ return 0
++ result=0
++ [[ 0 -eq 0 ]]
++ verify_binary baseline
++ local variant_name=baseline
++ local binary_path=/proj_soc/user_dev/gczajkowski/bin/rg-baseline
++ [[ ! -f /proj_soc/user_dev/gczajkowski/bin/rg-baseline ]]
++ /proj_soc/user_dev/gczajkowski/bin/rg-baseline --version
++ echo -e '\033[0;32m✓ Binary execution test passed\033[0m'
+[0;32m✓ Binary execution test passed[0m
++ verify_binary_features /proj_soc/user_dev/gczajkowski/bin/rg-baseline baseline
++ local binary_path=/proj_soc/user_dev/gczajkowski/bin/rg-baseline
++ local variant_name=baseline
++ echo ''
+
++ echo $'\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201'
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
++ echo 'BINARY FEATURE VERIFICATION: baseline'
+BINARY FEATURE VERIFICATION: baseline
++ echo $'\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201'
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
++ echo ''
+
++ [[ ! -f /proj_soc/user_dev/gczajkowski/bin/rg-baseline ]]
++ local errors=0
++ echo '=== Basic Properties ==='
+=== Basic Properties ===
+++ file /proj_soc/user_dev/gczajkowski/bin/rg-baseline
++ local 'file_output=/proj_soc/user_dev/gczajkowski/bin/rg-baseline: ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 3.2.0, BuildID[sha1]=2e73ce2b141e24dd5c9777c62a46565c276e24c2, with debug_info, not stripped'
++ echo 'File type: /proj_soc/user_dev/gczajkowski/bin/rg-baseline: ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 3.2.0, BuildID[sha1]=2e73ce2b141e24dd5c9777c62a46565c276e24c2, with debug_info, not stripped'
+File type: /proj_soc/user_dev/gczajkowski/bin/rg-baseline: ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 3.2.0, BuildID[sha1]=2e73ce2b141e24dd5c9777c62a46565c276e24c2, with debug_info, not stripped
++ [[ /proj_soc/user_dev/gczajkowski/bin/rg-baseline: ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 3.2.0, BuildID[sha1]=2e73ce2b141e24dd5c9777c62a46565c276e24c2, with debug_info, not stripped == *\s\t\r\i\p\p\e\d* ]]
++ echo '✓ Binary is stripped'
+✓ Binary is stripped
++ echo ''
+
++ echo '=== C Library ==='
+=== C Library ===
++ [[ baseline == *\m\u\s\l* ]]
++ ldd /proj_soc/user_dev/gczajkowski/bin/rg-baseline
++ grep -qE 'libc\.so\.'
++ echo '✓ GLIBC: Dynamically linked'
+✓ GLIBC: Dynamically linked
+++ ldd /proj_soc/user_dev/gczajkowski/bin/rg-baseline
+++ grep -E 'libc\.so\.'
+++ awk '{print $3}'
++ local libc_path=/lib64/libc.so.6
++ echo '  → /lib64/libc.so.6'
+  → /lib64/libc.so.6
++ echo ''
+
++ echo '=== CPU Target ==='
+=== CPU Target ===
++ [[ baseline == *\-\v\3* ]]
++ echo '✓ x86-64: Standard target (baseline)'
+✓ x86-64: Standard target (baseline)
++ echo ''
+
++ echo '=== Link-Time Optimization ==='
+=== Link-Time Optimization ===
++ [[ baseline == *\l\t\o\-\t\h\i\n* ]]
++ [[ baseline == *\l\t\o* ]]
++ echo '• No LTO: Standard build'
+• No LTO: Standard build
++ echo ''
+
++ echo '=== Profile-Guided Optimization ==='
+=== Profile-Guided Optimization ===
++ [[ baseline == *\p\g\o* ]]
++ echo '• PGO: Not used'
+• PGO: Not used
++ echo ''
+
++ echo '=== BOLT Optimization ==='
+=== BOLT Optimization ===
++ [[ baseline == *\b\o\l\t* ]]
++ echo '• BOLT: Not used'
+• BOLT: Not used
++ echo ''
+
++ echo '=== PCRE2 Library ==='
+=== PCRE2 Library ===
++ local has_pcre2_dynamic=false
++ ldd /proj_soc/user_dev/gczajkowski/bin/rg-baseline
++ grep -q libpcre2
++ has_pcre2_dynamic=true
++ [[ true == \t\r\u\e ]]
++ [[ baseline == *\p\c\r\e\2\-\d\y\n\a\m\i\c* ]]
++ [[ baseline == *\p\c\r\e\2\-\s\t\a\t\i\c* ]]
++ echo '✓ PCRE2: Dynamically linked (default)'
+✓ PCRE2: Dynamically linked (default)
++ echo ''
+
++ echo '=== Memory Allocator ==='
+=== Memory Allocator ===
+++ ldd /proj_soc/user_dev/gczajkowski/bin/rg-baseline
++ local 'ldd_output=	linux-vdso.so.1 (0x00007ffdaa3b1000)
+	libpcre2-8.so.0 => /tools_soc/opensrc/pcre2/stable/lib/libpcre2-8.so.0 (0x00007fd4ea31a000)
+	libgcc_s.so.1 => /lib64/libgcc_s.so.1 (0x00007fd4e838d000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x00007fd4e816d000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x00007fd4e7f69000)
+	libc.so.6 => /lib64/libc.so.6 (0x00007fd4e7b92000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007fd4ea19b000)'
+++ readelf -d /proj_soc/user_dev/gczajkowski/bin/rg-baseline
++ local 'readelf_output=
+Dynamic section at offset 0x1bf5840 contains 33 entries:
+  Tag        Type                         Name/Value
+ 0x000000000000001d (RUNPATH)            Library runpath: [/tools_soc/opensrc/pcre2/stable/lib]
+ 0x0000000000000001 (NEEDED)             Shared library: [libpcre2-8.so.0]
+ 0x0000000000000001 (NEEDED)             Shared library: [libgcc_s.so.1]
+ 0x0000000000000001 (NEEDED)             Shared library: [libpthread.so.0]
+ 0x0000000000000001 (NEEDED)             Shared library: [libdl.so.2]
+ 0x0000000000000001 (NEEDED)             Shared library: [libc.so.6]
+ 0x0000000000000001 (NEEDED)             Shared library: [ld-linux-x86-64.so.2]
+ 0x000000000000001e (FLAGS)              BIND_NOW
+ 0x000000006ffffffb (FLAGS_1)            Flags: NOW PIE
+ 0x0000000000000015 (DEBUG)              0x0
+ 0x0000000000000007 (RELA)               0x1dc0
+ 0x0000000000000008 (RELASZ)             466176 (bytes)
+ 0x0000000000000009 (RELAENT)            24 (bytes)
+ 0x000000006ffffff9 (RELACOUNT)          19280
+ 0x0000000000000017 (JMPREL)             0x73ac0
+ 0x0000000000000002 (PLTRELSZ)           144 (bytes)
+ 0x0000000000000003 (PLTGOT)             0x4f8b58
+ 0x0000000000000014 (PLTREL)             RELA
+ 0x0000000000000006 (SYMTAB)             0x1bf4068
+ 0x000000000000000b (SYMENT)             24 (bytes)
+ 0x0000000000000005 (STRTAB)             0x1bf4e90
+ 0x000000000000000a (STRSZ)              2478 (bytes)
+ 0x000000006ffffef5 (GNU_HASH)           0x1418
+ 0x0000000000000019 (INIT_ARRAY)         0x4f61a0
+ 0x000000000000001b (INIT_ARRAYSZ)       16 (bytes)
+ 0x000000000000001a (FINI_ARRAY)         0x4f6198
+ 0x000000000000001c (FINI_ARRAYSZ)       8 (bytes)
+ 0x000000000000000c (INIT)               0x4a261c
+ 0x000000000000000d (FINI)               0x4a2638
+ 0x000000006ffffff0 (VERSYM)             0x1168
+ 0x000000006ffffffe (VERNEED)            0x1298
+ 0x000000006fffffff (VERNEEDNUM)         5
+ 0x0000000000000000 (NULL)               0x0'
++ [[ baseline == *\j\e\m\a\l\l\o\c* ]]
++ [[ baseline == *\m\i\m\a\l\l\o\c* ]]
++ echo '✓ System allocator: Using GLIBC malloc (default)'
+✓ System allocator: Using GLIBC malloc (default)
++ echo ''
+
++ echo $'\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201'
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
++ [[ 0 -eq 0 ]]
++ echo -e '\033[0;32m✓ VERIFICATION PASSED\033[0m'
+[0;32m✓ VERIFICATION PASSED[0m
++ echo $'\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201'
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
++ echo ''
+
++ return 0
++ return 0
++ result=0
++ [[ -n /proj_soc/user_dev/gczajkowski/ripgrepTT/tt/build-logs/baseline/build-20260216-131452 ]]
++ print_build_environment
++ echo 'Post-build environment: /proj_soc/user_dev/gczajkowski/ripgrepTT/tt/build-logs/baseline/build-20260216-131452.postenv'
+Post-build environment: /proj_soc/user_dev/gczajkowski/ripgrepTT/tt/build-logs/baseline/build-20260216-131452.postenv
++ [[ -d /localdev/gczajkowski/TMPDIR/build-baseline ]]
++ rm -rf /localdev/gczajkowski/TMPDIR/build-baseline
++ return 0

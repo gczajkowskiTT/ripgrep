@@ -1,0 +1,4 @@
+Benchmark 1: /proj_soc/user_dev/gczajkowski/bin/rg-lto-pgo-bolt-v3-mimalloc-pcre2-dynamic-mold-2.40.4-fulllto-pgo-bolt --no-config --no-ignore function '/proj_soc/user_dev/gczajkowski/chiplet-template'
+  Time (mean ± σ):      3.259 s ±  0.050 s    [User: 0.281 s, System: 12.029 s]
+  Range (min … max):    3.177 s …  3.313 s    5 runs
+ 

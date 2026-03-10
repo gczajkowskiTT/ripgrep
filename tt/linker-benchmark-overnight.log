@@ -1,0 +1,350 @@
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  RIPGREP LINKER BENCHMARK
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Testing 8 linkers with 3 variant types
+Build directory: /proj_soc/user_dev/gczajkowski/bin
+Build location: /localdev/gczajkowski/cargo-linker-benchmark
+Temp directory: /localdev/gczajkowski/TMPDIR
+Dataset: /proj_soc/user_dev/gczajkowski/chiplet-template
+Results: /proj_soc/user_dev/gczajkowski/ripgrepTT/tt/linker-benchmark-results
+
+═══════════════════════════════════════════════════════════════
+PHASE 1: Building all variant/linker combinations
+═══════════════════════════════════════════════════════════════
+
+Progress: 1/24
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Building: lto-thin with linker: mold-2.36.0
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Using linker: /tools_soc/opensrc/mold/2.36.0/bin/mold
+     Removed 1 file, 356B total
+SUCCESS: Built in 26s, size: 4377024 bytes
+
+Progress: 2/24
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Building: lto-thin with linker: mold-2.40.4-default
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Using linker: /tools_soc/opensrc/mold/2.40.4/default/bin/mold
+     Removed 0 files
+SUCCESS: Built in 25s, size: 4377024 bytes
+
+Progress: 3/24
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Building: lto-thin with linker: mold-2.40.4-thinlto-pgo
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Using linker: /tools_soc/opensrc/mold/2.40.4/thinlto-pgo/bin/mold
+     Removed 0 files
+SUCCESS: Built in 25s, size: 4377024 bytes
+
+Progress: 4/24
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Building: lto-thin with linker: mold-stable
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Using linker: /tools_soc/opensrc/mold/stable/bin/mold
+     Removed 0 files
+SUCCESS: Built in 25s, size: 4377024 bytes
+
+Progress: 5/24
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Building: lto-thin with linker: mold-2.40.2
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Using linker: /tools_soc/opensrc/mold/2.40.2/bin/mold
+     Removed 0 files
+SUCCESS: Built in 25s, size: 4377024 bytes
+
+Progress: 6/24
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Building: lto-thin with linker: lld
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Using linker: /tools_soc/opensrc/clang/21.0.0/bin/ld.lld
+     Removed 0 files
+SUCCESS: Built in 25s, size: 4376664 bytes
+
+Progress: 7/24
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Building: lto-thin with linker: mold-2.40.4-fulllto-pgo-bolt
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Using linker: /tools_soc/opensrc/mold/2.40.4/fulllto-pgo-bolt/bin/mold
+     Removed 0 files
+SUCCESS: Built in 25s, size: 4377024 bytes
+
+Progress: 8/24
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Building: lto-thin with linker: default
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Using default linker
+     Removed 0 files
+SUCCESS: Built in 25s, size: 4376776 bytes
+
+Progress: 9/24
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Building: lto-pgo-mimalloc-pcre2-dynamic with linker: mold-2.36.0
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Using linker: /tools_soc/opensrc/mold/2.36.0/bin/mold
+     Removed 0 files
+SUCCESS: Built in 84s, size: 4119064 bytes
+
+Progress: 10/24
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Building: lto-pgo-mimalloc-pcre2-dynamic with linker: mold-2.40.4-default
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Using linker: /tools_soc/opensrc/mold/2.40.4/default/bin/mold
+     Removed 0 files
+SUCCESS: Built in 85s, size: 4119064 bytes
+
+Progress: 11/24
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Building: lto-pgo-mimalloc-pcre2-dynamic with linker: mold-2.40.4-thinlto-pgo
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Using linker: /tools_soc/opensrc/mold/2.40.4/thinlto-pgo/bin/mold
+     Removed 0 files
+SUCCESS: Built in 84s, size: 4119064 bytes
+
+Progress: 12/24
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Building: lto-pgo-mimalloc-pcre2-dynamic with linker: mold-stable
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Using linker: /tools_soc/opensrc/mold/stable/bin/mold
+     Removed 0 files
+SUCCESS: Built in 84s, size: 4119064 bytes
+
+Progress: 13/24
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Building: lto-pgo-mimalloc-pcre2-dynamic with linker: mold-2.40.2
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Using linker: /tools_soc/opensrc/mold/2.40.2/bin/mold
+     Removed 0 files
+SUCCESS: Built in 84s, size: 4119064 bytes
+
+Progress: 14/24
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Building: lto-pgo-mimalloc-pcre2-dynamic with linker: lld
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Using linker: /tools_soc/opensrc/clang/21.0.0/bin/ld.lld
+     Removed 0 files
+SUCCESS: Built in 83s, size: 4123208 bytes
+
+Progress: 15/24
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Building: lto-pgo-mimalloc-pcre2-dynamic with linker: mold-2.40.4-fulllto-pgo-bolt
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Using linker: /tools_soc/opensrc/mold/2.40.4/fulllto-pgo-bolt/bin/mold
+     Removed 0 files
+SUCCESS: Built in 83s, size: 4119064 bytes
+
+Progress: 16/24
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Building: lto-pgo-mimalloc-pcre2-dynamic with linker: default
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Using default linker
+     Removed 0 files
+SUCCESS: Built in 84s, size: 4119184 bytes
+
+Progress: 17/24
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Building: lto-pgo-bolt-v3-mimalloc-pcre2-dynamic with linker: mold-2.36.0
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Using linker: /tools_soc/opensrc/mold/2.36.0/bin/mold
+     Removed 0 files
+SUCCESS: Built in 104s, size: 6596889 bytes
+
+Progress: 18/24
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Building: lto-pgo-bolt-v3-mimalloc-pcre2-dynamic with linker: mold-2.40.4-default
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Using linker: /tools_soc/opensrc/mold/2.40.4/default/bin/mold
+     Removed 0 files
+SUCCESS: Built in 105s, size: 6596889 bytes
+
+Progress: 19/24
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Building: lto-pgo-bolt-v3-mimalloc-pcre2-dynamic with linker: mold-2.40.4-thinlto-pgo
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Using linker: /tools_soc/opensrc/mold/2.40.4/thinlto-pgo/bin/mold
+     Removed 0 files
+SUCCESS: Built in 103s, size: 6596889 bytes
+
+Progress: 20/24
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Building: lto-pgo-bolt-v3-mimalloc-pcre2-dynamic with linker: mold-stable
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Using linker: /tools_soc/opensrc/mold/stable/bin/mold
+     Removed 0 files
+SUCCESS: Built in 104s, size: 6596889 bytes
+
+Progress: 21/24
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Building: lto-pgo-bolt-v3-mimalloc-pcre2-dynamic with linker: mold-2.40.2
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Using linker: /tools_soc/opensrc/mold/2.40.2/bin/mold
+     Removed 0 files
+SUCCESS: Built in 103s, size: 6596889 bytes
+
+Progress: 22/24
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Building: lto-pgo-bolt-v3-mimalloc-pcre2-dynamic with linker: lld
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Using linker: /tools_soc/opensrc/clang/21.0.0/bin/ld.lld
+     Removed 0 files
+SUCCESS: Built in 104s, size: 6597057 bytes
+
+Progress: 23/24
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Building: lto-pgo-bolt-v3-mimalloc-pcre2-dynamic with linker: mold-2.40.4-fulllto-pgo-bolt
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Using linker: /tools_soc/opensrc/mold/2.40.4/fulllto-pgo-bolt/bin/mold
+     Removed 0 files
+SUCCESS: Built in 105s, size: 6596889 bytes
+
+Progress: 24/24
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Building: lto-pgo-bolt-v3-mimalloc-pcre2-dynamic with linker: default
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Using default linker
+     Removed 0 files
+SUCCESS: Built in 102s, size: 6597057 bytes
+
+═══════════════════════════════════════════════════════════════
+PHASE 2: Runtime performance benchmarks
+═══════════════════════════════════════════════════════════════
+Benchmarking: rg-lto-thin-mold-2.36.0 with pattern: literal
+Collecting memory statistics...
+Benchmarking: rg-lto-thin-mold-2.40.4-default with pattern: literal
+Collecting memory statistics...
+Benchmarking: rg-lto-thin-mold-2.40.4-thinlto-pgo with pattern: literal
+Collecting memory statistics...
+Benchmarking: rg-lto-thin-mold-stable with pattern: literal
+Collecting memory statistics...
+Benchmarking: rg-lto-thin-mold-2.40.2 with pattern: literal
+Collecting memory statistics...
+Benchmarking: rg-lto-thin-lld with pattern: literal
+Collecting memory statistics...
+Benchmarking: rg-lto-thin-mold-2.40.4-fulllto-pgo-bolt with pattern: literal
+Collecting memory statistics...
+Benchmarking: rg-lto-thin-default with pattern: literal
+Collecting memory statistics...
+Benchmarking: rg-lto-pgo-mimalloc-pcre2-dynamic-mold-2.36.0 with pattern: literal
+Collecting memory statistics...
+Benchmarking: rg-lto-pgo-mimalloc-pcre2-dynamic-mold-2.40.4-default with pattern: literal
+Collecting memory statistics...
+Benchmarking: rg-lto-pgo-mimalloc-pcre2-dynamic-mold-2.40.4-thinlto-pgo with pattern: literal
+Collecting memory statistics...
+Benchmarking: rg-lto-pgo-mimalloc-pcre2-dynamic-mold-stable with pattern: literal
+Collecting memory statistics...
+Benchmarking: rg-lto-pgo-mimalloc-pcre2-dynamic-mold-2.40.2 with pattern: literal
+Collecting memory statistics...
+Benchmarking: rg-lto-pgo-mimalloc-pcre2-dynamic-lld with pattern: literal
+Collecting memory statistics...
+Benchmarking: rg-lto-pgo-mimalloc-pcre2-dynamic-mold-2.40.4-fulllto-pgo-bolt with pattern: literal
+Collecting memory statistics...
+Benchmarking: rg-lto-pgo-mimalloc-pcre2-dynamic-default with pattern: literal
+Collecting memory statistics...
+Benchmarking: rg-lto-pgo-bolt-v3-mimalloc-pcre2-dynamic-mold-2.36.0 with pattern: literal
+Collecting memory statistics...
+Benchmarking: rg-lto-pgo-bolt-v3-mimalloc-pcre2-dynamic-mold-2.40.4-default with pattern: literal
+Collecting memory statistics...
+Benchmarking: rg-lto-pgo-bolt-v3-mimalloc-pcre2-dynamic-mold-2.40.4-thinlto-pgo with pattern: literal
+Collecting memory statistics...
+Benchmarking: rg-lto-pgo-bolt-v3-mimalloc-pcre2-dynamic-mold-stable with pattern: literal
+Collecting memory statistics...
+Benchmarking: rg-lto-pgo-bolt-v3-mimalloc-pcre2-dynamic-mold-2.40.2 with pattern: literal
+Collecting memory statistics...
+Benchmarking: rg-lto-pgo-bolt-v3-mimalloc-pcre2-dynamic-lld with pattern: literal
+Collecting memory statistics...
+Benchmarking: rg-lto-pgo-bolt-v3-mimalloc-pcre2-dynamic-mold-2.40.4-fulllto-pgo-bolt with pattern: literal
+Collecting memory statistics...
+Benchmarking: rg-lto-pgo-bolt-v3-mimalloc-pcre2-dynamic-default with pattern: literal
+Collecting memory statistics...
+
+═══════════════════════════════════════════════════════════════
+PHASE 3: Generating summary report
+═══════════════════════════════════════════════════════════════
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  BENCHMARK COMPLETE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Results saved to: /proj_soc/user_dev/gczajkowski/ripgrepTT/tt/linker-benchmark-results
+Report: /proj_soc/user_dev/gczajkowski/ripgrepTT/tt/linker-benchmark-results/LINKER-BENCHMARK-REPORT.md
+
+═══ Build Results ═══
+Linker                        Variant                                 BuildTime(s)  BinarySize(bytes)  Status
+mold-2.36.0                   lto-thin                                26            4377024            SUCCESS
+mold-2.40.4-default           lto-thin                                25            4377024            SUCCESS
+mold-2.40.4-thinlto-pgo       lto-thin                                25            4377024            SUCCESS
+mold-stable                   lto-thin                                25            4377024            SUCCESS
+mold-2.40.2                   lto-thin                                25            4377024            SUCCESS
+lld                           lto-thin                                25            4376664            SUCCESS
+mold-2.40.4-fulllto-pgo-bolt  lto-thin                                25            4377024            SUCCESS
+default                       lto-thin                                25            4376776            SUCCESS
+mold-2.36.0                   lto-pgo-mimalloc-pcre2-dynamic          84            4119064            SUCCESS
+mold-2.40.4-default           lto-pgo-mimalloc-pcre2-dynamic          85            4119064            SUCCESS
+mold-2.40.4-thinlto-pgo       lto-pgo-mimalloc-pcre2-dynamic          84            4119064            SUCCESS
+mold-stable                   lto-pgo-mimalloc-pcre2-dynamic          84            4119064            SUCCESS
+mold-2.40.2                   lto-pgo-mimalloc-pcre2-dynamic          84            4119064            SUCCESS
+lld                           lto-pgo-mimalloc-pcre2-dynamic          83            4123208            SUCCESS
+mold-2.40.4-fulllto-pgo-bolt  lto-pgo-mimalloc-pcre2-dynamic          83            4119064            SUCCESS
+default                       lto-pgo-mimalloc-pcre2-dynamic          84            4119184            SUCCESS
+mold-2.36.0                   lto-pgo-bolt-v3-mimalloc-pcre2-dynamic  104           6596889            SUCCESS
+mold-2.40.4-default           lto-pgo-bolt-v3-mimalloc-pcre2-dynamic  105           6596889            SUCCESS
+mold-2.40.4-thinlto-pgo       lto-pgo-bolt-v3-mimalloc-pcre2-dynamic  103           6596889            SUCCESS
+mold-stable                   lto-pgo-bolt-v3-mimalloc-pcre2-dynamic  104           6596889            SUCCESS
+mold-2.40.2                   lto-pgo-bolt-v3-mimalloc-pcre2-dynamic  103           6596889            SUCCESS
+lld                           lto-pgo-bolt-v3-mimalloc-pcre2-dynamic  104           6597057            SUCCESS
+mold-2.40.4-fulllto-pgo-bolt  lto-pgo-bolt-v3-mimalloc-pcre2-dynamic  105           6596889            SUCCESS
+default                       lto-pgo-bolt-v3-mimalloc-pcre2-dynamic  102           6597057            SUCCESS
+
+═══ Memory Results ═══
+Linker                        Variant                                 MaxRSS(KB)  AvgRSS(KB)  PageFaults  ContextSwitches
+mold-2.36.0                   lto-thin                                17160       16458.7     0           0
+mold-2.40.4-default           lto-thin                                16460       15958.7     0           0
+mold-2.40.4-thinlto-pgo       lto-thin                                16000       15266.7     0.333333    0
+mold-stable                   lto-thin                                16600       15748       0           0
+mold-2.40.2                   lto-thin                                17252       15606.7     0           0
+lld                           lto-thin                                16912       16698.7     0           0
+mold-2.40.4-fulllto-pgo-bolt  lto-thin                                17504       16192       0           0
+default                       lto-thin                                17228       16614.7     0           0
+mold-2.36.0                   lto-pgo-mimalloc-pcre2-dynamic          21996       21505.3     0           0
+mold-2.40.4-default           lto-pgo-mimalloc-pcre2-dynamic          21228       20796       0           0
+mold-2.40.4-thinlto-pgo       lto-pgo-mimalloc-pcre2-dynamic          21472       20990.7     0           0
+mold-stable                   lto-pgo-mimalloc-pcre2-dynamic          22580       22160       0           0
+mold-2.40.2                   lto-pgo-mimalloc-pcre2-dynamic          23744       21881.3     0           0
+lld                           lto-pgo-mimalloc-pcre2-dynamic          22152       21497.3     0           0
+mold-2.40.4-fulllto-pgo-bolt  lto-pgo-mimalloc-pcre2-dynamic          22312       21660       0           0
+default                       lto-pgo-mimalloc-pcre2-dynamic          20424       20000       0           0
+mold-2.36.0                   lto-pgo-bolt-v3-mimalloc-pcre2-dynamic  21364       21185.3     0           0
+mold-2.40.4-default           lto-pgo-bolt-v3-mimalloc-pcre2-dynamic  23476       22105.3     0           0
+mold-2.40.4-thinlto-pgo       lto-pgo-bolt-v3-mimalloc-pcre2-dynamic  23272       22196       0           0
+mold-stable                   lto-pgo-bolt-v3-mimalloc-pcre2-dynamic  23036       22100       0           0
+mold-2.40.2                   lto-pgo-bolt-v3-mimalloc-pcre2-dynamic  21420       20749.3     0           0
+lld                           lto-pgo-bolt-v3-mimalloc-pcre2-dynamic  22600       21649.3     0           0
+mold-2.40.4-fulllto-pgo-bolt  lto-pgo-bolt-v3-mimalloc-pcre2-dynamic  23412       22500       0           0
+default                       lto-pgo-bolt-v3-mimalloc-pcre2-dynamic  23248       22193.3     0           0
+
+Full report available at: /proj_soc/user_dev/gczajkowski/ripgrepTT/tt/linker-benchmark-results/LINKER-BENCHMARK-REPORT.md
+

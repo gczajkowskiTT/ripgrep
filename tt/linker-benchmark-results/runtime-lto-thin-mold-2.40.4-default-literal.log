@@ -1,0 +1,4 @@
+Benchmark 1: /proj_soc/user_dev/gczajkowski/bin/rg-lto-thin-mold-2.40.4-default --no-config --no-ignore function '/proj_soc/user_dev/gczajkowski/chiplet-template'
+  Time (mean ± σ):      5.923 s ±  0.167 s    [User: 0.335 s, System: 8.053 s]
+  Range (min … max):    5.787 s …  6.185 s    5 runs
+ 

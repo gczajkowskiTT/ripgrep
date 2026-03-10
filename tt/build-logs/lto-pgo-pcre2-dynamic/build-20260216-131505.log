@@ -1,0 +1,475 @@
+++ dirname /proj_soc/user_dev/gczajkowski/ripgrepTT/tt/build-variant-lto-pgo-pcre2-dynamic.sh
++ source /proj_soc/user_dev/gczajkowski/ripgrepTT/tt/build-lib.sh
+++ [[ /proj_soc/user_dev/gczajkowski/ripgrepTT/tt/build-lib.sh == \/\p\r\o\j\_\s\o\c\/\u\s\e\r\_\d\e\v\/\g\c\z\a\j\k\o\w\s\k\i\/\r\i\p\g\r\e\p\T\T\/\t\t\/\b\u\i\l\d\-\v\a\r\i\a\n\t\-\l\t\o\-\p\g\o\-\p\c\r\e\2\-\d\y\n\a\m\i\c\.\s\h ]]
+++ set -euox pipefail
+++ export 'BUILD_GREEN=\033[0;32m'
+++ BUILD_GREEN='\033[0;32m'
+++ export 'BUILD_YELLOW=\033[1;33m'
+++ BUILD_YELLOW='\033[1;33m'
+++ export 'BUILD_BLUE=\033[0;34m'
+++ BUILD_BLUE='\033[0;34m'
+++ export 'BUILD_RED=\033[0;31m'
+++ BUILD_RED='\033[0;31m'
+++ export 'BUILD_NC=\033[0m'
+++ BUILD_NC='\033[0m'
+++++ dirname /proj_soc/user_dev/gczajkowski/ripgrepTT/tt/build-lib.sh
++++ cd /proj_soc/user_dev/gczajkowski/ripgrepTT/tt/..
++++ pwd
+++ export BUILD_RIPGREP_ROOT=/proj_soc/user_dev/gczajkowski/ripgrepTT
+++ BUILD_RIPGREP_ROOT=/proj_soc/user_dev/gczajkowski/ripgrepTT
+++ [[ -z /proj_soc/user_dev/gczajkowski/bin ]]
+++ export BUILD_INSTALL_DIR
+++ export SCRATCH_DIR=/localdev/gczajkowski/TMPDIR
+++ SCRATCH_DIR=/localdev/gczajkowski/TMPDIR
+++ export BUILD_MUSL_DIR=/localdev/gczajkowski/TMPDIR/x86_64-linux-musl-cross
+++ BUILD_MUSL_DIR=/localdev/gczajkowski/TMPDIR/x86_64-linux-musl-cross
+++ export BUILD_FEATURES=pcre2
+++ BUILD_FEATURES=pcre2
+++ export 'BUILD_BASE_RUSTFLAGS=-C link-arg=-fno-stack-protector -C link-arg=-U_FORTIFY_SOURCE'
+++ BUILD_BASE_RUSTFLAGS='-C link-arg=-fno-stack-protector -C link-arg=-U_FORTIFY_SOURCE'
+++ mkdir -p /localdev/gczajkowski/TMPDIR
+++ export BUILD_VARIANT_SCRATCH=
+++ BUILD_VARIANT_SCRATCH=
+++ export BUILD_PGO_DATA_DIR=
+++ BUILD_PGO_DATA_DIR=
+++ export BUILD_JEMALLOC_ROOT=/tools_soc/opensrc/jemalloc/5.3.0
+++ BUILD_JEMALLOC_ROOT=/tools_soc/opensrc/jemalloc/5.3.0
+++ export BUILD_JEMALLOC_LIB=/tools_soc/opensrc/jemalloc/5.3.0/lib
+++ BUILD_JEMALLOC_LIB=/tools_soc/opensrc/jemalloc/5.3.0/lib
+++ export BUILD_JEMALLOC_INCLUDE=/tools_soc/opensrc/jemalloc/5.3.0/include
+++ BUILD_JEMALLOC_INCLUDE=/tools_soc/opensrc/jemalloc/5.3.0/include
+++ export BUILD_MIMALLOC_ROOT=/tools_soc/opensrc/mimalloc/2.1.7
+++ BUILD_MIMALLOC_ROOT=/tools_soc/opensrc/mimalloc/2.1.7
+++ export BUILD_MIMALLOC_LIB=/tools_soc/opensrc/mimalloc/2.1.7/lib64
+++ BUILD_MIMALLOC_LIB=/tools_soc/opensrc/mimalloc/2.1.7/lib64
+++ export BUILD_MIMALLOC_INCLUDE=/tools_soc/opensrc/mimalloc/2.1.7/include
+++ BUILD_MIMALLOC_INCLUDE=/tools_soc/opensrc/mimalloc/2.1.7/include
+++ export BUILD_PCRE2_ROOT=/tools_soc/opensrc/pcre2/stable
+++ BUILD_PCRE2_ROOT=/tools_soc/opensrc/pcre2/stable
+++ export BUILD_PCRE2_LIB=/tools_soc/opensrc/pcre2/stable/lib
+++ BUILD_PCRE2_LIB=/tools_soc/opensrc/pcre2/stable/lib
+++ export BUILD_PCRE2_INCLUDE=/tools_soc/opensrc/pcre2/stable/include
+++ BUILD_PCRE2_INCLUDE=/tools_soc/opensrc/pcre2/stable/include
++ VARIANT_NAME=lto-pgo-pcre2-dynamic
++ DESCRIPTION='LTO + PGO (dynamic PCRE2, dynamic glibc)'
++ BUILD_TYPE=pgo
++ TARGET=x86_64-unknown-linux-gnu
++ PROFILE=release-lto
++ RUSTFLAGS=
++ FEATURES=pcre2
++ build_variant lto-pgo-pcre2-dynamic 'LTO + PGO (dynamic PCRE2, dynamic glibc)' pgo x86_64-unknown-linux-gnu release-lto '' pcre2
++ local variant_name=lto-pgo-pcre2-dynamic
++ local 'description=LTO + PGO (dynamic PCRE2, dynamic glibc)'
++ local build_type=pgo
++ local target=x86_64-unknown-linux-gnu
++ local profile=release-lto
++ local rustflags=
++ local features=pcre2
++ export BUILD_VARIANT_SCRATCH=/localdev/gczajkowski/TMPDIR/build-lto-pgo-pcre2-dynamic
++ BUILD_VARIANT_SCRATCH=/localdev/gczajkowski/TMPDIR/build-lto-pgo-pcre2-dynamic
++ export BUILD_PGO_DATA_DIR=/localdev/gczajkowski/TMPDIR/build-lto-pgo-pcre2-dynamic/pgo-data
++ BUILD_PGO_DATA_DIR=/localdev/gczajkowski/TMPDIR/build-lto-pgo-pcre2-dynamic/pgo-data
++ export CARGO_TARGET_DIR=/localdev/gczajkowski/TMPDIR/build-lto-pgo-pcre2-dynamic/target
++ CARGO_TARGET_DIR=/localdev/gczajkowski/TMPDIR/build-lto-pgo-pcre2-dynamic/target
++ [[ -d /localdev/gczajkowski/TMPDIR/build-lto-pgo-pcre2-dynamic ]]
++ mkdir -p /localdev/gczajkowski/TMPDIR/build-lto-pgo-pcre2-dynamic
++ print_build_header lto-pgo-pcre2-dynamic 'LTO + PGO (dynamic PCRE2, dynamic glibc)'
++ local variant_name=lto-pgo-pcre2-dynamic
++ local 'description=LTO + PGO (dynamic PCRE2, dynamic glibc)'
++ echo -e '\033[1;33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m'
+[1;33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
++ echo -e '\033[0;34mBuilding: rg-lto-pgo-pcre2-dynamic\033[0m'
+[0;34mBuilding: rg-lto-pgo-pcre2-dynamic[0m
++ [[ -n LTO + PGO (dynamic PCRE2, dynamic glibc) ]]
++ echo -e '\033[0;34mDescription: LTO + PGO (dynamic PCRE2, dynamic glibc)\033[0m'
+[0;34mDescription: LTO + PGO (dynamic PCRE2, dynamic glibc)[0m
++ echo -e '\033[1;33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m'
+[1;33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
++ echo ''
+
++ [[ -n /proj_soc/user_dev/gczajkowski/ripgrepTT/tt/build-logs/lto-pgo-pcre2-dynamic/build-20260216-131505 ]]
++ print_build_environment
++ echo 'Pre-build environment: /proj_soc/user_dev/gczajkowski/ripgrepTT/tt/build-logs/lto-pgo-pcre2-dynamic/build-20260216-131505.preenv'
+Pre-build environment: /proj_soc/user_dev/gczajkowski/ripgrepTT/tt/build-logs/lto-pgo-pcre2-dynamic/build-20260216-131505.preenv
++ local result=0
++ [[ pgo == \s\i\m\p\l\e ]]
++ [[ pgo == \p\g\o ]]
++ build_pgo lto-pgo-pcre2-dynamic x86_64-unknown-linux-gnu release-lto '' pcre2
++ local variant_name=lto-pgo-pcre2-dynamic
++ local target=x86_64-unknown-linux-gnu
++ local profile=release-lto
++ local extra_rustflags=
++ local features=pcre2
++ cd /proj_soc/user_dev/gczajkowski/ripgrepTT
++ [[ x86_64-unknown-linux-gnu == *\m\u\s\l* ]]
++ setup_pcre2_env lto-pgo-pcre2-dynamic
++ local variant_name=lto-pgo-pcre2-dynamic
++ export PKG_CONFIG_PATH=/tools_soc/opensrc/pcre2/stable/lib/pkgconfig:/opt/rh/gcc-toolset-14/root/usr/lib64/pkgconfig:/opt/rh/gcc-toolset-14/root/usr/lib/pkgconfig
++ PKG_CONFIG_PATH=/tools_soc/opensrc/pcre2/stable/lib/pkgconfig:/opt/rh/gcc-toolset-14/root/usr/lib64/pkgconfig:/opt/rh/gcc-toolset-14/root/usr/lib/pkgconfig
++ export PCRE2_LIB_DIR=/tools_soc/opensrc/pcre2/stable/lib
++ PCRE2_LIB_DIR=/tools_soc/opensrc/pcre2/stable/lib
++ export PCRE2_INCLUDE_DIR=/tools_soc/opensrc/pcre2/stable/include
++ PCRE2_INCLUDE_DIR=/tools_soc/opensrc/pcre2/stable/include
++ [[ lto-pgo-pcre2-dynamic == *\p\c\r\e\2\-\s\t\a\t\i\c* ]]
+++ date +%s
++ local build_start=1771265705
++ mkdir -p /localdev/gczajkowski/TMPDIR/build-lto-pgo-pcre2-dynamic/pgo-data
++ rm -rf '/localdev/gczajkowski/TMPDIR/build-lto-pgo-pcre2-dynamic/pgo-data/*'
++ echo 'Step 1/3: Building instrumented binary...'
+Step 1/3: Building instrumented binary...
++ local 'inst_flags=-C link-arg=-fno-stack-protector -C link-arg=-U_FORTIFY_SOURCE -C profile-generate=/localdev/gczajkowski/TMPDIR/build-lto-pgo-pcre2-dynamic/pgo-data'
++ [[ -n '' ]]
++ RUSTFLAGS='-C link-arg=-fno-stack-protector -C link-arg=-U_FORTIFY_SOURCE -C profile-generate=/localdev/gczajkowski/TMPDIR/build-lto-pgo-pcre2-dynamic/pgo-data'
++ cargo build --target x86_64-unknown-linux-gnu --profile release-lto --features pcre2
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+   Compiling libc v0.2.177
+   Compiling memchr v2.7.6
+   Compiling log v0.4.28
+   Compiling regex-syntax v0.8.8
+   Compiling shlex v1.3.0
+   Compiling find-msvc-tools v0.1.4
+   Compiling pkg-config v0.3.32
+   Compiling serde_core v1.0.228
+   Compiling crossbeam-utils v0.8.21
+   Compiling cfg-if v1.0.4
+   Compiling serde v1.0.228
+   Compiling serde_json v1.0.145
+   Compiling termcolor v1.4.1
+   Compiling ryu v1.0.20
+   Compiling itoa v1.0.15
+   Compiling same-file v1.0.6
+   Compiling anyhow v1.0.100
+   Compiling ripgrep v15.1.0 (/proj_soc/user_dev/gczajkowski/ripgrepTT)
+   Compiling textwrap v0.16.2
+   Compiling lexopt v0.3.1
+   Compiling encoding_rs v0.8.35
+   Compiling walkdir v2.5.0
+   Compiling memmap2 v0.9.9
+   Compiling aho-corasick v1.1.3
+   Compiling grep-matcher v0.1.8 (/proj_soc/user_dev/gczajkowski/ripgrepTT/crates/matcher)
+   Compiling crossbeam-epoch v0.9.18
+   Compiling crossbeam-deque v0.8.6
+   Compiling jobserver v0.1.34
+   Compiling encoding_rs_io v0.1.7
+   Compiling cc v1.2.41
+   Compiling regex-automata v0.4.13
+   Compiling bstr v1.12.0
+   Compiling globset v0.4.18 (/proj_soc/user_dev/gczajkowski/ripgrepTT/crates/globset)
+   Compiling grep-searcher v0.1.16 (/proj_soc/user_dev/gczajkowski/ripgrepTT/crates/searcher)
+   Compiling grep-regex v0.1.14 (/proj_soc/user_dev/gczajkowski/ripgrepTT/crates/regex)
+   Compiling pcre2-sys v0.2.10
+   Compiling grep-cli v0.1.12 (/proj_soc/user_dev/gczajkowski/ripgrepTT/crates/cli)
+   Compiling ignore v0.4.25 (/proj_soc/user_dev/gczajkowski/ripgrepTT/crates/ignore)
+   Compiling grep-printer v0.3.1 (/proj_soc/user_dev/gczajkowski/ripgrepTT/crates/printer)
+   Compiling pcre2 v0.2.11
+   Compiling grep-pcre2 v0.1.9 (/proj_soc/user_dev/gczajkowski/ripgrepTT/crates/pcre2)
+   Compiling grep v0.4.1 (/proj_soc/user_dev/gczajkowski/ripgrepTT/crates/grep)
+    Finished `release-lto` profile [optimized] target(s) in 1m 12s
++ echo 'Step 2/3: Collecting profiling data...'
+Step 2/3: Collecting profiling data...
++ local target_dir=/localdev/gczajkowski/TMPDIR/build-lto-pgo-pcre2-dynamic/target
++ local inst_binary=/localdev/gczajkowski/TMPDIR/build-lto-pgo-pcre2-dynamic/target/x86_64-unknown-linux-gnu/release-lto/rg
++ run_pgo_workloads /localdev/gczajkowski/TMPDIR/build-lto-pgo-pcre2-dynamic/target/x86_64-unknown-linux-gnu/release-lto/rg
++ local binary_path=/localdev/gczajkowski/TMPDIR/build-lto-pgo-pcre2-dynamic/target/x86_64-unknown-linux-gnu/release-lto/rg
++ cd /proj_soc/user_dev/gczajkowski/ripgrepTT
++ echo 'Running profiling workloads using ripgrep benchsuite patterns...'
+Running profiling workloads using ripgrep benchsuite patterns...
++ /localdev/gczajkowski/TMPDIR/build-lto-pgo-pcre2-dynamic/target/x86_64-unknown-linux-gnu/release-lto/rg 'fn ' crates/
++ /localdev/gczajkowski/TMPDIR/build-lto-pgo-pcre2-dynamic/target/x86_64-unknown-linux-gnu/release-lto/rg 'struct ' crates/
++ /localdev/gczajkowski/TMPDIR/build-lto-pgo-pcre2-dynamic/target/x86_64-unknown-linux-gnu/release-lto/rg 'impl ' crates/
++ /localdev/gczajkowski/TMPDIR/build-lto-pgo-pcre2-dynamic/target/x86_64-unknown-linux-gnu/release-lto/rg 'pub fn' crates/
++ /localdev/gczajkowski/TMPDIR/build-lto-pgo-pcre2-dynamic/target/x86_64-unknown-linux-gnu/release-lto/rg return crates/
++ /localdev/gczajkowski/TMPDIR/build-lto-pgo-pcre2-dynamic/target/x86_64-unknown-linux-gnu/release-lto/rg -i error crates/
++ /localdev/gczajkowski/TMPDIR/build-lto-pgo-pcre2-dynamic/target/x86_64-unknown-linux-gnu/release-lto/rg -i warning crates/
++ /localdev/gczajkowski/TMPDIR/build-lto-pgo-pcre2-dynamic/target/x86_64-unknown-linux-gnu/release-lto/rg -i result crates/
++ /localdev/gczajkowski/TMPDIR/build-lto-pgo-pcre2-dynamic/target/x86_64-unknown-linux-gnu/release-lto/rg -w new crates/
++ /localdev/gczajkowski/TMPDIR/build-lto-pgo-pcre2-dynamic/target/x86_64-unknown-linux-gnu/release-lto/rg -w test crates/
++ /localdev/gczajkowski/TMPDIR/build-lto-pgo-pcre2-dynamic/target/x86_64-unknown-linux-gnu/release-lto/rg -w String crates/
++ /localdev/gczajkowski/TMPDIR/build-lto-pgo-pcre2-dynamic/target/x86_64-unknown-linux-gnu/release-lto/rg 'TODO|FIXME' crates/
++ /localdev/gczajkowski/TMPDIR/build-lto-pgo-pcre2-dynamic/target/x86_64-unknown-linux-gnu/release-lto/rg 'Ok|Err' crates/
++ /localdev/gczajkowski/TMPDIR/build-lto-pgo-pcre2-dynamic/target/x86_64-unknown-linux-gnu/release-lto/rg 'Some|None' crates/
++ /localdev/gczajkowski/TMPDIR/build-lto-pgo-pcre2-dynamic/target/x86_64-unknown-linux-gnu/release-lto/rg '\b[A-Z][a-z]+\b' crates/
++ /localdev/gczajkowski/TMPDIR/build-lto-pgo-pcre2-dynamic/target/x86_64-unknown-linux-gnu/release-lto/rg '[0-9]+' crates/
++ /localdev/gczajkowski/TMPDIR/build-lto-pgo-pcre2-dynamic/target/x86_64-unknown-linux-gnu/release-lto/rg 'fn\s+\w+' crates/
++ /localdev/gczajkowski/TMPDIR/build-lto-pgo-pcre2-dynamic/target/x86_64-unknown-linux-gnu/release-lto/rg 'let.*=.*;' crates/
++ /localdev/gczajkowski/TMPDIR/build-lto-pgo-pcre2-dynamic/target/x86_64-unknown-linux-gnu/release-lto/rg 'if\s+.*\s*{' crates/
++ true
++ /localdev/gczajkowski/TMPDIR/build-lto-pgo-pcre2-dynamic/target/x86_64-unknown-linux-gnu/release-lto/rg 'use ' crates/
++ /localdev/gczajkowski/TMPDIR/build-lto-pgo-pcre2-dynamic/target/x86_64-unknown-linux-gnu/release-lto/rg 'mod ' crates/
++ /localdev/gczajkowski/TMPDIR/build-lto-pgo-pcre2-dynamic/target/x86_64-unknown-linux-gnu/release-lto/rg -P '(?<=fn\s)\w+' crates/
++ /localdev/gczajkowski/TMPDIR/build-lto-pgo-pcre2-dynamic/target/x86_64-unknown-linux-gnu/release-lto/rg -P '\w+(?=\()' crates/
++ echo 'Profiling workload complete'
+Profiling workload complete
++ echo 'Step 3/3: Building PGO-optimized binary...'
+Step 3/3: Building PGO-optimized binary...
++ llvm-profdata merge -o /localdev/gczajkowski/TMPDIR/build-lto-pgo-pcre2-dynamic/pgo-data/merged.profdata /localdev/gczajkowski/TMPDIR/build-lto-pgo-pcre2-dynamic/pgo-data/default_4626745941970163131_0.profraw
++ echo 'Cleaning previous build artifacts...'
+Cleaning previous build artifacts...
++ cargo clean
+     Removed 419 files, 114.4MiB total
++ local 'opt_flags=-C link-arg=-fno-stack-protector -C link-arg=-U_FORTIFY_SOURCE -C profile-use=/localdev/gczajkowski/TMPDIR/build-lto-pgo-pcre2-dynamic/pgo-data/merged.profdata -C llvm-args=-pgo-warn-missing-function'
++ [[ -n '' ]]
++ RUSTFLAGS='-C link-arg=-fno-stack-protector -C link-arg=-U_FORTIFY_SOURCE -C profile-use=/localdev/gczajkowski/TMPDIR/build-lto-pgo-pcre2-dynamic/pgo-data/merged.profdata -C llvm-args=-pgo-warn-missing-function'
++ cargo build --target x86_64-unknown-linux-gnu --profile release-lto --features pcre2
+   Compiling libc v0.2.177
+   Compiling memchr v2.7.6
+   Compiling regex-syntax v0.8.8
+   Compiling log v0.4.28
+   Compiling find-msvc-tools v0.1.4
+   Compiling shlex v1.3.0
+   Compiling pkg-config v0.3.32
+   Compiling serde_core v1.0.228
+   Compiling crossbeam-utils v0.8.21
+   Compiling cfg-if v1.0.4
+   Compiling serde_json v1.0.145
+   Compiling serde v1.0.228
+   Compiling termcolor v1.4.1
+   Compiling ryu v1.0.20
+   Compiling itoa v1.0.15
+   Compiling same-file v1.0.6
+   Compiling anyhow v1.0.100
+   Compiling ripgrep v15.1.0 (/proj_soc/user_dev/gczajkowski/ripgrepTT)
+   Compiling lexopt v0.3.1
+   Compiling textwrap v0.16.2
+   Compiling encoding_rs v0.8.35
+   Compiling walkdir v2.5.0
+   Compiling aho-corasick v1.1.3
+   Compiling grep-matcher v0.1.8 (/proj_soc/user_dev/gczajkowski/ripgrepTT/crates/matcher)
+   Compiling crossbeam-epoch v0.9.18
+   Compiling encoding_rs_io v0.1.7
+   Compiling crossbeam-deque v0.8.6
+   Compiling jobserver v0.1.34
+   Compiling memmap2 v0.9.9
+   Compiling regex-automata v0.4.13
+   Compiling cc v1.2.41
+   Compiling bstr v1.12.0
+   Compiling globset v0.4.18 (/proj_soc/user_dev/gczajkowski/ripgrepTT/crates/globset)
+   Compiling grep-searcher v0.1.16 (/proj_soc/user_dev/gczajkowski/ripgrepTT/crates/searcher)
+   Compiling grep-regex v0.1.14 (/proj_soc/user_dev/gczajkowski/ripgrepTT/crates/regex)
+   Compiling grep-cli v0.1.12 (/proj_soc/user_dev/gczajkowski/ripgrepTT/crates/cli)
+   Compiling ignore v0.4.25 (/proj_soc/user_dev/gczajkowski/ripgrepTT/crates/ignore)
+   Compiling pcre2-sys v0.2.10
+   Compiling grep-printer v0.3.1 (/proj_soc/user_dev/gczajkowski/ripgrepTT/crates/printer)
+   Compiling pcre2 v0.2.11
+   Compiling grep-pcre2 v0.1.9 (/proj_soc/user_dev/gczajkowski/ripgrepTT/crates/pcre2)
+   Compiling grep v0.4.1 (/proj_soc/user_dev/gczajkowski/ripgrepTT/crates/grep)
+    Finished `release-lto` profile [optimized] target(s) in 1m 13s
+++ date +%s
++ local build_end=1771265853
++ local build_time=148
++ local target_dir=/localdev/gczajkowski/TMPDIR/build-lto-pgo-pcre2-dynamic/target
++ local binary_path=/localdev/gczajkowski/TMPDIR/build-lto-pgo-pcre2-dynamic/target/x86_64-unknown-linux-gnu/release-lto/rg
++ [[ ! -f /localdev/gczajkowski/TMPDIR/build-lto-pgo-pcre2-dynamic/target/x86_64-unknown-linux-gnu/release-lto/rg ]]
++ mkdir -p /proj_soc/user_dev/gczajkowski/bin
++ cp /localdev/gczajkowski/TMPDIR/build-lto-pgo-pcre2-dynamic/target/x86_64-unknown-linux-gnu/release-lto/rg /proj_soc/user_dev/gczajkowski/bin/rg-lto-pgo-pcre2-dynamic
++ chmod +x /proj_soc/user_dev/gczajkowski/bin/rg-lto-pgo-pcre2-dynamic
++ inject_allocator_library /proj_soc/user_dev/gczajkowski/bin/rg-lto-pgo-pcre2-dynamic lto-pgo-pcre2-dynamic
++ local binary_path=/proj_soc/user_dev/gczajkowski/bin/rg-lto-pgo-pcre2-dynamic
++ local variant_name=lto-pgo-pcre2-dynamic
++ local allocator=
++ local lib_name=
++ local lib_path=
++ local root_path=
++ [[ lto-pgo-pcre2-dynamic == *\j\e\m\a\l\l\o\c* ]]
++ [[ lto-pgo-pcre2-dynamic == *\m\i\m\a\l\l\o\c* ]]
++ return 0
++ inject_pcre2_library /proj_soc/user_dev/gczajkowski/bin/rg-lto-pgo-pcre2-dynamic lto-pgo-pcre2-dynamic
++ local binary_path=/proj_soc/user_dev/gczajkowski/bin/rg-lto-pgo-pcre2-dynamic
++ local variant_name=lto-pgo-pcre2-dynamic
++ [[ ! -d /tools_soc/opensrc/pcre2/stable ]]
++ [[ lto-pgo-pcre2-dynamic == *\p\c\r\e\2\-\s\t\a\t\i\c* ]]
++ [[ lto-pgo-pcre2-dynamic == *\m\u\s\l* ]]
++ echo 'Configuring SOC PCRE2 dynamic library using patchelf...'
+Configuring SOC PCRE2 dynamic library using patchelf...
+++ patchelf --print-rpath /proj_soc/user_dev/gczajkowski/bin/rg-lto-pgo-pcre2-dynamic
++ local current_rpath=
++ local new_rpath=/tools_soc/opensrc/pcre2/stable/lib
++ [[ -n '' ]]
++ patchelf --set-rpath /tools_soc/opensrc/pcre2/stable/lib /proj_soc/user_dev/gczajkowski/bin/rg-lto-pgo-pcre2-dynamic
++ echo -e '\033[0;32m✓ Configured SOC PCRE2 dynamic: /tools_soc/opensrc/pcre2/stable\033[0m'
+[0;32m✓ Configured SOC PCRE2 dynamic: /tools_soc/opensrc/pcre2/stable[0m
+++ du -h /proj_soc/user_dev/gczajkowski/bin/rg-lto-pgo-pcre2-dynamic
+++ cut -f1
++ local size=4.0M
++ echo -e '\033[0;32m✓ Built successfully\033[0m'
+[0;32m✓ Built successfully[0m
++ echo '  Build time: 148s'
+  Build time: 148s
++ echo '  Binary size: 4.0M'
+  Binary size: 4.0M
++ echo '  Installed: /proj_soc/user_dev/gczajkowski/bin/rg-lto-pgo-pcre2-dynamic'
+  Installed: /proj_soc/user_dev/gczajkowski/bin/rg-lto-pgo-pcre2-dynamic
++ echo ''
+
++ return 0
++ result=0
++ [[ 0 -eq 0 ]]
++ verify_binary lto-pgo-pcre2-dynamic
++ local variant_name=lto-pgo-pcre2-dynamic
++ local binary_path=/proj_soc/user_dev/gczajkowski/bin/rg-lto-pgo-pcre2-dynamic
++ [[ ! -f /proj_soc/user_dev/gczajkowski/bin/rg-lto-pgo-pcre2-dynamic ]]
++ /proj_soc/user_dev/gczajkowski/bin/rg-lto-pgo-pcre2-dynamic --version
++ echo -e '\033[0;32m✓ Binary execution test passed\033[0m'
+[0;32m✓ Binary execution test passed[0m
++ verify_binary_features /proj_soc/user_dev/gczajkowski/bin/rg-lto-pgo-pcre2-dynamic lto-pgo-pcre2-dynamic
++ local binary_path=/proj_soc/user_dev/gczajkowski/bin/rg-lto-pgo-pcre2-dynamic
++ local variant_name=lto-pgo-pcre2-dynamic
++ echo ''
+
++ echo $'\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201'
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
++ echo 'BINARY FEATURE VERIFICATION: lto-pgo-pcre2-dynamic'
+BINARY FEATURE VERIFICATION: lto-pgo-pcre2-dynamic
++ echo $'\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201'
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
++ echo ''
+
++ [[ ! -f /proj_soc/user_dev/gczajkowski/bin/rg-lto-pgo-pcre2-dynamic ]]
++ local errors=0
++ echo '=== Basic Properties ==='
+=== Basic Properties ===
+++ file /proj_soc/user_dev/gczajkowski/bin/rg-lto-pgo-pcre2-dynamic
++ local 'file_output=/proj_soc/user_dev/gczajkowski/bin/rg-lto-pgo-pcre2-dynamic: ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 3.2.0, BuildID[sha1]=e68c1f3209f13503e1b900c385bb9a6bc70396bd, stripped'
++ echo 'File type: /proj_soc/user_dev/gczajkowski/bin/rg-lto-pgo-pcre2-dynamic: ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 3.2.0, BuildID[sha1]=e68c1f3209f13503e1b900c385bb9a6bc70396bd, stripped'
+File type: /proj_soc/user_dev/gczajkowski/bin/rg-lto-pgo-pcre2-dynamic: ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 3.2.0, BuildID[sha1]=e68c1f3209f13503e1b900c385bb9a6bc70396bd, stripped
++ [[ /proj_soc/user_dev/gczajkowski/bin/rg-lto-pgo-pcre2-dynamic: ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 3.2.0, BuildID[sha1]=e68c1f3209f13503e1b900c385bb9a6bc70396bd, stripped == *\s\t\r\i\p\p\e\d* ]]
++ echo '✓ Binary is stripped'
+✓ Binary is stripped
++ echo ''
+
++ echo '=== C Library ==='
+=== C Library ===
++ [[ lto-pgo-pcre2-dynamic == *\m\u\s\l* ]]
++ ldd /proj_soc/user_dev/gczajkowski/bin/rg-lto-pgo-pcre2-dynamic
++ grep -qE 'libc\.so\.'
++ echo '✓ GLIBC: Dynamically linked'
+✓ GLIBC: Dynamically linked
+++ ldd /proj_soc/user_dev/gczajkowski/bin/rg-lto-pgo-pcre2-dynamic
+++ grep -E 'libc\.so\.'
+++ awk '{print $3}'
++ local libc_path=/lib64/libc.so.6
++ echo '  → /lib64/libc.so.6'
+  → /lib64/libc.so.6
++ echo ''
+
++ echo '=== CPU Target ==='
+=== CPU Target ===
++ [[ lto-pgo-pcre2-dynamic == *\-\v\3* ]]
++ echo '✓ x86-64: Standard target (baseline)'
+✓ x86-64: Standard target (baseline)
++ echo ''
+
++ echo '=== Link-Time Optimization ==='
+=== Link-Time Optimization ===
++ [[ lto-pgo-pcre2-dynamic == *\l\t\o\-\t\h\i\n* ]]
++ [[ lto-pgo-pcre2-dynamic == *\l\t\o* ]]
++ echo '✓ LTO Fat: Expected (build used release-lto profile)'
+✓ LTO Fat: Expected (build used release-lto profile)
++ echo ''
+
++ echo '=== Profile-Guided Optimization ==='
+=== Profile-Guided Optimization ===
++ [[ lto-pgo-pcre2-dynamic == *\p\g\o* ]]
++ echo '✓ PGO: Binary built with profile-guided optimization'
+✓ PGO: Binary built with profile-guided optimization
++ echo ''
+
++ echo '=== BOLT Optimization ==='
+=== BOLT Optimization ===
++ [[ lto-pgo-pcre2-dynamic == *\b\o\l\t* ]]
++ echo '• BOLT: Not used'
+• BOLT: Not used
++ echo ''
+
++ echo '=== PCRE2 Library ==='
+=== PCRE2 Library ===
++ local has_pcre2_dynamic=false
++ ldd /proj_soc/user_dev/gczajkowski/bin/rg-lto-pgo-pcre2-dynamic
++ grep -q libpcre2
++ has_pcre2_dynamic=true
++ [[ true == \t\r\u\e ]]
++ [[ lto-pgo-pcre2-dynamic == *\p\c\r\e\2\-\d\y\n\a\m\i\c* ]]
++ echo '✓ PCRE2 Dynamic: Correctly linked'
+✓ PCRE2 Dynamic: Correctly linked
+++ ldd /proj_soc/user_dev/gczajkowski/bin/rg-lto-pgo-pcre2-dynamic
+++ awk '{print $3}'
+++ grep libpcre2
++ local pcre2_path=/tools_soc/opensrc/pcre2/stable/lib/libpcre2-8.so.0
++ [[ -n /tools_soc/opensrc/pcre2/stable/lib/libpcre2-8.so.0 ]]
++ echo '  → /tools_soc/opensrc/pcre2/stable/lib/libpcre2-8.so.0'
+  → /tools_soc/opensrc/pcre2/stable/lib/libpcre2-8.so.0
++ echo ''
+
++ echo '=== Memory Allocator ==='
+=== Memory Allocator ===
+++ ldd /proj_soc/user_dev/gczajkowski/bin/rg-lto-pgo-pcre2-dynamic
++ local 'ldd_output=	linux-vdso.so.1 (0x00007ffc84197000)
+	libpcre2-8.so.0 => /tools_soc/opensrc/pcre2/stable/lib/libpcre2-8.so.0 (0x00007f8cfbb45000)
+	libgcc_s.so.1 => /lib64/libgcc_s.so.1 (0x00007f8cfb3c1000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x00007f8cfb1a1000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x00007f8cfaf9d000)
+	libc.so.6 => /lib64/libc.so.6 (0x00007f8cfabc6000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007f8cfb9c6000)'
+++ readelf -d /proj_soc/user_dev/gczajkowski/bin/rg-lto-pgo-pcre2-dynamic
++ local 'readelf_output=
+Dynamic section at offset 0x3eb7a8 contains 32 entries:
+  Tag        Type                         Name/Value
+ 0x000000000000001d (RUNPATH)            Library runpath: [/tools_soc/opensrc/pcre2/stable/lib]
+ 0x0000000000000001 (NEEDED)             Shared library: [libpcre2-8.so.0]
+ 0x0000000000000001 (NEEDED)             Shared library: [libgcc_s.so.1]
+ 0x0000000000000001 (NEEDED)             Shared library: [libpthread.so.0]
+ 0x0000000000000001 (NEEDED)             Shared library: [libdl.so.2]
+ 0x0000000000000001 (NEEDED)             Shared library: [libc.so.6]
+ 0x000000000000001e (FLAGS)              BIND_NOW
+ 0x000000006ffffffb (FLAGS_1)            Flags: NOW PIE
+ 0x0000000000000015 (DEBUG)              0x0
+ 0x0000000000000007 (RELA)               0x1d00
+ 0x0000000000000008 (RELASZ)             293256 (bytes)
+ 0x0000000000000009 (RELAENT)            24 (bytes)
+ 0x000000006ffffff9 (RELACOUNT)          12077
+ 0x0000000000000017 (JMPREL)             0x49688
+ 0x0000000000000002 (PLTRELSZ)           144 (bytes)
+ 0x0000000000000003 (PLTGOT)             0x3e9008
+ 0x0000000000000014 (PLTREL)             RELA
+ 0x0000000000000006 (SYMTAB)             0x3eb068
+ 0x000000000000000b (SYMENT)             24 (bytes)
+ 0x0000000000000005 (STRTAB)             0x3ebe48
+ 0x000000000000000a (STRSZ)              2395 (bytes)
+ 0x000000006ffffef5 (GNU_HASH)           0x13a8
+ 0x0000000000000019 (INIT_ARRAY)         0x3e8978
+ 0x000000000000001b (INIT_ARRAYSZ)       16 (bytes)
+ 0x000000000000001a (FINI_ARRAY)         0x3e8970
+ 0x000000000000001c (FINI_ARRAYSZ)       8 (bytes)
+ 0x000000000000000c (INIT)               0x3b3014
+ 0x000000000000000d (FINI)               0x3b3030
+ 0x000000006ffffff0 (VERSYM)             0x1120
+ 0x000000006ffffffe (VERNEED)            0x1248
+ 0x000000006fffffff (VERNEEDNUM)         4
+ 0x0000000000000000 (NULL)               0x0'
++ [[ lto-pgo-pcre2-dynamic == *\j\e\m\a\l\l\o\c* ]]
++ [[ lto-pgo-pcre2-dynamic == *\m\i\m\a\l\l\o\c* ]]
++ echo '✓ System allocator: Using GLIBC malloc (default)'
+✓ System allocator: Using GLIBC malloc (default)
++ echo ''
+
++ echo $'\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201'
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
++ [[ 0 -eq 0 ]]
++ echo -e '\033[0;32m✓ VERIFICATION PASSED\033[0m'
+[0;32m✓ VERIFICATION PASSED[0m
++ echo $'\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201'
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
++ echo ''
+
++ return 0
++ return 0
++ result=0
++ [[ -n /proj_soc/user_dev/gczajkowski/ripgrepTT/tt/build-logs/lto-pgo-pcre2-dynamic/build-20260216-131505 ]]
++ print_build_environment
++ echo 'Post-build environment: /proj_soc/user_dev/gczajkowski/ripgrepTT/tt/build-logs/lto-pgo-pcre2-dynamic/build-20260216-131505.postenv'
+Post-build environment: /proj_soc/user_dev/gczajkowski/ripgrepTT/tt/build-logs/lto-pgo-pcre2-dynamic/build-20260216-131505.postenv
++ [[ -d /localdev/gczajkowski/TMPDIR/build-lto-pgo-pcre2-dynamic ]]
++ rm -rf /localdev/gczajkowski/TMPDIR/build-lto-pgo-pcre2-dynamic
++ return 0

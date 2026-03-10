@@ -1,0 +1,360 @@
+++ dirname /proj_soc/user_dev/gczajkowski/ripgrepTT/tt/build-variant-lto-musl.sh
++ source /proj_soc/user_dev/gczajkowski/ripgrepTT/tt/build-lib.sh
+++ [[ /proj_soc/user_dev/gczajkowski/ripgrepTT/tt/build-lib.sh == \/\p\r\o\j\_\s\o\c\/\u\s\e\r\_\d\e\v\/\g\c\z\a\j\k\o\w\s\k\i\/\r\i\p\g\r\e\p\T\T\/\t\t\/\b\u\i\l\d\-\v\a\r\i\a\n\t\-\l\t\o\-\m\u\s\l\.\s\h ]]
+++ set -euox pipefail
+++ export 'BUILD_GREEN=\033[0;32m'
+++ BUILD_GREEN='\033[0;32m'
+++ export 'BUILD_YELLOW=\033[1;33m'
+++ BUILD_YELLOW='\033[1;33m'
+++ export 'BUILD_BLUE=\033[0;34m'
+++ BUILD_BLUE='\033[0;34m'
+++ export 'BUILD_RED=\033[0;31m'
+++ BUILD_RED='\033[0;31m'
+++ export 'BUILD_NC=\033[0m'
+++ BUILD_NC='\033[0m'
+++++ dirname /proj_soc/user_dev/gczajkowski/ripgrepTT/tt/build-lib.sh
++++ cd /proj_soc/user_dev/gczajkowski/ripgrepTT/tt/..
++++ pwd
+++ export BUILD_RIPGREP_ROOT=/proj_soc/user_dev/gczajkowski/ripgrepTT
+++ BUILD_RIPGREP_ROOT=/proj_soc/user_dev/gczajkowski/ripgrepTT
+++ [[ -z /proj_soc/user_dev/gczajkowski/bin ]]
+++ export BUILD_INSTALL_DIR
+++ export SCRATCH_DIR=/localdev/gczajkowski/TMPDIR
+++ SCRATCH_DIR=/localdev/gczajkowski/TMPDIR
+++ export BUILD_MUSL_DIR=/localdev/gczajkowski/TMPDIR/x86_64-linux-musl-cross
+++ BUILD_MUSL_DIR=/localdev/gczajkowski/TMPDIR/x86_64-linux-musl-cross
+++ export BUILD_FEATURES=pcre2
+++ BUILD_FEATURES=pcre2
+++ export 'BUILD_BASE_RUSTFLAGS=-C link-arg=-fno-stack-protector -C link-arg=-U_FORTIFY_SOURCE'
+++ BUILD_BASE_RUSTFLAGS='-C link-arg=-fno-stack-protector -C link-arg=-U_FORTIFY_SOURCE'
+++ mkdir -p /localdev/gczajkowski/TMPDIR
+++ export BUILD_VARIANT_SCRATCH=
+++ BUILD_VARIANT_SCRATCH=
+++ export BUILD_PGO_DATA_DIR=
+++ BUILD_PGO_DATA_DIR=
+++ export BUILD_JEMALLOC_ROOT=/tools_soc/opensrc/jemalloc/5.3.0
+++ BUILD_JEMALLOC_ROOT=/tools_soc/opensrc/jemalloc/5.3.0
+++ export BUILD_JEMALLOC_LIB=/tools_soc/opensrc/jemalloc/5.3.0/lib
+++ BUILD_JEMALLOC_LIB=/tools_soc/opensrc/jemalloc/5.3.0/lib
+++ export BUILD_JEMALLOC_INCLUDE=/tools_soc/opensrc/jemalloc/5.3.0/include
+++ BUILD_JEMALLOC_INCLUDE=/tools_soc/opensrc/jemalloc/5.3.0/include
+++ export BUILD_MIMALLOC_ROOT=/tools_soc/opensrc/mimalloc/2.1.7
+++ BUILD_MIMALLOC_ROOT=/tools_soc/opensrc/mimalloc/2.1.7
+++ export BUILD_MIMALLOC_LIB=/tools_soc/opensrc/mimalloc/2.1.7/lib64
+++ BUILD_MIMALLOC_LIB=/tools_soc/opensrc/mimalloc/2.1.7/lib64
+++ export BUILD_MIMALLOC_INCLUDE=/tools_soc/opensrc/mimalloc/2.1.7/include
+++ BUILD_MIMALLOC_INCLUDE=/tools_soc/opensrc/mimalloc/2.1.7/include
+++ export BUILD_PCRE2_ROOT=/tools_soc/opensrc/pcre2/stable
+++ BUILD_PCRE2_ROOT=/tools_soc/opensrc/pcre2/stable
+++ export BUILD_PCRE2_LIB=/tools_soc/opensrc/pcre2/stable/lib
+++ BUILD_PCRE2_LIB=/tools_soc/opensrc/pcre2/stable/lib
+++ export BUILD_PCRE2_INCLUDE=/tools_soc/opensrc/pcre2/stable/include
+++ BUILD_PCRE2_INCLUDE=/tools_soc/opensrc/pcre2/stable/include
++ VARIANT_NAME=lto-musl
++ DESCRIPTION='LTO + MUSL fully static'
++ BUILD_TYPE=simple
++ TARGET=x86_64-unknown-linux-musl
++ PROFILE=release-lto
++ RUSTFLAGS=
++ FEATURES=pcre2
++ build_variant lto-musl 'LTO + MUSL fully static' simple x86_64-unknown-linux-musl release-lto '' pcre2
++ local variant_name=lto-musl
++ local 'description=LTO + MUSL fully static'
++ local build_type=simple
++ local target=x86_64-unknown-linux-musl
++ local profile=release-lto
++ local rustflags=
++ local features=pcre2
++ export BUILD_VARIANT_SCRATCH=/localdev/gczajkowski/TMPDIR/build-lto-musl
++ BUILD_VARIANT_SCRATCH=/localdev/gczajkowski/TMPDIR/build-lto-musl
++ export BUILD_PGO_DATA_DIR=/localdev/gczajkowski/TMPDIR/build-lto-musl/pgo-data
++ BUILD_PGO_DATA_DIR=/localdev/gczajkowski/TMPDIR/build-lto-musl/pgo-data
++ export CARGO_TARGET_DIR=/localdev/gczajkowski/TMPDIR/build-lto-musl/target
++ CARGO_TARGET_DIR=/localdev/gczajkowski/TMPDIR/build-lto-musl/target
++ [[ -d /localdev/gczajkowski/TMPDIR/build-lto-musl ]]
++ mkdir -p /localdev/gczajkowski/TMPDIR/build-lto-musl
++ print_build_header lto-musl 'LTO + MUSL fully static'
++ local variant_name=lto-musl
++ local 'description=LTO + MUSL fully static'
++ echo -e '\033[1;33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m'
+[1;33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
++ echo -e '\033[0;34mBuilding: rg-lto-musl\033[0m'
+[0;34mBuilding: rg-lto-musl[0m
++ [[ -n LTO + MUSL fully static ]]
++ echo -e '\033[0;34mDescription: LTO + MUSL fully static\033[0m'
+[0;34mDescription: LTO + MUSL fully static[0m
++ echo -e '\033[1;33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m'
+[1;33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
++ echo ''
+
++ [[ -n /proj_soc/user_dev/gczajkowski/ripgrepTT/tt/build-logs/lto-musl/build-20260216-131452 ]]
++ print_build_environment
++ echo 'Pre-build environment: /proj_soc/user_dev/gczajkowski/ripgrepTT/tt/build-logs/lto-musl/build-20260216-131452.preenv'
+Pre-build environment: /proj_soc/user_dev/gczajkowski/ripgrepTT/tt/build-logs/lto-musl/build-20260216-131452.preenv
++ local result=0
++ [[ simple == \s\i\m\p\l\e ]]
++ build_simple lto-musl x86_64-unknown-linux-musl release-lto '' pcre2
++ local variant_name=lto-musl
++ local target=x86_64-unknown-linux-musl
++ local profile=release-lto
++ local rustflags=
++ local features=pcre2
++ cd /proj_soc/user_dev/gczajkowski/ripgrepTT
++ [[ x86_64-unknown-linux-musl == *\m\u\s\l* ]]
++ setup_musl_env
++ [[ ! -d /localdev/gczajkowski/TMPDIR/x86_64-linux-musl-cross ]]
++ [[ ! -f /localdev/gczajkowski/TMPDIR/x86_64-linux-musl-cross/bin/x86_64-linux-musl-gcc ]]
++ export PATH=/localdev/gczajkowski/TMPDIR/x86_64-linux-musl-cross/bin:/tools_soc/opensrc/patchelf/0.18.0/bin:/opt/rh/gcc-toolset-14/root/bin:/tools_soc/opensrc/make/make-4.4.1/bin:/tools_soc/opensrc/cmake/cmake-3.30.3/bin:/tools_soc/opensrc/clang/21.0.0/bin:/home/gczajkowski/.cargo/bin:/home/gczajkowski/bin:/home/gczajkowski/.local/bin:/tools_soc/opensrc/python/python-3.9.18/bin:/tools_soc/opensrc/node.js/v22.14.0/bin:/tools_soc/opensrc/rust/2025.11.23/bin:/tools_soc/opensrc/go/1.24.1/bin:/tools_soc/opensrc/perl/perl-5.36.0/bin:/tools_soc/opensrc/bender/0.28.1-tenstorrent8-mr_fixes:/tools_soc/tt/git_wrap:/tools_soc/opensrc/git/git-2.26.2:/tools_soc/tt/Modules/bin:/usr/share/Modules/bin:/usr/lib64/ccache:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/tools_soc/tt/bin
++ PATH=/localdev/gczajkowski/TMPDIR/x86_64-linux-musl-cross/bin:/tools_soc/opensrc/patchelf/0.18.0/bin:/opt/rh/gcc-toolset-14/root/bin:/tools_soc/opensrc/make/make-4.4.1/bin:/tools_soc/opensrc/cmake/cmake-3.30.3/bin:/tools_soc/opensrc/clang/21.0.0/bin:/home/gczajkowski/.cargo/bin:/home/gczajkowski/bin:/home/gczajkowski/.local/bin:/tools_soc/opensrc/python/python-3.9.18/bin:/tools_soc/opensrc/node.js/v22.14.0/bin:/tools_soc/opensrc/rust/2025.11.23/bin:/tools_soc/opensrc/go/1.24.1/bin:/tools_soc/opensrc/perl/perl-5.36.0/bin:/tools_soc/opensrc/bender/0.28.1-tenstorrent8-mr_fixes:/tools_soc/tt/git_wrap:/tools_soc/opensrc/git/git-2.26.2:/tools_soc/tt/Modules/bin:/usr/share/Modules/bin:/usr/lib64/ccache:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/tools_soc/tt/bin
++ export CC_x86_64_unknown_linux_musl=x86_64-linux-musl-gcc
++ CC_x86_64_unknown_linux_musl=x86_64-linux-musl-gcc
++ export AR_x86_64_unknown_linux_musl=x86_64-linux-musl-ar
++ AR_x86_64_unknown_linux_musl=x86_64-linux-musl-ar
++ export CARGO_TARGET_X86_64_UNKNOWN_LINUX_MUSL_LINKER=x86_64-linux-musl-gcc
++ CARGO_TARGET_X86_64_UNKNOWN_LINUX_MUSL_LINKER=x86_64-linux-musl-gcc
++ setup_pcre2_env lto-musl
++ local variant_name=lto-musl
++ export PKG_CONFIG_PATH=/tools_soc/opensrc/pcre2/stable/lib/pkgconfig:/opt/rh/gcc-toolset-14/root/usr/lib64/pkgconfig:/opt/rh/gcc-toolset-14/root/usr/lib/pkgconfig
++ PKG_CONFIG_PATH=/tools_soc/opensrc/pcre2/stable/lib/pkgconfig:/opt/rh/gcc-toolset-14/root/usr/lib64/pkgconfig:/opt/rh/gcc-toolset-14/root/usr/lib/pkgconfig
++ export PCRE2_LIB_DIR=/tools_soc/opensrc/pcre2/stable/lib
++ PCRE2_LIB_DIR=/tools_soc/opensrc/pcre2/stable/lib
++ export PCRE2_INCLUDE_DIR=/tools_soc/opensrc/pcre2/stable/include
++ PCRE2_INCLUDE_DIR=/tools_soc/opensrc/pcre2/stable/include
++ [[ lto-musl == *\p\c\r\e\2\-\s\t\a\t\i\c* ]]
+++ date +%s
++ local build_start=1771265692
++ local 'combined_rustflags=-C link-arg=-fno-stack-protector -C link-arg=-U_FORTIFY_SOURCE'
++ [[ -n '' ]]
++ RUSTFLAGS='-C link-arg=-fno-stack-protector -C link-arg=-U_FORTIFY_SOURCE'
++ cargo build --target x86_64-unknown-linux-musl --profile release-lto --features pcre2
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on shared package cache
+   Compiling libc v0.2.177
+   Compiling memchr v2.7.6
+   Compiling find-msvc-tools v0.1.4
+   Compiling shlex v1.3.0
+   Compiling regex-syntax v0.8.8
+   Compiling log v0.4.28
+   Compiling serde_core v1.0.228
+   Compiling pkg-config v0.3.32
+   Compiling cfg-if v1.0.4
+   Compiling crossbeam-utils v0.8.21
+   Compiling serde_json v1.0.145
+   Compiling serde v1.0.228
+   Compiling itoa v1.0.15
+   Compiling termcolor v1.4.1
+   Compiling ryu v1.0.20
+   Compiling same-file v1.0.6
+   Compiling anyhow v1.0.100
+   Compiling ripgrep v15.1.0 (/proj_soc/user_dev/gczajkowski/ripgrepTT)
+   Compiling lexopt v0.3.1
+   Compiling textwrap v0.16.2
+   Compiling encoding_rs v0.8.35
+   Compiling walkdir v2.5.0
+   Compiling aho-corasick v1.1.3
+   Compiling grep-matcher v0.1.8 (/proj_soc/user_dev/gczajkowski/ripgrepTT/crates/matcher)
+   Compiling crossbeam-epoch v0.9.18
+   Compiling encoding_rs_io v0.1.7
+   Compiling crossbeam-deque v0.8.6
+   Compiling memmap2 v0.9.9
+   Compiling jobserver v0.1.34
+   Compiling regex-automata v0.4.13
+   Compiling cc v1.2.41
+   Compiling bstr v1.12.0
+   Compiling globset v0.4.18 (/proj_soc/user_dev/gczajkowski/ripgrepTT/crates/globset)
+   Compiling grep-searcher v0.1.16 (/proj_soc/user_dev/gczajkowski/ripgrepTT/crates/searcher)
+   Compiling grep-regex v0.1.14 (/proj_soc/user_dev/gczajkowski/ripgrepTT/crates/regex)
+   Compiling grep-cli v0.1.12 (/proj_soc/user_dev/gczajkowski/ripgrepTT/crates/cli)
+   Compiling ignore v0.4.25 (/proj_soc/user_dev/gczajkowski/ripgrepTT/crates/ignore)
+   Compiling grep-printer v0.3.1 (/proj_soc/user_dev/gczajkowski/ripgrepTT/crates/printer)
+   Compiling pcre2-sys v0.2.10
+   Compiling tikv-jemalloc-sys v0.6.1+5.3.0-1-ge13ca993e8ccb9ba9847cc330696e02839f328f7
+   Compiling pcre2 v0.2.11
+   Compiling grep-pcre2 v0.1.9 (/proj_soc/user_dev/gczajkowski/ripgrepTT/crates/pcre2)
+   Compiling grep v0.4.1 (/proj_soc/user_dev/gczajkowski/ripgrepTT/crates/grep)
+   Compiling tikv-jemallocator v0.6.1
+    Finished `release-lto` profile [optimized] target(s) in 1m 37s
+++ date +%s
++ local build_end=1771265790
++ local build_time=98
++ local target_dir=/localdev/gczajkowski/TMPDIR/build-lto-musl/target
++ local binary_path=/localdev/gczajkowski/TMPDIR/build-lto-musl/target/x86_64-unknown-linux-musl/release-lto/rg
++ [[ ! -f /localdev/gczajkowski/TMPDIR/build-lto-musl/target/x86_64-unknown-linux-musl/release-lto/rg ]]
++ mkdir -p /proj_soc/user_dev/gczajkowski/bin
++ cp /localdev/gczajkowski/TMPDIR/build-lto-musl/target/x86_64-unknown-linux-musl/release-lto/rg /proj_soc/user_dev/gczajkowski/bin/rg-lto-musl
++ chmod +x /proj_soc/user_dev/gczajkowski/bin/rg-lto-musl
++ inject_allocator_library /proj_soc/user_dev/gczajkowski/bin/rg-lto-musl lto-musl
++ local binary_path=/proj_soc/user_dev/gczajkowski/bin/rg-lto-musl
++ local variant_name=lto-musl
++ local allocator=
++ local lib_name=
++ local lib_path=
++ local root_path=
++ [[ lto-musl == *\j\e\m\a\l\l\o\c* ]]
++ [[ lto-musl == *\m\i\m\a\l\l\o\c* ]]
++ return 0
++ inject_pcre2_library /proj_soc/user_dev/gczajkowski/bin/rg-lto-musl lto-musl
++ local binary_path=/proj_soc/user_dev/gczajkowski/bin/rg-lto-musl
++ local variant_name=lto-musl
++ [[ ! -d /tools_soc/opensrc/pcre2/stable ]]
++ [[ lto-musl == *\p\c\r\e\2\-\s\t\a\t\i\c* ]]
++ [[ lto-musl == *\m\u\s\l* ]]
++ return 0
+++ cut -f1
+++ du -h /proj_soc/user_dev/gczajkowski/bin/rg-lto-musl
++ local size=5.2M
++ echo -e '\033[0;32m✓ Built successfully\033[0m'
+[0;32m✓ Built successfully[0m
++ echo '  Build time: 98s'
+  Build time: 98s
++ echo '  Binary size: 5.2M'
+  Binary size: 5.2M
++ echo '  Installed: /proj_soc/user_dev/gczajkowski/bin/rg-lto-musl'
+  Installed: /proj_soc/user_dev/gczajkowski/bin/rg-lto-musl
++ echo ''
+
++ return 0
++ result=0
++ [[ 0 -eq 0 ]]
++ verify_binary lto-musl
++ local variant_name=lto-musl
++ local binary_path=/proj_soc/user_dev/gczajkowski/bin/rg-lto-musl
++ [[ ! -f /proj_soc/user_dev/gczajkowski/bin/rg-lto-musl ]]
++ /proj_soc/user_dev/gczajkowski/bin/rg-lto-musl --version
++ echo -e '\033[0;32m✓ Binary execution test passed\033[0m'
+[0;32m✓ Binary execution test passed[0m
++ verify_binary_features /proj_soc/user_dev/gczajkowski/bin/rg-lto-musl lto-musl
++ local binary_path=/proj_soc/user_dev/gczajkowski/bin/rg-lto-musl
++ local variant_name=lto-musl
++ echo ''
+
++ echo $'\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201'
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
++ echo 'BINARY FEATURE VERIFICATION: lto-musl'
+BINARY FEATURE VERIFICATION: lto-musl
++ echo $'\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201'
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
++ echo ''
+
++ [[ ! -f /proj_soc/user_dev/gczajkowski/bin/rg-lto-musl ]]
++ local errors=0
++ echo '=== Basic Properties ==='
+=== Basic Properties ===
+++ file /proj_soc/user_dev/gczajkowski/bin/rg-lto-musl
++ local 'file_output=/proj_soc/user_dev/gczajkowski/bin/rg-lto-musl: ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), static-pie linked, stripped'
++ echo 'File type: /proj_soc/user_dev/gczajkowski/bin/rg-lto-musl: ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), static-pie linked, stripped'
+File type: /proj_soc/user_dev/gczajkowski/bin/rg-lto-musl: ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), static-pie linked, stripped
++ [[ /proj_soc/user_dev/gczajkowski/bin/rg-lto-musl: ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), static-pie linked, stripped == *\s\t\r\i\p\p\e\d* ]]
++ echo '✓ Binary is stripped'
+✓ Binary is stripped
++ echo ''
+
++ echo '=== C Library ==='
+=== C Library ===
++ [[ lto-musl == *\m\u\s\l* ]]
++ [[ /proj_soc/user_dev/gczajkowski/bin/rg-lto-musl: ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), static-pie linked, stripped == *\s\t\a\t\i\c\a\l\l\y\ \l\i\n\k\e\d* ]]
++ [[ /proj_soc/user_dev/gczajkowski/bin/rg-lto-musl: ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), static-pie linked, stripped == *\s\t\a\t\i\c\-\p\i\e\ \l\i\n\k\e\d* ]]
++ echo '✓ MUSL: Statically linked (expected)'
+✓ MUSL: Statically linked (expected)
++ echo ''
+
++ echo '=== CPU Target ==='
+=== CPU Target ===
++ [[ lto-musl == *\-\v\3* ]]
++ echo '✓ x86-64: Standard target (baseline)'
+✓ x86-64: Standard target (baseline)
++ echo ''
+
++ echo '=== Link-Time Optimization ==='
+=== Link-Time Optimization ===
++ [[ lto-musl == *\l\t\o\-\t\h\i\n* ]]
++ [[ lto-musl == *\l\t\o* ]]
++ echo '✓ LTO Fat: Expected (build used release-lto profile)'
+✓ LTO Fat: Expected (build used release-lto profile)
++ echo ''
+
++ echo '=== Profile-Guided Optimization ==='
+=== Profile-Guided Optimization ===
++ [[ lto-musl == *\p\g\o* ]]
++ echo '• PGO: Not used'
+• PGO: Not used
++ echo ''
+
++ echo '=== BOLT Optimization ==='
+=== BOLT Optimization ===
++ [[ lto-musl == *\b\o\l\t* ]]
++ echo '• BOLT: Not used'
+• BOLT: Not used
++ echo ''
+
++ echo '=== PCRE2 Library ==='
+=== PCRE2 Library ===
++ local has_pcre2_dynamic=false
++ grep -q libpcre2
++ ldd /proj_soc/user_dev/gczajkowski/bin/rg-lto-musl
++ readelf -d /proj_soc/user_dev/gczajkowski/bin/rg-lto-musl
++ grep -q libpcre2
++ [[ false == \t\r\u\e ]]
++ [[ lto-musl == *\p\c\r\e\2\-\s\t\a\t\i\c* ]]
++ [[ lto-musl == *\m\u\s\l* ]]
++ echo '✓ PCRE2 Static: Correctly embedded'
+✓ PCRE2 Static: Correctly embedded
++ echo ''
+
++ echo '=== Memory Allocator ==='
+=== Memory Allocator ===
+++ ldd /proj_soc/user_dev/gczajkowski/bin/rg-lto-musl
++ local 'ldd_output=	statically linked'
+++ readelf -d /proj_soc/user_dev/gczajkowski/bin/rg-lto-musl
++ local 'readelf_output=
+Dynamic section at offset 0x51e9f0 contains 21 entries:
+  Tag        Type                         Name/Value
+ 0x000000000000000c (INIT)               0x4dd98
+ 0x000000000000000d (FINI)               0x3ceb82
+ 0x0000000000000019 (INIT_ARRAY)         0x6e5288
+ 0x000000000000001b (INIT_ARRAYSZ)       16 (bytes)
+ 0x000000000000001a (FINI_ARRAY)         0x6e5298
+ 0x000000000000001c (FINI_ARRAYSZ)       8 (bytes)
+ 0x0000000000000004 (HASH)               0x1c8
+ 0x000000006ffffef5 (GNU_HASH)           0x1d8
+ 0x0000000000000005 (STRTAB)             0x210
+ 0x0000000000000006 (SYMTAB)             0x1f8
+ 0x000000000000000a (STRSZ)              1 (bytes)
+ 0x000000000000000b (SYMENT)             24 (bytes)
+ 0x0000000000000015 (DEBUG)              0x0
+ 0x0000000000000003 (PLTGOT)             0x71eb80
+ 0x0000000000000007 (RELA)               0x218
+ 0x0000000000000008 (RELASZ)             318336 (bytes)
+ 0x0000000000000009 (RELAENT)            24 (bytes)
+ 0x0000000000000018 (BIND_NOW)           
+ 0x000000006ffffffb (FLAGS_1)            Flags: NOW PIE
+ 0x000000006ffffff9 (RELACOUNT)          13264
+ 0x0000000000000000 (NULL)               0x0'
++ [[ lto-musl == *\j\e\m\a\l\l\o\c* ]]
++ [[ lto-musl == *\m\i\m\a\l\l\o\c* ]]
++ echo '✓ System allocator: Using GLIBC malloc (default)'
+✓ System allocator: Using GLIBC malloc (default)
++ echo ''
+
++ echo $'\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201'
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
++ [[ 0 -eq 0 ]]
++ echo -e '\033[0;32m✓ VERIFICATION PASSED\033[0m'
+[0;32m✓ VERIFICATION PASSED[0m
++ echo $'\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201\342\224\201'
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
++ echo ''
+
++ return 0
++ return 0
++ result=0
++ [[ -n /proj_soc/user_dev/gczajkowski/ripgrepTT/tt/build-logs/lto-musl/build-20260216-131452 ]]
++ print_build_environment
++ echo 'Post-build environment: /proj_soc/user_dev/gczajkowski/ripgrepTT/tt/build-logs/lto-musl/build-20260216-131452.postenv'
+Post-build environment: /proj_soc/user_dev/gczajkowski/ripgrepTT/tt/build-logs/lto-musl/build-20260216-131452.postenv
++ [[ -d /localdev/gczajkowski/TMPDIR/build-lto-musl ]]
++ rm -rf /localdev/gczajkowski/TMPDIR/build-lto-musl
++ return 0

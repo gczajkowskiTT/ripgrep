@@ -1,0 +1,35 @@
+{
+  "results": [
+    {
+      "command": "/proj_soc/user_dev/gczajkowski/bin/rg-lto-thin-mold-2.36.0 --no-config --no-ignore function '/proj_soc/user_dev/gczajkowski/chiplet-template'",
+      "mean": 5.9226308345,
+      "stddev": 0.1784775621838442,
+      "median": 5.9391023360999995,
+      "user": 0.2907007,
+      "system": 7.984540140000002,
+      "min": 5.6738365091,
+      "max": 6.1733899841,
+      "times": [
+        6.1733899841,
+        5.9391023360999995,
+        5.6738365091,
+        5.9465558001,
+        5.8802695431
+      ],
+      "memory_usage_byte": [
+        16609280,
+        16609280,
+        16756736,
+        17125376,
+        17125376
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ]
+}

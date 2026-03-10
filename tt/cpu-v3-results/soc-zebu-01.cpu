@@ -1,0 +1,4 @@
+HOST: soc-zebu-01
+CPU: AMD EPYC 9274F 24-Core Processor
+V3_SUPPORT: YES
+FEATURES: All x86-64-v3 features present

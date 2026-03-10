@@ -1,0 +1,5 @@
+HOST: socinfra
+TIMESTAMP: 2026-02-14 16:22:32
+STATUS: FAILED
+ERROR: Version check failed
+OUTPUT: ssh: Could not resolve hostname socinfra: Name or service not known

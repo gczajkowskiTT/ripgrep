@@ -1,0 +1,72 @@
+BOLT-WARNING: '-reorder-functions=hfsort+' is deprecated, please use '-reorder-functions=cdsort' instead
+BOLT-WARNING: specifying non-boolean value "3" for option -split-functions is deprecated
+BOLT-WARNING: specifying numeric value "1" for option -icf is deprecated
+BOLT-INFO: shared object or position-independent executable detected
+BOLT-INFO: Target architecture: x86_64
+BOLT-INFO: BOLT version: f8ef2699d860aea97750953f1b79db8ef7574e82
+BOLT-INFO: first alloc address is 0x0
+BOLT-WARNING: debug info will be stripped from the binary. Use -update-debug-sections to keep it.
+BOLT-INFO: enabling relocation mode
+BOLT-INFO: enabling lite mode
+BOLT-INFO: pre-processing profile using branch profile reader
+BOLT-INFO: forcing -jump-tables=move as PIC jump table was detected in function _ZN6ignore9gitignore9Gitignore5strip17h0e471f4729a3c3a8E/1(*2)
+BOLT-INFO: 700 out of 4121 functions in the binary (17.0%) have non-empty execution profile
+BOLT-INFO: 24 functions with profile could not be optimized
+BOLT-INFO: profile for 1 objects was ignored
+BOLT-INFO: among the hottest 700 functions top 5% function CFG discontinuity is 0.00%
+BOLT-INFO: 16869 instructions were shortened
+BOLT-INFO: removed 277 empty blocks
+BOLT-INFO: merged 6 duplicate CFG edges
+BOLT-INFO: ICF folded 11 out of 4127 functions in 3 passes. 0 functions had jump tables.
+BOLT-INFO: Removing all identical functions will save 1.06 KB of code space. Folded functions were called 1043 times based on profile.
+BOLT-INFO: basic block reordering modified layout of 330 functions (47.14% of profiled, 8.02% of total)
+BOLT-INFO: UCE removed 1 blocks and 7 bytes of code
+BOLT-INFO: splitting separates 315065 hot bytes from 416035 cold bytes (43.09% of split functions is hot).
+BOLT-INFO: 5 Functions were reordered by LoopInversionPass
+BOLT-INFO: program-wide dynostats after all optimizations before SCTC and FOP:
+
+            18806065 : executed forward branches
+             2889200 : taken forward branches
+             9520898 : executed backward branches
+             8708556 : taken backward branches
+              558675 : executed unconditional branches
+             1003365 : all function calls
+              903887 : indirect calls
+                   1 : PLT calls
+           144173583 : executed instructions
+            19175711 : executed load instructions
+             5638304 : executed store instructions
+               10107 : taken jump table branches
+                   0 : taken unknown indirect branches
+            28885638 : total branches
+            12156431 : taken branches
+            16729207 : non-taken conditional branches
+            11597756 : taken conditional branches
+            28326963 : all conditional branches
+
+            17384737 : executed forward branches (-7.6%)
+              299592 : taken forward branches (-89.6%)
+            10942203 : executed backward branches (+14.9%)
+             8400824 : taken backward branches (-3.5%)
+              464437 : executed unconditional branches (-16.9%)
+             1003365 : all function calls (=)
+              903887 : indirect calls (=)
+                   1 : PLT calls (=)
+           143578283 : executed instructions (-0.4%)
+            19175711 : executed load instructions (=)
+             5638304 : executed store instructions (=)
+               10107 : taken jump table branches (=)
+                   0 : taken unknown indirect branches (=)
+            28791377 : total branches (-0.3%)
+             9164853 : taken branches (-24.6%)
+            19626524 : non-taken conditional branches (+17.3%)
+             8700416 : taken conditional branches (-25.0%)
+            28326940 : all conditional branches (-0.0%)
+
+BOLT-INFO: SCTC: patched 1 tail calls (1 forward) tail calls (0 backward) from a total of 1 while removing 0 double jumps and removing 1 basic blocks totalling 5 bytes of code. CTCs total execution count is 4 and the number of times CTCs are taken is 4
+BOLT-INFO: padding code to 0x600000 to accommodate hot text
+BOLT-INFO: patched build-id (flipped last bit)
+BOLT-INFO: setting _end to 0x6481d0
+BOLT-INFO: setting _end to 0x6481d0
+BOLT-INFO: setting __hot_start to 0x400000
+BOLT-INFO: setting __hot_end to 0x46c83f

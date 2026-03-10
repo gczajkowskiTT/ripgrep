@@ -1,0 +1,35 @@
+{
+  "results": [
+    {
+      "command": "/proj_soc/user_dev/gczajkowski/bin/rg-lto-thin-mold-2.40.4-fulllto-pgo-bolt --no-config --no-ignore function '/proj_soc/user_dev/gczajkowski/chiplet-template'",
+      "mean": 5.901007441279999,
+      "stddev": 0.12564381835804933,
+      "median": 5.945819331879999,
+      "user": 0.3097581399999999,
+      "system": 7.89666774,
+      "min": 5.760387897879999,
+      "max": 6.045903505879999,
+      "times": [
+        5.77857603188,
+        5.760387897879999,
+        5.945819331879999,
+        5.974350438879999,
+        6.045903505879999
+      ],
+      "memory_usage_byte": [
+        18509824,
+        18509824,
+        18509824,
+        18509824,
+        18509824
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+HOST: soc-c-19
+CPU: AMD EPYC 9384X 32-Core Processor
+V3_SUPPORT: YES
+FEATURES: All x86-64-v3 features present

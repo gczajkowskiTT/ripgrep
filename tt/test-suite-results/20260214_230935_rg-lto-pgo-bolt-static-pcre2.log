@@ -1,0 +1,4450 @@
+   Compiling ripgrep v15.1.0 (/proj_soc/user_dev/gczajkowski/ripgrepTT)
+    Finished `release` profile [optimized + debuginfo] target(s) in 3.54s
+     Running unittests crates/core/main.rs (target/release/deps/rg-2dd4b02636340b97)
+
+running 116 tests
+test flags::config::tests::basic ... ok
+test flags::config::tests::error ... ok
+test flags::defs::test_after_context ... ok
+test flags::defs::test_auto_hybrid_regex ... ok
+test flags::defs::test_before_context ... ok
+test flags::defs::test_binary ... ok
+test flags::defs::test_block_buffered ... ok
+test flags::defs::test_byte_offset ... ok
+test flags::defs::test_case_sensitive ... ok
+test flags::defs::test_color ... ok
+test flags::defs::test_colors ... ok
+test flags::defs::test_column ... ok
+test flags::defs::test_context ... ok
+test flags::defs::test_context_separator ... ok
+test flags::defs::test_count ... ok
+test flags::defs::test_count_matches ... ok
+test flags::defs::test_crlf ... ok
+test flags::defs::test_debug ... ok
+test flags::defs::test_dfa_size_limit ... ok
+test flags::defs::test_encoding ... ok
+test flags::defs::test_engine ... ok
+test flags::defs::test_field_context_separator ... ok
+test flags::defs::test_field_match_separator ... ok
+test flags::defs::test_file ... ok
+test flags::defs::test_files ... ok
+test flags::defs::test_files_with_matches ... ok
+test flags::defs::test_files_without_match ... ok
+test flags::defs::test_fixed_strings ... ok
+test flags::defs::test_follow ... ok
+test flags::defs::test_generate ... ok
+test flags::defs::test_git_blame ... ok
+test flags::defs::test_glob ... ok
+test flags::defs::test_glob_case_insensitive ... ok
+test flags::defs::test_heading ... ok
+test flags::defs::test_help ... ok
+test flags::defs::test_hidden ... ok
+test flags::defs::test_hostname_bin ... ok
+test flags::defs::test_hyperlink_format ... ok
+test flags::defs::test_iglob ... ok
+test flags::defs::test_ignore_case ... ok
+test flags::defs::test_ignore_file ... ok
+test flags::defs::test_ignore_file_case_insensitive ... ok
+test flags::defs::test_include_zero ... ok
+test flags::defs::test_invert_match ... ok
+test flags::defs::test_json ... ok
+test flags::defs::test_line_buffered ... ok
+test flags::defs::test_line_regexp ... ok
+test flags::defs::test_line_number ... ok
+test flags::defs::test_max_columns ... ok
+test flags::defs::test_max_count ... ok
+test flags::defs::test_max_filesize ... ok
+test flags::defs::test_max_columns_preview ... ok
+test flags::defs::test_max_depth ... ok
+test flags::defs::test_mmap ... ok
+test flags::defs::test_multiline ... ok
+test flags::defs::test_multiline_dotall ... ok
+test flags::defs::test_no_git_blame ... ok
+test flags::defs::test_no_config ... ok
+test flags::defs::test_no_ignore ... ok
+test flags::defs::test_no_ignore_dot ... ok
+test flags::defs::test_no_ignore_exclude ... ok
+test flags::defs::test_no_ignore_files ... ok
+test flags::defs::test_no_ignore_global ... ok
+test flags::defs::test_no_ignore_messages ... ok
+test flags::defs::test_no_ignore_parent ... ok
+test flags::defs::test_no_ignore_vcs ... ok
+test flags::defs::test_no_line_number ... ok
+test flags::defs::test_no_messages ... ok
+test flags::defs::test_no_pcre2_unicode ... ok
+test flags::defs::test_no_require_git ... ok
+test flags::defs::test_no_unicode ... ok
+test flags::defs::test_null_data ... ok
+test flags::defs::test_one_file_system ... ok
+test flags::defs::test_null ... ok
+test flags::defs::test_only_matching ... ok
+test flags::defs::test_passthru ... ok
+test flags::defs::test_path_separator ... ok
+test flags::defs::test_pcre2_version ... ok
+test flags::defs::test_pcre2 ... ok
+test flags::defs::test_pre ... ok
+test flags::defs::test_pre_glob ... ok
+test flags::defs::test_pretty ... ok
+test flags::defs::test_quiet ... ok
+test flags::defs::test_regex_size_limit ... ok
+test flags::defs::test_regexp ... ok
+test flags::defs::test_replace ... ok
+test flags::defs::test_search_zip ... ok
+test flags::defs::test_smart_case ... ok
+test flags::defs::test_sort ... ok
+test flags::defs::test_sort_files ... ok
+test flags::defs::test_sortr ... ok
+test flags::defs::test_stats ... ok
+test flags::defs::test_stop_on_nonmatch ... ok
+test flags::defs::test_text ... ok
+test flags::defs::test_threads ... ok
+test flags::defs::test_trace ... ok
+test flags::defs::test_trim ... ok
+test flags::defs::test_type ... ok
+test flags::defs::test_type_add ... ok
+test flags::defs::test_type_clear ... ok
+test flags::defs::test_type_list ... ok
+test flags::defs::test_type_not ... ok
+test flags::defs::test_unrestricted ... ok
+test flags::defs::test_version ... ok
+test flags::defs::test_vimgrep ... ok
+test flags::defs::test_with_filename ... ok
+test flags::defs::test_with_filename_no ... ok
+test flags::defs::test_word_regexp ... ok
+test flags::defs::tests::available_shorts ... ok
+test flags::defs::tests::choices_ascii_alphanumeric ... ok
+test flags::defs::tests::longs_all_ascii_alphanumeric ... ok
+test flags::defs::tests::non_switches_have_variable_names ... ok
+test flags::defs::tests::longs_no_duplicates ... ok
+test flags::defs::tests::shorts_all_ascii_alphanumeric ... ok
+test flags::defs::tests::shorts_no_duplicates ... ok
+test flags::defs::tests::switches_have_no_choices ... ok
+
+test result: ok. 116 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/tests.rs (target/release/deps/integration-a96b98c59690520b)
+
+running 329 tests
+test binary::after_match1_implicit_count ... ok
+test binary::after_match1_explicit_count ... ok
+test binary::after_match1_implicit_path ... ok
+test binary::after_match1_implicit_count_binary ... ok
+test feature::f129_matches ... FAILED
+test binary::after_match2_implicit ... ok
+test binary::after_match1_explicit ... FAILED
+test binary::after_match1_explicit_text ... FAILED
+test binary::after_match1_implicit ... ok
+test feature::f159_max_count_zero ... ok
+test binary::after_match1_implicit_binary ... ok
+test feature::f1_replacement_encoding ... ok
+test feature::f1_unknown_encoding ... ok
+test feature::f159_max_count ... FAILED
+test feature::f1842_field_context_separator ... FAILED
+test feature::f1842_field_match_separator ... FAILED
+test feature::f1_eucjp ... FAILED
+test feature::f1_sjis ... FAILED
+test feature::f1_utf16_auto ... FAILED
+test feature::f20_no_filename ... FAILED
+test feature::f196_persistent_config ... FAILED
+test feature::f1_utf16_explicit ... FAILED
+test feature::f2288_context_partial_override ... FAILED
+test feature::f2288_context_partial_override_rev ... FAILED
+test feature::f275_pathsep ... FAILED
+test feature::f1466_no_ignore_files ... ok
+test feature::f243_column_line ... ok
+test feature::f362_exceeds_regex_size_limit ... ok
+test feature::f411_single_threaded_quiet_search_stats ... ok
+test feature::f411_parallel_quiet_search_stats ... ok
+test feature::f362_dfa_size_limit ... FAILED
+test feature::f34_only_matching_line_column ... ok
+test feature::f34_only_matching ... FAILED
+test feature::f411_parallel_search_stats ... ok
+test feature::f416_crlf ... FAILED
+test feature::f411_single_threaded_search_stats ... ok
+test feature::f263_sort_files ... FAILED
+test feature::f419_zero_as_shortcut_for_null ... ok
+test feature::f416_crlf_multiline ... FAILED
+test feature::f263_sort_files_reverse ... FAILED
+test feature::f416_crlf_only_matching ... FAILED
+test feature::f45_precedence_internal ... FAILED
+test feature::f45_precedence_with_others ... FAILED
+test feature::f7 ... FAILED
+test feature::f89_count ... ok
+test feature::f89_files ... ok
+test feature::f68_no_ignore_vcs ... FAILED
+test feature::f740_passthru ... FAILED
+test feature::f70_smart_case ... FAILED
+test feature::f7_stdin ... FAILED
+test feature::f89_files_with_matches ... ok
+test feature::f89_files_without_match ... ok
+test feature::f1155_auto_hybrid_regex ... ok
+test feature::f89_match ... FAILED
+test feature::f917_trim ... FAILED
+test feature::f917_trim_max_columns_multi_per_match ... ok
+test feature::f45_relative_cwd ... ok
+test feature::f917_trim_max_columns_multi_only_matching ... FAILED
+test feature::f917_trim_max_columns_multi_standard ... FAILED
+test feature::f917_trim_max_columns_normal ... FAILED
+test feature::f917_trim_match ... FAILED
+test feature::f917_trim_max_columns_matches ... FAILED
+test binary::after_match1_stdin ... FAILED
+test binary::after_match1_implicit_quiet ... ok
+test binary::before_match2_explicit ... FAILED
+test binary::before_match1_explicit ... FAILED
+test binary::after_match1_implicit_text ... ok
+test binary::before_match1_implicit_binary ... ok
+test feature::f917_trim_multi_standard ... FAILED
+test feature::f109_case_sensitive_part2 ... ok
+test binary::after_match2_implicit_text ... ok
+test json::r1412_look_behind_match_missing ... ok
+test binary::before_match1_implicit_text ... ok
+test feature::f1078_max_columns_preview1 ... FAILED
+test binary::mmap_after_nul_match ... FAILED
+test feature::f1404_nothing_searched_ignored ... ok
+test binary::mmap_match_explicit ... FAILED
+test json::basic ... ok
+test feature::f1207_ignore_encoding ... FAILED
+test feature::context_sep ... FAILED
+test feature::f948_exit_code_error ... ok
+test feature::f1404_nothing_searched_warning ... ok
+test feature::f948_exit_code_no_match ... ok
+test feature::f129_replace ... FAILED
+test feature::no_context_sep_overrides ... FAILED
+test json::crlf ... ok
+test feature::no_context_sep ... FAILED
+test feature::context_sep_empty ... FAILED
+test json::notutf8 ... ok
+test json::notutf8_file ... ok
+test feature::no_context_sep_overridden ... FAILED
+test feature::no_unicode ... ok
+test feature::f1414_no_require_git ... ok
+test json::replacement ... ok
+test feature::f993_null_data ... FAILED
+test feature::f948_exit_code_match ... ok
+test json::quiet_stats ... ok
+test misc::binary_convert ... FAILED
+test misc::binary_quit ... ok
+test misc::binary_quit_mmap ... ok
+test feature::stop_on_nonmatch ... FAILED
+test misc::after_context ... FAILED
+test misc::binary_search_no_mmap ... FAILED
+test misc::binary_convert_mmap ... FAILED
+test misc::before_context_line_numbers ... FAILED
+test misc::before_context ... FAILED
+test misc::after_context_line_numbers ... FAILED
+test json::r1095_crlf_empty_match ... ok
+test misc::compressed_failing_gzip ... ok
+test misc::columns ... FAILED
+test misc::case_insensitive ... FAILED
+test misc::count_matches ... ok
+test misc::byte_offset_only_matching ... FAILED
+test misc::context ... FAILED
+test misc::count_matches_inverted ... ok
+test misc::compressed_lz4 ... FAILED
+test misc::count ... ok
+test misc::compressed_gzip ... FAILED
+test misc::file_type_clear ... ok
+test misc::compressed_brotli ... FAILED
+test misc::count_matches_via_only ... ok
+test misc::context_line_numbers ... FAILED
+test misc::compressed_zstd ... FAILED
+test misc::files ... ok
+test misc::compressed_bzip2 ... FAILED
+test misc::compressed_lzma ... FAILED
+test misc::files_with_matches ... ok
+test misc::ignore_git ... ok
+test misc::file_type_add_compose ... FAILED
+test misc::files_without_match ... ok
+test misc::ignore_generic ... ok
+test misc::file_type_add ... FAILED
+test misc::compressed_xz ... FAILED
+test misc::file_types_negate ... FAILED
+test misc::ignore_git_parent ... ok
+test misc::file_types ... FAILED
+test misc::ignore_hidden ... ok
+test misc::glob ... FAILED
+test misc::glob_case_insensitive ... FAILED
+test misc::glob_case_sensitive ... FAILED
+test misc::max_filesize_parse_error_suffix ... ok
+test misc::max_filesize_parse_error_length ... ok
+test misc::dir ... FAILED
+test misc::ignore_git_parent_stop ... FAILED
+test misc::inverted ... FAILED
+test misc::file_types_negate_all ... FAILED
+test misc::ignore_git_parent_stop_file ... FAILED
+test misc::glob_negate ... FAILED
+test misc::max_filesize_parse_no_suffix ... ok
+test misc::max_filesize_parse_k_suffix ... ok
+test misc::max_filesize_suffix_overflow ... ok
+test misc::glob_always_case_insensitive ... FAILED
+test misc::max_filesize_parse_m_suffix ... ok
+test misc::inverted_line_numbers ... FAILED
+test misc::literal ... FAILED
+test misc::ignore_ripgrep_parent_no_stop ... ok
+test misc::line_numbers ... FAILED
+test misc::line ... FAILED
+test misc::file_types_all ... FAILED
+test misc::ignore_ripgrep ... ok
+test misc::quiet ... ok
+test misc::no_ignore_hidden ... FAILED
+test misc::no_ignore ... FAILED
+test misc::include_zero ... ok
+test misc::include_zero_override ... ok
+test misc::no_parent_ignore_git ... FAILED
+test misc::symlink_nofollow ... ok
+test misc::replace ... FAILED
+test misc::replace_named_groups ... FAILED
+test misc::replace_groups ... FAILED
+test misc::type_list ... ok
+test misc::unrestricted3 ... ok
+test misc::replace_with_only_matching ... FAILED
+test misc::single_file ... FAILED
+test misc::vimgrep_no_line ... ok
+test misc::preprocessing ... FAILED
+test misc::compressed_uncompress ... ok
+test misc::vimgrep ... ok
+test misc::with_filename ... FAILED
+test misc::unrestricted1 ... FAILED
+test misc::vimgrep_no_line_no_column ... ok
+test misc::word ... FAILED
+test misc::symlink_follow ... FAILED
+test misc::unrestricted2 ... FAILED
+test binary::mmap_match_count ... ok
+test binary::before_match1_implicit ... ok
+test misc::word_period ... FAILED
+test misc::with_heading ... FAILED
+test misc::preprocessing_glob ... FAILED
+test multiline::context ... FAILED
+test feature::f109_case_sensitive_part1 ... ok
+test misc::binary_search_mmap ... FAILED
+test binary::mmap_match_near_nul ... FAILED
+test misc::with_heading_default ... FAILED
+test binary::mmap_match_multiple ... FAILED
+test binary::before_match2_implicit_text ... ok
+test feature::f1207_auto_encoding ... ok
+test feature::f109_max_depth ... FAILED
+test feature::context_sep_default ... FAILED
+test binary::before_match2_implicit ... ok
+test feature::f1078_max_columns_preview2 ... FAILED
+test binary::mmap_match_implicit ... ok
+test json::r1095_missing_crlf ... ok
+test multiline::stdin ... FAILED
+test multiline::dot_no_newline ... ok
+test feature::f129_context ... FAILED
+test binary::mmap_binary_flag ... ok
+test feature::f1420_no_ignore_exclude ... ok
+test binary::mmap_text_flag ... ok
+test regression::r1401_look_ahead_only_matching_1 ... ok
+test multiline::dot_all ... FAILED
+test multiline::only_matching ... FAILED
+test regression::r1401_look_ahead_only_matching_2 ... ok
+test regression::r1412_look_behind_no_replacement ... ok
+test multiline::overlap1 ... FAILED
+test multiline::overlap2 ... FAILED
+test regression::r1064 ... FAILED
+test regression::r1159_invalid_flag ... ok
+test regression::r1098 ... ok
+test multiline::vimgrep ... ok
+test regression::r1573 ... ok
+test regression::r1174 ... ok
+test regression::r1173 ... ok
+test regression::r105_part2 ... ok
+test regression::r1223_no_dir_check_for_default_path ... FAILED
+test regression::r1176_line_regex ... FAILED
+test regression::r1176_literal_file ... FAILED
+test feature::f1138_no_ignore_dot ... ok
+test regression::r1163 ... FAILED
+test regression::r105_part1 ... ok
+test regression::r1203_reverse_suffix_literal ... FAILED
+test regression::r1259_drop_last_byte_nonl ... FAILED
+test regression::r128 ... ok
+test regression::r131 ... ok
+test regression::r156 ... FAILED
+test regression::r1389_bad_symlinks_no_biscuit ... FAILED
+test regression::r1446_respect_excludes_in_worktree ... ok
+test regression::r1130 ... ok
+test regression::r1311_multi_line_term_replace ... FAILED
+test regression::r1334_crazy_literals ... FAILED
+test regression::r127 ... FAILED
+test regression::r1319 ... FAILED
+test regression::r1380 ... FAILED
+test regression::r16 ... ok
+test regression::r1638 ... ok
+test regression::r1164 ... FAILED
+test regression::r1537 ... FAILED
+test regression::r1559 ... FAILED
+test regression::r1878 ... FAILED
+test regression::r137 ... FAILED
+test regression::r1739_replacement_lineterm_match ... FAILED
+test regression::r1866 ... ok
+test regression::r251 ... FAILED
+test regression::r2094 ... ok
+test regression::r1765 ... ok
+test regression::r1891 ... FAILED
+test regression::r2208 ... FAILED
+test regression::r2095 ... FAILED
+test regression::r3139_multiline_lookahead_files_with_matches ... ok
+test regression::r184 ... FAILED
+test regression::r2236 ... ok
+test regression::r210 ... FAILED
+test regression::r1334_invert_empty_patterns ... FAILED
+test regression::r1868_context_passthru_override ... FAILED
+test regression::r2480 ... FAILED
+test regression::r228 ... ok
+test regression::r199 ... FAILED
+test binary::matching_files_inconsistent_with_count ... ok
+test regression::r3127_glob_flag_not_allow_unclosed_class ... ok
+test regression::r2574 ... FAILED
+test regression::r279 ... ok
+test regression::r25 ... FAILED
+test regression::r206 ... FAILED
+test regression::r256 ... FAILED
+test regression::r229 ... ok
+test regression::r256_j1 ... FAILED
+test regression::r2198 ... ok
+test regression::r3127_gitignore_allow_unclosed_class ... ok
+test regression::r30 ... FAILED
+test regression::r270 ... FAILED
+test regression::r2944_incorrect_bytes_searched ... ok
+test regression::r49 ... ok
+test regression::r1838_nul_error_with_binary_detection ... FAILED
+test regression::r2658_null_data_line_regexp ... FAILED
+test regression::r391 ... ok
+test regression::r428_color_context_path ... ok
+test regression::r451_only_matching_as_in_issue ... FAILED
+test regression::r3180_look_around_panic ... FAILED
+test regression::f1757 ... ok
+test regression::r483_non_matching_exit_code ... ok
+test regression::r3179_global_gitignore_cwd ... ok
+test regression::r483_matching_no_stdout ... ok
+test regression::r67 ... FAILED
+test regression::r493 ... FAILED
+test regression::r2990_trip_over_trailing_dot ... ok
+test regression::r405 ... FAILED
+test regression::r50 ... ok
+test regression::r693_context_in_contextless_mode ... ok
+test regression::r451_only_matching ... FAILED
+test regression::r3067_gitignore_error ... FAILED
+test regression::r553_flag ... FAILED
+test regression::r64 ... ok
+test regression::r65 ... ok
+test regression::r568_leading_hyphen_option_args ... FAILED
+test regression::r599 ... FAILED
+test regression::r553_switch ... FAILED
+test regression::r506_word_not_parenthesized ... FAILED
+test regression::r428_unrecognized_style ... ok
+test regression::r829_2933 ... ok
+test regression::r2770_gitignore_error ... ok
+test regression::r900 ... ok
+test regression::r807 ... FAILED
+test regression::r87 ... ok
+test regression::r90 ... FAILED
+test regression::r829_2778 ... ok
+test regression::r829_2836 ... ok
+test regression::r93 ... FAILED
+test regression::r99 ... FAILED
+test regression::r829_2747 ... ok
+test regression::r829_original ... ok
+test regression::r3173_hidden_whitelist_only_dot ... ok
+test regression::r829_2731 ... ok
+test regression::r1159_exit_status ... ok
+test regression::r3108_files_without_match_quiet_exit ... ok
+test regression::r2711 ... ok
+test misc::sortr_accessed ... FAILED
+test misc::sort_accessed ... FAILED
+test misc::sort_files ... FAILED
+test feature::f2361_sort_nested_files ... ok
+
+failures:
+
+---- feature::f129_matches stdout ----
+
+thread 'feature::f129_matches' (779547) panicked at tests/feature.rs:289:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+foo:test
+foo:[Omitted long matching line]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+foo:1:test
+foo:2:[Omitted long matching line]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+---- binary::after_match1_explicit stdout ----
+
+thread 'binary::after_match1_explicit' (779496) panicked at tests/binary.rs:183:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1:The Project Gutenberg EBook of A Study In Scarlet, by Arthur Conan Doyle
+binary file matches (found "\0" byte around offset 77041)
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hay:1:The Project Gutenberg EBook of A Study In Scarlet, by Arthur Conan Doyle
+hay: binary file matches (found "\0" byte around offset 77041)
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- binary::after_match1_explicit_text stdout ----
+
+thread 'binary::after_match1_explicit_text' (779498) panicked at tests/binary.rs:246:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1:The Project Gutenberg EBook of A Study In Scarlet, by Arthur Conan Doyle
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hay:1:The Project Gutenberg EBook of A Study In Scarlet, by Arthur Conan Doyle
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- feature::f159_max_count stdout ----
+
+thread 'feature::f159_max_count' (779634) panicked at tests/feature.rs:312:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+foo:test
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+foo:1:test
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- feature::f1842_field_context_separator stdout ----
+
+thread 'feature::f1842_field_context_separator' (779646) panicked at tests/feature.rs:1014:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1:For the Doctor Watsons of this world, as opposed to the Sherlock
+2-Holmeses, success in the province of detective work must always
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sherlock:1:For the Doctor Watsons of this world, as opposed to the Sherlock
+sherlock-2-Holmeses, success in the province of detective work must always
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- feature::f1842_field_match_separator stdout ----
+
+thread 'feature::f1842_field_match_separator' (779654) panicked at tests/feature.rs:1062:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1:For the Doctor Watsons of this world, as opposed to the Sherlock
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sherlock:1:For the Doctor Watsons of this world, as opposed to the Sherlock
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- feature::f1_eucjp stdout ----
+
+thread 'feature::f1_eucjp' (779658) panicked at tests/feature.rs:41:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+foo:Шерлок Холмс
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+foo:1:Шерлок Холмс
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- feature::f1_sjis stdout ----
+
+thread 'feature::f1_sjis' (779662) panicked at tests/feature.rs:11:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+foo:Шерлок Холмс
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+foo:1:Шерлок Холмс
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- feature::f1_utf16_auto stdout ----
+
+thread 'feature::f1_utf16_auto' (779680) panicked at tests/feature.rs:21:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+foo:Шерлок Холмс
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+foo:1:Шерлок Холмс
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- feature::f20_no_filename stdout ----
+
+thread 'feature::f20_no_filename' (779700) panicked at tests/feature.rs:87:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+For the Doctor Watsons of this world, as opposed to the Sherlock
+be, to a very large extent, the result of luck. Sherlock Holmes
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1:For the Doctor Watsons of this world, as opposed to the Sherlock
+3:be, to a very large extent, the result of luck. Sherlock Holmes
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- feature::f196_persistent_config stdout ----
+
+thread 'feature::f196_persistent_config' (779655) panicked at tests/feature.rs:338:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+For the Doctor Watsons of this world, as opposed to the Sherlock
+be, to a very large extent, the result of luck. Sherlock Holmes
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sherlock:1:For the Doctor Watsons of this world, as opposed to the Sherlock
+sherlock:3:be, to a very large extent, the result of luck. Sherlock Holmes
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- feature::f1_utf16_explicit stdout ----
+
+thread 'feature::f1_utf16_explicit' (779683) panicked at tests/feature.rs:31:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+foo:Шерлок Холмс
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+foo:1:Шерлок Холмс
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- feature::f2288_context_partial_override stdout ----
+
+thread 'feature::f2288_context_partial_override' (779719) panicked at tests/feature.rs:1101:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+4
+5
+6
+7
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test-4-4
+test:5:5
+test-6-6
+test-7-7
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- feature::f2288_context_partial_override_rev stdout ----
+
+thread 'feature::f2288_context_partial_override_rev' (779731) panicked at tests/feature.rs:1110:9:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+4
+5
+6
+7
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test-4-4
+test:5:5
+test-6-6
+test-7-7
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- feature::f275_pathsep stdout ----
+
+thread 'feature::f275_pathsep' (779767) panicked at tests/feature.rs:376:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+fooZbar:test
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+fooZbar:1:test
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- feature::f362_dfa_size_limit stdout ----
+
+thread 'feature::f362_dfa_size_limit' (779790) panicked at tests/feature.rs:390:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+For the Doctor Watsons of this world, as opposed to the Sherlock
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sherlock:1:For the Doctor Watsons of this world, as opposed to the Sherlock
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- feature::f34_only_matching stdout ----
+
+thread 'feature::f34_only_matching' (779771) panicked at tests/feature.rs:98:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sherlock:Sherlock
+sherlock:Sherlock
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sherlock:1:Sherlock
+sherlock:3:Sherlock
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- feature::f416_crlf stdout ----
+
+thread 'feature::f416_crlf' (779850) panicked at tests/feature.rs:485:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+For the Doctor Watsons of this world, as opposed to the Sherlock
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sherlock:1:For the Doctor Watsons of this world, as opposed to the Sherlock
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- feature::f263_sort_files stdout ----
+
+thread 'feature::f263_sort_files' (779763) panicked at tests/feature.rs:356:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+abc:test
+bar:test
+foo:test
+zoo:test
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+abc:1:test
+bar:1:test
+foo:1:test
+zoo:1:test
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- feature::f416_crlf_multiline stdout ----
+
+thread 'feature::f416_crlf_multiline' (779853) panicked at tests/feature.rs:496:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+For the Doctor Watsons of this world, as opposed to the Sherlock
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sherlock:1:For the Doctor Watsons of this world, as opposed to the Sherlock
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- feature::f263_sort_files_reverse stdout ----
+
+thread 'feature::f263_sort_files_reverse' (779765) panicked at tests/feature.rs:367:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+zoo:test
+foo:test
+bar:test
+abc:test
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+zoo:1:test
+foo:1:test
+bar:1:test
+abc:1:test
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- feature::f416_crlf_only_matching stdout ----
+
+thread 'feature::f416_crlf_only_matching' (779855) panicked at tests/feature.rs:507:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Sherlock
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sherlock:1:Sherlock
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- feature::f45_precedence_internal stdout ----
+
+thread 'feature::f45_precedence_internal' (779857) panicked at tests/feature.rs:190:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+imp.log:test
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+imp.log:1:test
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- feature::f45_precedence_with_others stdout ----
+
+thread 'feature::f45_precedence_with_others' (779866) panicked at tests/feature.rs:173:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+imp.log:test
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+imp.log:1:test
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- feature::f7 stdout ----
+
+thread 'feature::f7' (779897) panicked at tests/feature.rs:64:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+For the Doctor Watsons of this world, as opposed to the Sherlock
+Holmeses, success in the province of detective work must always
+be, to a very large extent, the result of luck. Sherlock Holmes
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sherlock:1:For the Doctor Watsons of this world, as opposed to the Sherlock
+sherlock:2:Holmeses, success in the province of detective work must always
+sherlock:3:be, to a very large extent, the result of luck. Sherlock Holmes
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- feature::f68_no_ignore_vcs stdout ----
+
+thread 'feature::f68_no_ignore_vcs' (779896) panicked at tests/feature.rs:201:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+foo:test
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+foo:1:test
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- feature::f740_passthru stdout ----
+
+thread 'feature::f740_passthru' (779901) panicked at tests/feature.rs:537:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1-
+2:foo
+3-bar
+4:foobar
+5-
+6-baz
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+file-1-
+file:2:foo
+file-3-bar
+file:4:foobar
+file-5-
+file-6-baz
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- feature::f70_smart_case stdout ----
+
+thread 'feature::f70_smart_case' (779900) panicked at tests/feature.rs:212:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sherlock:For the Doctor Watsons of this world, as opposed to the Sherlock
+sherlock:be, to a very large extent, the result of luck. Sherlock Holmes
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sherlock:1:For the Doctor Watsons of this world, as opposed to the Sherlock
+sherlock:3:be, to a very large extent, the result of luck. Sherlock Holmes
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- feature::f7_stdin stdout ----
+
+thread 'feature::f7_stdin' (779918) panicked at tests/feature.rs:75:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sherlock:For the Doctor Watsons of this world, as opposed to the Sherlock
+sherlock:be, to a very large extent, the result of luck. Sherlock Holmes
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sherlock:1:For the Doctor Watsons of this world, as opposed to the Sherlock
+sherlock:3:be, to a very large extent, the result of luck. Sherlock Holmes
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- feature::f89_match stdout ----
+
+thread 'feature::f89_match' (780008) panicked at tests/feature.rs:257:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sherlock For the Doctor Watsons of this world, as opposed to the Sherlock
+sherlock Holmeses, success in the province of detective work must always
+sherlock be, to a very large extent, the result of luck. Sherlock Holmes
+sherlock can extract a clew from a wisp of straw or a flake of cigar ash;
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sherlock 1:For the Doctor Watsons of this world, as opposed to the Sherlock
+sherlock 2-Holmeses, success in the province of detective work must always
+sherlock 3:be, to a very large extent, the result of luck. Sherlock Holmes
+sherlock 4-can extract a clew from a wisp of straw or a flake of cigar ash;
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- feature::f917_trim stdout ----
+
+thread 'feature::f917_trim' (780010) panicked at tests/feature.rs:641:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2-For the Doctor Watsons of this world, as opposed to the Sherlock
+3:Holmeses, success in the province of detective work must always
+4-be, to a very large extent, the result of luck. Sherlock Holmes
+5-can extract a clew from a wisp of straw or a flake of cigar ash;
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sherlock-2-For the Doctor Watsons of this world, as opposed to the Sherlock
+sherlock:3:Holmeses, success in the province of detective work must always
+sherlock-4-be, to a very large extent, the result of luck. Sherlock Holmes
+sherlock-5-can extract a clew from a wisp of straw or a flake of cigar ash;
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- feature::f917_trim_max_columns_multi_only_matching stdout ----
+
+thread 'feature::f917_trim_max_columns_multi_only_matching' (780052) panicked at tests/feature.rs:750:9:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+01234567 [... 0 more matches]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1:01234567 [... 0 more matches]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- feature::f917_trim_max_columns_multi_standard stdout ----
+
+thread 'feature::f917_trim_max_columns_multi_standard' (780055) panicked at tests/feature.rs:730:9:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+01234567 [... 1 more match]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0m[32m1[0m:01234567 [... 1 more match]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- feature::f917_trim_max_columns_normal stdout ----
+
+thread 'feature::f917_trim_max_columns_normal' (780060) panicked at tests/feature.rs:691:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+01234567 [... omitted end of long line]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1:01234567 [... omitted end of long line]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- feature::f917_trim_match stdout ----
+
+thread 'feature::f917_trim_match' (780012) panicked at tests/feature.rs:667:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2-For the Doctor Watsons of this world, as opposed to the Sherlock
+3:Holmeses, success in the province of detective work must always
+4-be, to a very large extent, the result of luck. Sherlock Holmes
+5-can extract a clew from a wisp of straw or a flake of cigar ash;
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sherlock-2-For the Doctor Watsons of this world, as opposed to the Sherlock
+sherlock:3:Holmeses, success in the province of detective work must always
+sherlock-4-be, to a very large extent, the result of luck. Sherlock Holmes
+sherlock-5-can extract a clew from a wisp of straw or a flake of cigar ash;
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- feature::f917_trim_max_columns_matches stdout ----
+
+thread 'feature::f917_trim_max_columns_matches' (780016) panicked at tests/feature.rs:708:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+01234567 [... 1 more match]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0m[32m1[0m:01234567 [... 1 more match]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- binary::after_match1_stdin stdout ----
+
+thread 'binary::after_match1_stdin' (779506) panicked at tests/binary.rs:194:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1:The Project Gutenberg EBook of A Study In Scarlet, by Arthur Conan Doyle
+binary file matches (found "\0" byte around offset 77041)
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<stdin>:1:The Project Gutenberg EBook of A Study In Scarlet, by Arthur Conan Doyle
+<stdin>: binary file matches (found "\0" byte around offset 77041)
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- binary::before_match2_explicit stdout ----
+
+thread 'binary::before_match2_explicit' (779521) panicked at tests/binary.rs:418:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+binary file matches (found "\0" byte around offset 77041)
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hay: binary file matches (found "\0" byte around offset 77041)
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- binary::before_match1_explicit stdout ----
+
+thread 'binary::before_match1_explicit' (779511) panicked at tests/binary.rs:370:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+binary file matches (found "\0" byte around offset 77041)
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hay: binary file matches (found "\0" byte around offset 77041)
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- feature::f917_trim_multi_standard stdout ----
+
+thread 'feature::f917_trim_multi_standard' (780155) panicked at tests/feature.rs:676:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+0123456789abcdefghijklmnopqrstuvwxyz
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1:0123456789abcdefghijklmnopqrstuvwxyz
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- feature::f1078_max_columns_preview1 stdout ----
+
+thread 'feature::f1078_max_columns_preview1' (779537) panicked at tests/feature.rs:800:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sherlock:but Doctor Watson has to have it taken out for [... omitted end of long line]
+sherlock:and exhibited clearly, with a label attached.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sherlock:5:but Doctor Watson has to have it taken out for [... omitted end of long line]
+sherlock:6:and exhibited clearly, with a label attached.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- binary::mmap_after_nul_match stdout ----
+
+thread 'binary::mmap_after_nul_match' (779526) panicked at tests/binary.rs:150:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+176:"A medical student, I suppose?" said I.
+409:"A medical student, I suppose?" said I.
+642:"A medical student, I suppose?" said I.
+875:"A medical student, I suppose?" said I.
+1108:"A medical student, I suppose?" said I.
+1341:"A medical student, I suppose?" said I.
+1574:"A medical student, I suppose?" said I.
+1807:"A medical student, I suppose?" said I.
+1867:"And yet you say he is not a medical student?"
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hay:176:"A medical student, I suppose?" said I.
+hay:409:"A medical student, I suppose?" said I.
+hay:642:"A medical student, I suppose?" said I.
+hay:875:"A medical student, I suppose?" said I.
+hay:1108:"A medical student, I suppose?" said I.
+hay:1341:"A medical student, I suppose?" said I.
+hay:1574:"A medical student, I suppose?" said I.
+hay:1807:"A medical student, I suppose?" said I.
+hay:1867:"And yet you say he is not a medical student?"
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- binary::mmap_match_explicit stdout ----
+
+thread 'binary::mmap_match_explicit' (779529) panicked at tests/binary.rs:57:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1:The Project Gutenberg EBook of A Study In Scarlet, by Arthur Conan Doyle
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hay:1:The Project Gutenberg EBook of A Study In Scarlet, by Arthur Conan Doyle
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- feature::f1207_ignore_encoding stdout ----
+
+thread 'feature::f1207_ignore_encoding' (779545) panicked at tests/feature.rs:876:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+�� b
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+foo:1:�� b
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- feature::context_sep stdout ----
+
+thread 'feature::context_sep' (779534) panicked at tests/feature.rs:1149:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+foo
+ctx
+AAA
+foo
+ctx
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test:1:foo
+test-2-ctx
+AAA
+test:5:foo
+test-6-ctx
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- feature::f129_replace stdout ----
+
+thread 'feature::f129_replace' (779548) panicked at tests/feature.rs:305:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+foo:foo
+foo:[Omitted long line with 2 matches]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+foo:1:foo
+foo:2:[Omitted long line with 2 matches]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- feature::no_context_sep_overrides stdout ----
+
+thread 'feature::no_context_sep_overrides' (780298) panicked at tests/feature.rs:1130:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+foo
+ctx
+foo
+ctx
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test:1:foo
+test-2-ctx
+test:5:foo
+test-6-ctx
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- feature::no_context_sep stdout ----
+
+thread 'feature::no_context_sep' (780208) panicked at tests/feature.rs:1117:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+foo
+ctx
+foo
+ctx
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test:1:foo
+test-2-ctx
+test:5:foo
+test-6-ctx
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- feature::context_sep_empty stdout ----
+
+thread 'feature::context_sep_empty' (779536) panicked at tests/feature.rs:1161:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+foo
+ctx
+
+foo
+ctx
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test:1:foo
+test-2-ctx
+
+test:5:foo
+test-6-ctx
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- feature::no_context_sep_overridden stdout ----
+
+thread 'feature::no_context_sep_overridden' (780234) panicked at tests/feature.rs:1143:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+foo
+ctx
+AAA
+foo
+ctx
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test:1:foo
+test-2-ctx
+AAA
+test:5:foo
+test-6-ctx
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- feature::f993_null_data stdout ----
+
+thread 'feature::f993_null_data' (780206) panicked at tests/feature.rs:782:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+foo bar baz 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test:1:foo test:2:bar test:5:baz 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- misc::binary_convert stdout ----
+
+thread 'misc::binary_convert' (780390) panicked at tests/misc.rs:1018:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+binary file matches (found "\0" byte around offset 3)
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+file: binary file matches (found "\0" byte around offset 3)
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- feature::stop_on_nonmatch stdout ----
+
+thread 'feature::stop_on_nonmatch' (780302) panicked at tests/feature.rs:1173:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test:line2
+test:line3
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test:2:line2
+test:3:line3
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- misc::after_context stdout ----
+
+thread 'misc::after_context' (780345) panicked at tests/misc.rs:458:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+For the Doctor Watsons of this world, as opposed to the Sherlock
+Holmeses, success in the province of detective work must always
+be, to a very large extent, the result of luck. Sherlock Holmes
+can extract a clew from a wisp of straw or a flake of cigar ash;
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sherlock:1:For the Doctor Watsons of this world, as opposed to the Sherlock
+sherlock-2-Holmeses, success in the province of detective work must always
+sherlock:3:be, to a very large extent, the result of luck. Sherlock Holmes
+sherlock-4-can extract a clew from a wisp of straw or a flake of cigar ash;
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- misc::binary_search_no_mmap stdout ----
+
+thread 'misc::binary_search_no_mmap' (780439) panicked at tests/misc.rs:1063:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+foo bar
+foo baz
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+file:1:foo bar
+file:2:foo baz
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- misc::binary_convert_mmap stdout ----
+
+thread 'misc::binary_convert_mmap' (780391) panicked at tests/misc.rs:1028:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+binary file matches (found "\0" byte around offset 3)
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+file: binary file matches (found "\0" byte around offset 3)
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- misc::before_context_line_numbers stdout ----
+
+thread 'misc::before_context_line_numbers' (780388) panicked at tests/misc.rs:495:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1:For the Doctor Watsons of this world, as opposed to the Sherlock
+2-Holmeses, success in the province of detective work must always
+3:be, to a very large extent, the result of luck. Sherlock Holmes
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sherlock:1:For the Doctor Watsons of this world, as opposed to the Sherlock
+sherlock-2-Holmeses, success in the province of detective work must always
+sherlock:3:be, to a very large extent, the result of luck. Sherlock Holmes
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- misc::before_context stdout ----
+
+thread 'misc::before_context' (780362) panicked at tests/misc.rs:483:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+For the Doctor Watsons of this world, as opposed to the Sherlock
+Holmeses, success in the province of detective work must always
+be, to a very large extent, the result of luck. Sherlock Holmes
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sherlock:1:For the Doctor Watsons of this world, as opposed to the Sherlock
+sherlock-2-Holmeses, success in the province of detective work must always
+sherlock:3:be, to a very large extent, the result of luck. Sherlock Holmes
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- misc::after_context_line_numbers stdout ----
+
+thread 'misc::after_context_line_numbers' (780349) panicked at tests/misc.rs:471:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1:For the Doctor Watsons of this world, as opposed to the Sherlock
+2-Holmeses, success in the province of detective work must always
+3:be, to a very large extent, the result of luck. Sherlock Holmes
+4-can extract a clew from a wisp of straw or a flake of cigar ash;
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sherlock:1:For the Doctor Watsons of this world, as opposed to the Sherlock
+sherlock-2-Holmeses, success in the province of detective work must always
+sherlock:3:be, to a very large extent, the result of luck. Sherlock Holmes
+sherlock-4-can extract a clew from a wisp of straw or a flake of cigar ash;
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- misc::columns stdout ----
+
+thread 'misc::columns' (780445) panicked at tests/misc.rs:49:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1:57:For the Doctor Watsons of this world, as opposed to the Sherlock
+3:49:be, to a very large extent, the result of luck. Sherlock Holmes
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sherlock:1:57:For the Doctor Watsons of this world, as opposed to the Sherlock
+sherlock:3:49:be, to a very large extent, the result of luck. Sherlock Holmes
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- misc::case_insensitive stdout ----
+
+thread 'misc::case_insensitive' (780444) panicked at tests/misc.rs:134:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+For the Doctor Watsons of this world, as opposed to the Sherlock
+be, to a very large extent, the result of luck. Sherlock Holmes
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sherlock:1:For the Doctor Watsons of this world, as opposed to the Sherlock
+sherlock:3:be, to a very large extent, the result of luck. Sherlock Holmes
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- misc::byte_offset_only_matching stdout ----
+
+thread 'misc::byte_offset_only_matching' (780443) panicked at tests/misc.rs:374:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sherlock:56:Sherlock
+sherlock:177:Sherlock
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sherlock:1:56:Sherlock
+sherlock:3:177:Sherlock
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- misc::context stdout ----
+
+thread 'misc::context' (780523) panicked at tests/misc.rs:509:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+For the Doctor Watsons of this world, as opposed to the Sherlock
+Holmeses, success in the province of detective work must always
+--
+but Doctor Watson has to have it taken out for him and dusted,
+and exhibited clearly, with a label attached.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sherlock:1:For the Doctor Watsons of this world, as opposed to the Sherlock
+sherlock-2-Holmeses, success in the province of detective work must always
+--
+sherlock-5-but Doctor Watson has to have it taken out for him and dusted,
+sherlock:6:and exhibited clearly, with a label attached.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- misc::compressed_lz4 stdout ----
+
+thread 'misc::compressed_lz4' (780470) panicked at tests/misc.rs:937:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+For the Doctor Watsons of this world, as opposed to the Sherlock
+be, to a very large extent, the result of luck. Sherlock Holmes
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sherlock.lz4:1:For the Doctor Watsons of this world, as opposed to the Sherlock
+sherlock.lz4:3:be, to a very large extent, the result of luck. Sherlock Holmes
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- misc::compressed_gzip stdout ----
+
+thread 'misc::compressed_gzip' (780468) panicked at tests/misc.rs:892:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+For the Doctor Watsons of this world, as opposed to the Sherlock
+be, to a very large extent, the result of luck. Sherlock Holmes
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sherlock.gz:1:For the Doctor Watsons of this world, as opposed to the Sherlock
+sherlock.gz:3:be, to a very large extent, the result of luck. Sherlock Holmes
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- misc::compressed_brotli stdout ----
+
+thread 'misc::compressed_brotli' (780462) panicked at tests/misc.rs:967:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+For the Doctor Watsons of this world, as opposed to the Sherlock
+be, to a very large extent, the result of luck. Sherlock Holmes
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sherlock.br:1:For the Doctor Watsons of this world, as opposed to the Sherlock
+sherlock.br:3:be, to a very large extent, the result of luck. Sherlock Holmes
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- misc::context_line_numbers stdout ----
+
+thread 'misc::context_line_numbers' (780542) panicked at tests/misc.rs:523:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1:For the Doctor Watsons of this world, as opposed to the Sherlock
+2-Holmeses, success in the province of detective work must always
+--
+5-but Doctor Watson has to have it taken out for him and dusted,
+6:and exhibited clearly, with a label attached.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sherlock:1:For the Doctor Watsons of this world, as opposed to the Sherlock
+sherlock-2-Holmeses, success in the province of detective work must always
+--
+sherlock-5-but Doctor Watson has to have it taken out for him and dusted,
+sherlock:6:and exhibited clearly, with a label attached.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- misc::compressed_zstd stdout ----
+
+thread 'misc::compressed_zstd' (780520) panicked at tests/misc.rs:982:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+For the Doctor Watsons of this world, as opposed to the Sherlock
+be, to a very large extent, the result of luck. Sherlock Holmes
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sherlock.zst:1:For the Doctor Watsons of this world, as opposed to the Sherlock
+sherlock.zst:3:be, to a very large extent, the result of luck. Sherlock Holmes
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- misc::compressed_bzip2 stdout ----
+
+thread 'misc::compressed_bzip2' (780465) panicked at tests/misc.rs:907:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+For the Doctor Watsons of this world, as opposed to the Sherlock
+be, to a very large extent, the result of luck. Sherlock Holmes
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sherlock.bz2:1:For the Doctor Watsons of this world, as opposed to the Sherlock
+sherlock.bz2:3:be, to a very large extent, the result of luck. Sherlock Holmes
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- misc::compressed_lzma stdout ----
+
+thread 'misc::compressed_lzma' (780494) panicked at tests/misc.rs:952:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+For the Doctor Watsons of this world, as opposed to the Sherlock
+be, to a very large extent, the result of luck. Sherlock Holmes
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sherlock.lzma:1:For the Doctor Watsons of this world, as opposed to the Sherlock
+sherlock.lzma:3:be, to a very large extent, the result of luck. Sherlock Holmes
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- misc::file_type_add_compose stdout ----
+
+thread 'misc::file_type_add_compose' (780606) panicked at tests/misc.rs:319:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+file.py:Sherlock
+file.wat:Sherlock
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+file.py:1:Sherlock
+file.wat:1:Sherlock
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- misc::file_type_add stdout ----
+
+thread 'misc::file_type_add' (780594) panicked at tests/misc.rs:297:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+file.wat:Sherlock
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+file.wat:1:Sherlock
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- misc::compressed_xz stdout ----
+
+thread 'misc::compressed_xz' (780513) panicked at tests/misc.rs:922:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+For the Doctor Watsons of this world, as opposed to the Sherlock
+be, to a very large extent, the result of luck. Sherlock Holmes
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sherlock.xz:1:For the Doctor Watsons of this world, as opposed to the Sherlock
+sherlock.xz:3:be, to a very large extent, the result of luck. Sherlock Holmes
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- misc::file_types_negate stdout ----
+
+thread 'misc::file_types_negate' (780627) panicked at tests/misc.rs:266:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+file.py:Sherlock
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+file.py:1:Sherlock
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- misc::file_types stdout ----
+
+thread 'misc::file_types' (780624) panicked at tests/misc.rs:248:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+file.rs:Sherlock
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+file.rs:1:Sherlock
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- misc::glob stdout ----
+
+thread 'misc::glob' (780664) panicked at tests/misc.rs:328:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+file.rs:Sherlock
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+file.rs:1:Sherlock
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- misc::glob_case_insensitive stdout ----
+
+thread 'misc::glob_case_insensitive' (780719) panicked at tests/misc.rs:346:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+file.HTML:Sherlock
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+file.HTML:1:Sherlock
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- misc::glob_case_sensitive stdout ----
+
+thread 'misc::glob_case_sensitive' (780739) panicked at tests/misc.rs:355:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+file2.html:Sherlock
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+file2.html:1:Sherlock
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- misc::dir stdout ----
+
+thread 'misc::dir' (780588) panicked at tests/misc.rs:28:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sherlock:For the Doctor Watsons of this world, as opposed to the Sherlock
+sherlock:be, to a very large extent, the result of luck. Sherlock Holmes
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sherlock:1:For the Doctor Watsons of this world, as opposed to the Sherlock
+sherlock:3:be, to a very large extent, the result of luck. Sherlock Holmes
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- misc::ignore_git_parent_stop stdout ----
+
+thread 'misc::ignore_git_parent_stop' (780756) panicked at tests/misc.rs:660:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sherlock:For the Doctor Watsons of this world, as opposed to the Sherlock
+sherlock:be, to a very large extent, the result of luck. Sherlock Holmes
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sherlock:1:For the Doctor Watsons of this world, as opposed to the Sherlock
+sherlock:3:be, to a very large extent, the result of luck. Sherlock Holmes
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- misc::inverted stdout ----
+
+thread 'misc::inverted' (780869) panicked at tests/misc.rs:110:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Holmeses, success in the province of detective work must always
+can extract a clew from a wisp of straw or a flake of cigar ash;
+but Doctor Watson has to have it taken out for him and dusted,
+and exhibited clearly, with a label attached.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sherlock:2:Holmeses, success in the province of detective work must always
+sherlock:4:can extract a clew from a wisp of straw or a flake of cigar ash;
+sherlock:5:but Doctor Watson has to have it taken out for him and dusted,
+sherlock:6:and exhibited clearly, with a label attached.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- misc::file_types_negate_all stdout ----
+
+thread 'misc::file_types_negate_all' (780628) panicked at tests/misc.rs:278:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sherlock:For the Doctor Watsons of this world, as opposed to the Sherlock
+sherlock:be, to a very large extent, the result of luck. Sherlock Holmes
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sherlock:1:For the Doctor Watsons of this world, as opposed to the Sherlock
+sherlock:3:be, to a very large extent, the result of luck. Sherlock Holmes
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- misc::ignore_git_parent_stop_file stdout ----
+
+thread 'misc::ignore_git_parent_stop_file' (780758) panicked at tests/misc.rs:691:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sherlock:For the Doctor Watsons of this world, as opposed to the Sherlock
+sherlock:be, to a very large extent, the result of luck. Sherlock Holmes
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sherlock:1:For the Doctor Watsons of this world, as opposed to the Sherlock
+sherlock:3:be, to a very large extent, the result of luck. Sherlock Holmes
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- misc::glob_negate stdout ----
+
+thread 'misc::glob_negate' (780743) panicked at tests/misc.rs:338:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+file.py:Sherlock
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+file.py:1:Sherlock
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- misc::glob_always_case_insensitive stdout ----
+
+thread 'misc::glob_always_case_insensitive' (780716) panicked at tests/misc.rs:363:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+file.HTML:Sherlock
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+file.HTML:1:Sherlock
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- misc::inverted_line_numbers stdout ----
+
+thread 'misc::inverted_line_numbers' (780878) panicked at tests/misc.rs:123:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2:Holmeses, success in the province of detective work must always
+4:can extract a clew from a wisp of straw or a flake of cigar ash;
+5:but Doctor Watson has to have it taken out for him and dusted,
+6:and exhibited clearly, with a label attached.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sherlock:2:Holmeses, success in the province of detective work must always
+sherlock:4:can extract a clew from a wisp of straw or a flake of cigar ash;
+sherlock:5:but Doctor Watson has to have it taken out for him and dusted,
+sherlock:6:and exhibited clearly, with a label attached.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- misc::literal stdout ----
+
+thread 'misc::literal' (780945) panicked at tests/misc.rs:178:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+()
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+file:2:()
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- misc::line_numbers stdout ----
+
+thread 'misc::line_numbers' (780940) panicked at tests/misc.rs:38:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1:For the Doctor Watsons of this world, as opposed to the Sherlock
+3:be, to a very large extent, the result of luck. Sherlock Holmes
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sherlock:1:For the Doctor Watsons of this world, as opposed to the Sherlock
+sherlock:3:be, to a very large extent, the result of luck. Sherlock Holmes
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- misc::line stdout ----
+
+thread 'misc::line' (780895) panicked at tests/misc.rs:170:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+and exhibited clearly, with a label attached.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sherlock:6:and exhibited clearly, with a label attached.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- misc::file_types_all stdout ----
+
+thread 'misc::file_types_all' (780626) panicked at tests/misc.rs:256:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+file.py:Sherlock
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+file.py:1:Sherlock
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- misc::no_ignore_hidden stdout ----
+
+thread 'misc::no_ignore_hidden' (781048) panicked at tests/misc.rs:581:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.sherlock:For the Doctor Watsons of this world, as opposed to the Sherlock
+.sherlock:be, to a very large extent, the result of luck. Sherlock Holmes
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.sherlock:1:For the Doctor Watsons of this world, as opposed to the Sherlock
+.sherlock:3:be, to a very large extent, the result of luck. Sherlock Holmes
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- misc::no_ignore stdout ----
+
+thread 'misc::no_ignore' (781039) panicked at tests/misc.rs:618:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sherlock:For the Doctor Watsons of this world, as opposed to the Sherlock
+sherlock:be, to a very large extent, the result of luck. Sherlock Holmes
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sherlock:1:For the Doctor Watsons of this world, as opposed to the Sherlock
+sherlock:3:be, to a very large extent, the result of luck. Sherlock Holmes
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- misc::no_parent_ignore_git stdout ----
+
+thread 'misc::no_parent_ignore_git' (781049) panicked at tests/misc.rs:742:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sherlock:For the Doctor Watsons of this world, as opposed to the Sherlock
+sherlock:be, to a very large extent, the result of luck. Sherlock Holmes
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sherlock:1:For the Doctor Watsons of this world, as opposed to the Sherlock
+sherlock:3:be, to a very large extent, the result of luck. Sherlock Holmes
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- misc::replace stdout ----
+
+thread 'misc::replace' (781079) panicked at tests/misc.rs:196:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+For the Doctor Watsons of this world, as opposed to the FooBar
+be, to a very large extent, the result of luck. FooBar Holmes
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sherlock:1:For the Doctor Watsons of this world, as opposed to the FooBar
+sherlock:3:be, to a very large extent, the result of luck. FooBar Holmes
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- misc::replace_named_groups stdout ----
+
+thread 'misc::replace_named_groups' (781127) panicked at tests/misc.rs:225:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+For the Watsons, Doctor of this world, as opposed to the Sherlock
+be, to a very large extent, the result of luck. Holmes, Sherlock
+but Watson, Doctor has to have it taken out for him and dusted,
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sherlock:1:For the Watsons, Doctor of this world, as opposed to the Sherlock
+sherlock:3:be, to a very large extent, the result of luck. Holmes, Sherlock
+sherlock:5:but Watson, Doctor has to have it taken out for him and dusted,
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- misc::replace_groups stdout ----
+
+thread 'misc::replace_groups' (781083) panicked at tests/misc.rs:208:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+For the Watsons, Doctor of this world, as opposed to the Sherlock
+be, to a very large extent, the result of luck. Holmes, Sherlock
+but Watson, Doctor has to have it taken out for him and dusted,
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sherlock:1:For the Watsons, Doctor of this world, as opposed to the Sherlock
+sherlock:3:be, to a very large extent, the result of luck. Holmes, Sherlock
+sherlock:5:but Watson, Doctor has to have it taken out for him and dusted,
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- misc::replace_with_only_matching stdout ----
+
+thread 'misc::replace_with_only_matching' (781130) panicked at tests/misc.rs:239:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+this
+detective
+luck
+straw
+cigar
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sherlock:1:this
+sherlock:2:detective
+sherlock:3:luck
+sherlock:4:straw
+sherlock:4:cigar
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- misc::single_file stdout ----
+
+thread 'misc::single_file' (781131) panicked at tests/misc.rs:18:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+For the Doctor Watsons of this world, as opposed to the Sherlock
+be, to a very large extent, the result of luck. Sherlock Holmes
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sherlock:1:For the Doctor Watsons of this world, as opposed to the Sherlock
+sherlock:3:be, to a very large extent, the result of luck. Sherlock Holmes
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- misc::preprocessing stdout ----
+
+thread 'misc::preprocessing' (781050) panicked at tests/misc.rs:859:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+For the Doctor Watsons of this world, as opposed to the Sherlock
+be, to a very large extent, the result of luck. Sherlock Holmes
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sherlock.xz:1:For the Doctor Watsons of this world, as opposed to the Sherlock
+sherlock.xz:3:be, to a very large extent, the result of luck. Sherlock Holmes
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- misc::with_filename stdout ----
+
+thread 'misc::with_filename' (781201) panicked at tests/misc.rs:60:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sherlock:For the Doctor Watsons of this world, as opposed to the Sherlock
+sherlock:be, to a very large extent, the result of luck. Sherlock Holmes
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sherlock:1:For the Doctor Watsons of this world, as opposed to the Sherlock
+sherlock:3:be, to a very large extent, the result of luck. Sherlock Holmes
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- misc::unrestricted1 stdout ----
+
+thread 'misc::unrestricted1' (781180) panicked at tests/misc.rs:783:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sherlock:For the Doctor Watsons of this world, as opposed to the Sherlock
+sherlock:be, to a very large extent, the result of luck. Sherlock Holmes
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sherlock:1:For the Doctor Watsons of this world, as opposed to the Sherlock
+sherlock:3:be, to a very large extent, the result of luck. Sherlock Holmes
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- misc::word stdout ----
+
+thread 'misc::word' (781232) panicked at tests/misc.rs:144:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+For the Doctor Watsons of this world, as opposed to the Sherlock
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sherlock:1:For the Doctor Watsons of this world, as opposed to the Sherlock
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- misc::symlink_follow stdout ----
+
+thread 'misc::symlink_follow' (781177) panicked at tests/misc.rs:771:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+baz/sherlock:For the Doctor Watsons of this world, as opposed to the Sherlock
+baz/sherlock:be, to a very large extent, the result of luck. Sherlock Holmes
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+baz/sherlock:1:For the Doctor Watsons of this world, as opposed to the Sherlock
+baz/sherlock:3:be, to a very large extent, the result of luck. Sherlock Holmes
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- misc::unrestricted2 stdout ----
+
+thread 'misc::unrestricted2' (781181) panicked at tests/misc.rs:794:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.sherlock:For the Doctor Watsons of this world, as opposed to the Sherlock
+.sherlock:be, to a very large extent, the result of luck. Sherlock Holmes
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.sherlock:1:For the Doctor Watsons of this world, as opposed to the Sherlock
+.sherlock:3:be, to a very large extent, the result of luck. Sherlock Holmes
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- misc::word_period stdout ----
+
+thread 'misc::word_period' (781242) panicked at tests/misc.rs:156:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.
+.
+.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+haystack:1:.
+haystack:1:.
+haystack:1:.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- misc::with_heading stdout ----
+
+thread 'misc::with_heading' (781229) panicked at tests/misc.rs:79:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sherlock
+For the Doctor Watsons of this world, as opposed to the Sherlock
+be, to a very large extent, the result of luck. Sherlock Holmes
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sherlock
+1:For the Doctor Watsons of this world, as opposed to the Sherlock
+3:be, to a very large extent, the result of luck. Sherlock Holmes
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- misc::preprocessing_glob stdout ----
+
+thread 'misc::preprocessing_glob' (781053) panicked at tests/misc.rs:877:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sherlock.xz:For the Doctor Watsons of this world, as opposed to the Sherlock
+sherlock.xz:be, to a very large extent, the result of luck. Sherlock Holmes
+sherlock:For the Doctor Watsons of this world, as opposed to the Sherlock
+sherlock:be, to a very large extent, the result of luck. Sherlock Holmes
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sherlock.xz:1:For the Doctor Watsons of this world, as opposed to the Sherlock
+sherlock.xz:3:be, to a very large extent, the result of luck. Sherlock Holmes
+sherlock:1:For the Doctor Watsons of this world, as opposed to the Sherlock
+sherlock:3:be, to a very large extent, the result of luck. Sherlock Holmes
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- multiline::context stdout ----
+
+thread 'multiline::context' (781246) panicked at tests/multiline.rs:120:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1-For the Doctor Watsons of this world, as opposed to the Sherlock
+2:Holmeses, success in the province of detective work must always
+3:be, to a very large extent, the result of luck. Sherlock Holmes
+4-can extract a clew from a wisp of straw or a flake of cigar ash;
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sherlock-1-For the Doctor Watsons of this world, as opposed to the Sherlock
+sherlock:2:Holmeses, success in the province of detective work must always
+sherlock:3:be, to a very large extent, the result of luck. Sherlock Holmes
+sherlock-4-can extract a clew from a wisp of straw or a flake of cigar ash;
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- misc::binary_search_mmap stdout ----
+
+thread 'misc::binary_search_mmap' (780432) panicked at tests/misc.rs:1057:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+foo bar
+foo baz
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+file:1:foo bar
+file:2:foo baz
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- binary::mmap_match_near_nul stdout ----
+
+thread 'binary::mmap_match_near_nul' (779532) panicked at tests/binary.rs:72:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+binary file matches (found "\0" byte around offset 77041)
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hay: binary file matches (found "\0" byte around offset 77041)
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- misc::with_heading_default stdout ----
+
+thread 'misc::with_heading_default' (781231) panicked at tests/misc.rs:97:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+For the Doctor Watsons of this world, as opposed to the Sherlock
+Sherlock Holmes lives on Baker Street.
+be, to a very large extent, the result of luck. Sherlock Holmes
+foo
+sherlock
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+1:For the Doctor Watsons of this world, as opposed to the Sherlock
+1:Sherlock Holmes lives on Baker Street.
+3:be, to a very large extent, the result of luck. Sherlock Holmes
+foo
+sherlock
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- binary::mmap_match_multiple stdout ----
+
+thread 'binary::mmap_match_multiple' (779531) panicked at tests/binary.rs:101:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1:The Project Gutenberg EBook of A Study In Scarlet, by Arthur Conan Doyle
+1871:"No. Heaven knows what the objects of his studies are. But here we
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hay:1:The Project Gutenberg EBook of A Study In Scarlet, by Arthur Conan Doyle
+hay:1871:"No. Heaven knows what the objects of his studies are. But here we
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- feature::f109_max_depth stdout ----
+
+thread 'feature::f109_max_depth' (779541) panicked at tests/feature.rs:268:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+one/pass:far
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+one/pass:1:far
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- feature::context_sep_default stdout ----
+
+thread 'feature::context_sep_default' (779535) panicked at tests/feature.rs:1155:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+foo
+ctx
+--
+foo
+ctx
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test:1:foo
+test-2-ctx
+--
+test:5:foo
+test-6-ctx
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- feature::f1078_max_columns_preview2 stdout ----
+
+thread 'feature::f1078_max_columns_preview2' (779538) panicked at tests/feature.rs:819:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sherlock:but Doctor Watson xxx taken out for him and [... 1 more match]
+sherlock:and xxx clearly, with a label attached.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sherlock:5:but Doctor Watson xxx taken out for him and [... 1 more match]
+sherlock:6:and xxx clearly, with a label attached.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- multiline::stdin stdout ----
+
+thread 'multiline::stdin' (781384) panicked at tests/multiline.rs:100:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1:For the Doctor Watsons of this world, as opposed to the Sherlock
+2:Holmeses, success in the province of detective work must always
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<stdin>:1:For the Doctor Watsons of this world, as opposed to the Sherlock
+<stdin>:2:Holmeses, success in the province of detective work must always
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- feature::f129_context stdout ----
+
+thread 'feature::f129_context' (779546) panicked at tests/feature.rs:297:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+foo:test
+foo-[Omitted long context line]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+foo:1:test
+foo-2-[Omitted long context line]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- multiline::dot_all stdout ----
+
+thread 'multiline::dot_all' (781299) panicked at tests/multiline.rs:42:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1:For the Doctor Watsons of this world, as opposed to the Sherlock
+2:Holmeses, success in the province of detective work must always
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sherlock:1:For the Doctor Watsons of this world, as opposed to the Sherlock
+sherlock:2:Holmeses, success in the province of detective work must always
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- multiline::only_matching stdout ----
+
+thread 'multiline::only_matching' (781378) panicked at tests/multiline.rs:63:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1:Watson
+1:Sherlock
+2:Holmes
+3:Sherlock Holmes
+5:Watson
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sherlock:1:Watson
+sherlock:1:Sherlock
+sherlock:2:Holmes
+sherlock:3:Sherlock Holmes
+sherlock:5:Watson
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- multiline::overlap1 stdout ----
+
+thread 'multiline::overlap1' (781379) panicked at tests/multiline.rs:9:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2:abc
+3:defxxxabc
+4:defxxx
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test:2:abc
+test:3:defxxxabc
+test:4:defxxx
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- multiline::overlap2 stdout ----
+
+thread 'multiline::overlap2' (781383) panicked at tests/multiline.rs:17:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2:abc
+3:defabc
+4:defxxx
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test:2:abc
+test:3:defabc
+test:4:defxxx
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- regression::r1064 stdout ----
+
+thread 'regression::r1064' (781465) panicked at tests/regression.rs:774:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+input:abc
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+input:1:abc
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- regression::r1223_no_dir_check_for_default_path stdout ----
+
+thread 'regression::r1223_no_dir_check_for_default_path' (781583) panicked at tests/regression.rs:922:9:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+a.json
+a.txt
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<stdin>:1:a.json
+<stdin>:2:a.txt
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- regression::r1176_line_regex stdout ----
+
+thread 'regression::r1176_line_regex' (781578) panicked at tests/regression.rs:897:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+foo
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test:2:foo
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- regression::r1176_literal_file stdout ----
+
+thread 'regression::r1176_literal_file' (781580) panicked at tests/regression.rs:886:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+foo(bar
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test:1:foo(bar
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- regression::r1163 stdout ----
+
+thread 'regression::r1163' (781544) panicked at tests/regression.rs:845:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+bom.txt:test123
+bom.txt:test123
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+bom.txt:1:test123
+bom.txt:2:test123
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- regression::r1203_reverse_suffix_literal stdout ----
+
+thread 'regression::r1203_reverse_suffix_literal' (781582) panicked at tests/regression.rs:908:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+153.230000
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test:1:153.230000
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- regression::r1259_drop_last_byte_nonl stdout ----
+
+thread 'regression::r1259_drop_last_byte_nonl' (781600) panicked at tests/regression.rs:935:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+fz
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test:1:fz
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- regression::r156 stdout ----
+
+thread 'regression::r156' (781681) panicked at tests/regression.rs:235:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#parse('widgets/foo_bar_macros.vm')
+#parse ( 'widgets/mobile/foo_bar_macros.vm' )
+#parse ("widgets/foobarhiddenformfields.vm")
+#parse ( "widgets/foo_bar_legal.vm" )
+#include( 'widgets/foo_bar_tips.vm' )
+#include('widgets/mobile/foo_bar_macros.vm')
+#include ("widgets/mobile/foo_bar_resetpw.vm")
+#parse('widgets/foo-bar-macros.vm')
+#parse ( 'widgets/mobile/foo-bar-macros.vm' )
+#parse ("widgets/foo-bar-hiddenformfields.vm")
+#parse ( "widgets/foo-bar-legal.vm" )
+#include( 'widgets/foo-bar-tips.vm' )
+#include('widgets/mobile/foo-bar-macros.vm')
+#include ("widgets/mobile/foo-bar-resetpw.vm")
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+testcase.txt:#parse('widgets/foo_bar_macros.vm')
+testcase.txt:#parse ( 'widgets/mobile/foo_bar_macros.vm' )
+testcase.txt:#parse ("widgets/foobarhiddenformfields.vm")
+testcase.txt:#parse ( "widgets/foo_bar_legal.vm" )
+testcase.txt:#include( 'widgets/foo_bar_tips.vm' )
+testcase.txt:#include('widgets/mobile/foo_bar_macros.vm')
+testcase.txt:#include ("widgets/mobile/foo_bar_resetpw.vm")
+testcase.txt:#parse('widgets/foo-bar-macros.vm')
+testcase.txt:#parse ( 'widgets/mobile/foo-bar-macros.vm' )
+testcase.txt:#parse ("widgets/foo-bar-hiddenformfields.vm")
+testcase.txt:#parse ( "widgets/foo-bar-legal.vm" )
+testcase.txt:#include( 'widgets/foo-bar-tips.vm' )
+testcase.txt:#include('widgets/mobile/foo-bar-macros.vm')
+testcase.txt:#include ("widgets/mobile/foo-bar-resetpw.vm")
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- regression::r1389_bad_symlinks_no_biscuit stdout ----
+
+thread 'regression::r1389_bad_symlinks_no_biscuit' (781613) panicked at tests/regression.rs:1036:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mylink/file.txt:test
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mylink/file.txt:1:test
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- regression::r1311_multi_line_term_replace stdout ----
+
+thread 'regression::r1311_multi_line_term_replace' (781607) panicked at tests/regression.rs:943:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1:hello?world?
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+input:1:hello?world?
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- regression::r1334_crazy_literals stdout ----
+
+thread 'regression::r1334_crazy_literals' (781609) panicked at tests/regression.rs:999:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1.208.0.0/12
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+corpus:1:1.208.0.0/12
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- regression::r127 stdout ----
+
+thread 'regression::r127' (781602) panicked at tests/regression.rs:167:5:
+assertion `left == right` failed
+  left: "foo/watson:For the Doctor Watsons of this world, as opposed to the Sherlock\nfoo/watson:be, to a very large extent, the result of luck. Sherlock Holmes\n"
+ right: "foo/watson:1:For the Doctor Watsons of this world, as opposed to the Sherlock\nfoo/watson:3:be, to a very large extent, the result of luck. Sherlock Holmes\n"
+
+---- regression::r1319 stdout ----
+
+thread 'regression::r1319' (781608) panicked at tests/regression.rs:952:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+input:CCAGCTACTCGGGAGGCTGAGGCTGGAGGATCGCTTGAGTCCAGGAGTTC
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+input:1:CCAGCTACTCGGGAGGCTGAGGCTGGAGGATCGCTTGAGTCCAGGAGTTC
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- regression::r1380 stdout ----
+
+thread 'regression::r1380' (781612) panicked at tests/regression.rs:1024:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+d
+e
+d
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+foo:4:d
+foo-5-e
+foo:6:d
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- regression::r1164 stdout ----
+
+thread 'regression::r1164' (781567) panicked at tests/regression.rs:858:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MYFILE:test
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MYFILE:1:test
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- regression::r1537 stdout ----
+
+thread 'regression::r1537' (781648) panicked at tests/regression.rs:1101:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+foo:abc;de,fg
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+foo:1:abc;de,fg
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- regression::r1559 stdout ----
+
+thread 'regression::r1559' (781651) panicked at tests/regression.rs:1124:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+foo:	TaskID int `json:"taskID"`
+foo:	TaskID   int    `json:"taskID"`
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+foo:2:	TaskID int `json:"taskID"`
+foo:7:	TaskID   int    `json:"taskID"`
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- regression::r1878 stdout ----
+
+thread 'regression::r1878' (781765) panicked at tests/regression.rs:1282:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+baz
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test:2:baz
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- regression::r137 stdout ----
+
+thread 'regression::r137' (781611) panicked at tests/regression.rs:210:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./sherlock:For the Doctor Watsons of this world, as opposed to the Sherlock
+./sherlock:be, to a very large extent, the result of luck. Sherlock Holmes
+sym1:For the Doctor Watsons of this world, as opposed to the Sherlock
+sym1:be, to a very large extent, the result of luck. Sherlock Holmes
+sym2:For the Doctor Watsons of this world, as opposed to the Sherlock
+sym2:be, to a very large extent, the result of luck. Sherlock Holmes
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./sherlock:1:For the Doctor Watsons of this world, as opposed to the Sherlock
+./sherlock:3:be, to a very large extent, the result of luck. Sherlock Holmes
+sym1:1:For the Doctor Watsons of this world, as opposed to the Sherlock
+sym1:3:be, to a very large extent, the result of luck. Sherlock Holmes
+sym2:1:For the Doctor Watsons of this world, as opposed to the Sherlock
+sym2:3:be, to a very large extent, the result of luck. Sherlock Holmes
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- regression::r1739_replacement_lineterm_match stdout ----
+
+thread 'regression::r1739_replacement_lineterm_match' (781734) panicked at tests/regression.rs:1182:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+af
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test:1:af
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- regression::r251 stdout ----
+
+thread 'regression::r251' (781852) panicked at tests/regression.rs:302:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+foo:привет
+foo:Привет
+foo:ПрИвЕт
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+foo:1:привет
+foo:2:Привет
+foo:3:ПрИвЕт
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- regression::r1891 stdout ----
+
+thread 'regression::r1891' (781774) panicked at tests/regression.rs:1304:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1:
+2:
+2:
+2:
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test:1:
+test:2:
+test:2:
+test:2:
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- regression::r2208 stdout ----
+
+thread 'regression::r2208' (781807) panicked at tests/regression.rs:1415:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ [-h] [-U|-u <pkgspec>[,<pkgspec>...]] [<reqs-in>...] [-- <pip-compile-arg>...]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test: [-h] [-U|-u <pkgspec>[,<pkgspec>...]] [<reqs-in>...] [-- <pip-compile-arg>...]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- regression::r2095 stdout ----
+
+thread 'regression::r2095' (781790) panicked at tests/regression.rs:1373:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+4:one
+8:(
+9:		a
+10:		b
+11:		c
+12:	)
+15:two
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test:4:one
+test:8:(
+test:9:		a
+test:10:		b
+test:11:		c
+test:12:	)
+test:15:two
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- regression::r184 stdout ----
+
+thread 'regression::r184' (781756) panicked at tests/regression.rs:245:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+foo/bar/baz:test
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+foo/bar/baz:1:test
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- regression::r210 stdout ----
+
+thread 'regression::r210' (781791) panicked at tests/regression.rs:279:9:
+assertion `left == right` failed
+  left: [102, 111, 111, 255, 98, 97, 114, 58, 116, 101, 115, 116, 10]
+ right: [102, 111, 111, 255, 98, 97, 114, 58, 49, 58, 116, 101, 115, 116, 10]
+
+---- regression::r1334_invert_empty_patterns stdout ----
+
+thread 'regression::r1334_invert_empty_patterns' (781610) panicked at tests/regression.rs:972:9:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+one
+two
+three
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+haystack:1:one
+haystack:2:two
+haystack:3:three
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- regression::r1868_context_passthru_override stdout ----
+
+thread 'regression::r1868_context_passthru_override' (781763) panicked at tests/regression.rs:1256:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+foo
+bar
+baz
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test-1-foo
+test:2:bar
+test-3-baz
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- regression::r2480 stdout ----
+
+thread 'regression::r2480' (781847) panicked at tests/regression.rs:1432:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FooBar
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+file:1:FooBar
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- regression::r199 stdout ----
+
+thread 'regression::r199' (781778) panicked at tests/regression.rs:255:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+foo:tEsT
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+foo:1:tEsT
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- regression::r2574 stdout ----
+
+thread 'regression::r2574' (781902) panicked at tests/regression.rs:1472:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+some.domain.com
+some.domain.com
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1:some.domain.com
+2:some.domain.com
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- regression::r25 stdout ----
+
+thread 'regression::r25' (781848) panicked at tests/regression.rs:24:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/llvm/foo:test
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/llvm/foo:1:test
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- regression::r206 stdout ----
+
+thread 'regression::r206' (781781) panicked at tests/regression.rs:264:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+foo/bar.txt:test
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+foo/bar.txt:1:test
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- regression::r256 stdout ----
+
+thread 'regression::r256' (781866) panicked at tests/regression.rs:312:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+foo/baz:test
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+foo/baz:1:test
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- regression::r256_j1 stdout ----
+
+thread 'regression::r256_j1' (781874) panicked at tests/regression.rs:322:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+foo/baz:test
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+foo/baz:1:test
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- regression::r30 stdout ----
+
+thread 'regression::r30' (781965) panicked at tests/regression.rs:36:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+vendor/manifest:test
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+vendor/manifest:1:test
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- regression::r270 stdout ----
+
+thread 'regression::r270' (781916) panicked at tests/regression.rs:330:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+foo:-test
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+foo:1:-test
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- regression::r1838_nul_error_with_binary_detection stdout ----
+
+thread 'regression::r1838_nul_error_with_binary_detection' (781752) panicked at tests/regression.rs:1227:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test:foo
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test:1:foo
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- regression::r2658_null_data_line_regexp stdout ----
+
+thread 'regression::r2658_null_data_line_regexp' (781907) panicked at tests/regression.rs:1479:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+haystack:bar 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+haystack:2:bar 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- regression::r451_only_matching_as_in_issue stdout ----
+
+thread 'regression::r451_only_matching_as_in_issue' (782113) panicked at tests/regression.rs:422:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1
+2
+3
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+digits.txt:1:1
+digits.txt:1:2
+digits.txt:1:3
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- regression::r3180_look_around_panic stdout ----
+
+thread 'regression::r3180_look_around_panic' (782073) panicked at tests/regression.rs:1718:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbxbx
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+haystack:1:xbxbx
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- regression::r67 stdout ----
+
+thread 'regression::r67' (782223) panicked at tests/regression.rs:89:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+dir/bar:test
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+dir/bar:1:test
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- regression::r493 stdout ----
+
+thread 'regression::r493' (782124) panicked at tests/regression.rs:460:5:
+assertion `left == right` failed
+  left: " 're \n"
+ right: "input.txt:1: 're \n"
+
+---- regression::r405 stdout ----
+
+thread 'regression::r405' (782109) panicked at tests/regression.rs:369:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+bar/foo/file2.txt:test
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+bar/foo/file2.txt:1:test
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- regression::r451_only_matching stdout ----
+
+thread 'regression::r451_only_matching' (782112) panicked at tests/regression.rs:438:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1:1:1
+1:3:2
+1:5:3
+2:1:1
+2:2:2
+2:3:3
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+digits.txt:1:1:1
+digits.txt:1:3:2
+digits.txt:1:5:3
+digits.txt:2:1:1
+digits.txt:2:2:2
+digits.txt:2:3:3
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- regression::r3067_gitignore_error stdout ----
+
+thread 'regression::r3067_gitignore_error' (781966) panicked at tests/regression.rs:1526:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+foobar/some/debug/flag:baz
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+foobar/some/debug/flag:1:baz
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- regression::r553_flag stdout ----
+
+thread 'regression::r553_flag' (782159) panicked at tests/regression.rs:496:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+For the Doctor Watsons of this world, as opposed to the Sherlock
+Holmeses, success in the province of detective work must always
+--
+but Doctor Watson has to have it taken out for him and dusted,
+and exhibited clearly, with a label attached.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sherlock:1:For the Doctor Watsons of this world, as opposed to the Sherlock
+sherlock-2-Holmeses, success in the province of detective work must always
+--
+sherlock-5-but Doctor Watson has to have it taken out for him and dusted,
+sherlock:6:and exhibited clearly, with a label attached.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- regression::r568_leading_hyphen_option_args stdout ----
+
+thread 'regression::r568_leading_hyphen_option_args' (782171) panicked at tests/regression.rs:509:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+foo bar -baz
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+file:1:foo bar -baz
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- regression::r599 stdout ----
+
+thread 'regression::r599' (782184) panicked at tests/regression.rs:548:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+"\u{1b}[0m1\u{1b}[0m:\n\u{1b}[0m2\u{1b}[0m:\n"
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+"\u{1b}[0minput.txt\u{1b}[0m:\u{1b}[0m1\u{1b}[0m:\n\u{1b}[0minput.txt\u{1b}[0m:\u{1b}[0m2\u{1b}[0m:\n"
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- regression::r553_switch stdout ----
+
+thread 'regression::r553_switch' (782160) panicked at tests/regression.rs:479:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sherlock:For the Doctor Watsons of this world, as opposed to the Sherlock
+sherlock:be, to a very large extent, the result of luck. Sherlock Holmes
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sherlock:1:For the Doctor Watsons of this world, as opposed to the Sherlock
+sherlock:3:be, to a very large extent, the result of luck. Sherlock Holmes
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- regression::r506_word_not_parenthesized stdout ----
+
+thread 'regression::r506_word_not_parenthesized' (782155) panicked at tests/regression.rs:467:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+min
+max
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+wb.txt:1:min
+wb.txt:2:max
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- regression::r807 stdout ----
+
+thread 'regression::r807' (782253) panicked at tests/regression.rs:569:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.a/c/file:test
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.a/c/file:1:test
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- regression::r90 stdout ----
+
+thread 'regression::r90' (782399) panicked at tests/regression.rs:107:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.foo:test
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.foo:1:test
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- regression::r93 stdout ----
+
+thread 'regression::r93' (782445) panicked at tests/regression.rs:114:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+foo:192.168.1.1
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+foo:1:192.168.1.1
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- regression::r99 stdout ----
+
+thread 'regression::r99' (782446) panicked at tests/regression.rs:123:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+bar
+foo1
+test
+test
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+1:test
+1:test
+bar
+foo1
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- misc::sortr_accessed stdout ----
+
+thread 'misc::sortr_accessed' (781167) panicked at tests/misc.rs:1135:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+dir/d:test
+b:test
+dir/c:test
+a:test
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+dir/d:1:test
+b:1:test
+dir/c:1:test
+a:1:test
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- misc::sort_accessed stdout ----
+
+thread 'misc::sort_accessed' (781147) panicked at tests/misc.rs:1126:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+a:test
+dir/c:test
+b:test
+dir/d:test
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+a:1:test
+dir/c:1:test
+b:1:test
+dir/d:1:test
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+---- misc::sort_files stdout ----
+
+thread 'misc::sort_files' (781151) panicked at tests/misc.rs:1117:5:
+
+printed outputs differ!
+
+expected:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+a:test
+b:test
+dir/c:test
+dir/d:test
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+got:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+a:1:test
+b:1:test
+dir/c:1:test
+dir/d:1:test
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+failures:
+    binary::after_match1_explicit
+    binary::after_match1_explicit_text
+    binary::after_match1_stdin
+    binary::before_match1_explicit
+    binary::before_match2_explicit
+    binary::mmap_after_nul_match
+    binary::mmap_match_explicit
+    binary::mmap_match_multiple
+    binary::mmap_match_near_nul
+    feature::context_sep
+    feature::context_sep_default
+    feature::context_sep_empty
+    feature::f1078_max_columns_preview1
+    feature::f1078_max_columns_preview2
+    feature::f109_max_depth
+    feature::f1207_ignore_encoding
+    feature::f129_context
+    feature::f129_matches
+    feature::f129_replace
+    feature::f159_max_count
+    feature::f1842_field_context_separator
+    feature::f1842_field_match_separator
+    feature::f196_persistent_config
+    feature::f1_eucjp
+    feature::f1_sjis
+    feature::f1_utf16_auto
+    feature::f1_utf16_explicit
+    feature::f20_no_filename
+    feature::f2288_context_partial_override
+    feature::f2288_context_partial_override_rev
+    feature::f263_sort_files
+    feature::f263_sort_files_reverse
+    feature::f275_pathsep
+    feature::f34_only_matching
+    feature::f362_dfa_size_limit
+    feature::f416_crlf
+    feature::f416_crlf_multiline
+    feature::f416_crlf_only_matching
+    feature::f45_precedence_internal
+    feature::f45_precedence_with_others
+    feature::f68_no_ignore_vcs
+    feature::f7
+    feature::f70_smart_case
+    feature::f740_passthru
+    feature::f7_stdin
+    feature::f89_match
+    feature::f917_trim
+    feature::f917_trim_match
+    feature::f917_trim_max_columns_matches
+    feature::f917_trim_max_columns_multi_only_matching
+    feature::f917_trim_max_columns_multi_standard
+    feature::f917_trim_max_columns_normal
+    feature::f917_trim_multi_standard
+    feature::f993_null_data
+    feature::no_context_sep
+    feature::no_context_sep_overridden
+    feature::no_context_sep_overrides
+    feature::stop_on_nonmatch
+    misc::after_context
+    misc::after_context_line_numbers
+    misc::before_context
+    misc::before_context_line_numbers
+    misc::binary_convert
+    misc::binary_convert_mmap
+    misc::binary_search_mmap
+    misc::binary_search_no_mmap
+    misc::byte_offset_only_matching
+    misc::case_insensitive
+    misc::columns
+    misc::compressed_brotli
+    misc::compressed_bzip2
+    misc::compressed_gzip
+    misc::compressed_lz4
+    misc::compressed_lzma
+    misc::compressed_xz
+    misc::compressed_zstd
+    misc::context
+    misc::context_line_numbers
+    misc::dir
+    misc::file_type_add
+    misc::file_type_add_compose
+    misc::file_types
+    misc::file_types_all
+    misc::file_types_negate
+    misc::file_types_negate_all
+    misc::glob
+    misc::glob_always_case_insensitive
+    misc::glob_case_insensitive
+    misc::glob_case_sensitive
+    misc::glob_negate
+    misc::ignore_git_parent_stop
+    misc::ignore_git_parent_stop_file
+    misc::inverted
+    misc::inverted_line_numbers
+    misc::line
+    misc::line_numbers
+    misc::literal
+    misc::no_ignore
+    misc::no_ignore_hidden
+    misc::no_parent_ignore_git
+    misc::preprocessing
+    misc::preprocessing_glob
+    misc::replace
+    misc::replace_groups
+    misc::replace_named_groups
+    misc::replace_with_only_matching
+    misc::single_file
+    misc::sort_accessed
+    misc::sort_files
+    misc::sortr_accessed
+    misc::symlink_follow
+    misc::unrestricted1
+    misc::unrestricted2
+    misc::with_filename
+    misc::with_heading
+    misc::with_heading_default
+    misc::word
+    misc::word_period
+    multiline::context
+    multiline::dot_all
+    multiline::only_matching
+    multiline::overlap1
+    multiline::overlap2
+    multiline::stdin
+    regression::r1064
+    regression::r1163
+    regression::r1164
+    regression::r1176_line_regex
+    regression::r1176_literal_file
+    regression::r1203_reverse_suffix_literal
+    regression::r1223_no_dir_check_for_default_path
+    regression::r1259_drop_last_byte_nonl
+    regression::r127
+    regression::r1311_multi_line_term_replace
+    regression::r1319
+    regression::r1334_crazy_literals
+    regression::r1334_invert_empty_patterns
+    regression::r137
+    regression::r1380
+    regression::r1389_bad_symlinks_no_biscuit
+    regression::r1537
+    regression::r1559
+    regression::r156
+    regression::r1739_replacement_lineterm_match
+    regression::r1838_nul_error_with_binary_detection
+    regression::r184
+    regression::r1868_context_passthru_override
+    regression::r1878
+    regression::r1891
+    regression::r199
+    regression::r206
+    regression::r2095
+    regression::r210
+    regression::r2208
+    regression::r2480
+    regression::r25
+    regression::r251
+    regression::r256
+    regression::r256_j1
+    regression::r2574
+    regression::r2658_null_data_line_regexp
+    regression::r270
+    regression::r30
+    regression::r3067_gitignore_error
+    regression::r3180_look_around_panic
+    regression::r405
+    regression::r451_only_matching
+    regression::r451_only_matching_as_in_issue
+    regression::r493
+    regression::r506_word_not_parenthesized
+    regression::r553_flag
+    regression::r553_switch
+    regression::r568_leading_hyphen_option_args
+    regression::r599
+    regression::r67
+    regression::r807
+    regression::r90
+    regression::r93
+    regression::r99
+
+test result: FAILED. 150 passed; 179 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.91s
+
+error: test failed, to rerun pass `--test integration`
